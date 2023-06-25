@@ -1653,6 +1653,51 @@ namespace Atom
                     new Isotope(145),
                     new Isotope(146),
                     new Isotope(147)
+                }),
+            new Element("Cesium", "Cs",
+                new Isotope[]{ 
+                    new Isotope(112),
+                    new Isotope(113),
+                    new Isotope(114),
+                    new Isotope(115),
+                    new Isotope(116),
+                    new Isotope(117),
+                    new Isotope(118),
+                    new Isotope(119),
+                    new Isotope(120),
+                    new Isotope(121),
+                    new Isotope(122),
+                    new Isotope(123),
+                    new Isotope(124),
+                    new Isotope(125),
+                    new Isotope(126),
+                    new Isotope(127),
+                    new Isotope(128),
+                    new Isotope(129),
+                    new Isotope(130),
+                    new Isotope(131),
+                    new Isotope(132),
+                    new Isotope(133, true, 100.0f),
+                    new Isotope(134),
+                    new Isotope(135),
+                    new Isotope(136),
+                    new Isotope(137),
+                    new Isotope(138),
+                    new Isotope(139),
+                    new Isotope(140),
+                    new Isotope(141),
+                    new Isotope(142),
+                    new Isotope(143),
+                    new Isotope(144),
+                    new Isotope(145),
+                    new Isotope(146),
+                    new Isotope(147),
+                    new Isotope(148),
+                    new Isotope(149),
+                    new Isotope(150),
+                    new Isotope(151),
+                    new Isotope(152),
+                    new Isotope(153),
                 })
             #endregion
         };
@@ -1761,4 +1806,3 @@ namespace Atom
         }
     }
 }
-

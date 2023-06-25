@@ -4,8 +4,6 @@ using UnityEngine;
 using DUI;
 namespace Atom
 {
-
-
     [RequireComponent(typeof(DUIAnchor))]
     public class Workbench : MonoBehaviour
     {

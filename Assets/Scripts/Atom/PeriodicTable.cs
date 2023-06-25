@@ -38,8 +38,6 @@ namespace Atom
             }
         }
 
-        
-
         /// <summary>
         /// Set the display element to the common form of whatever was just selected
         /// </summary>
