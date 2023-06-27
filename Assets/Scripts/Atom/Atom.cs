@@ -21,11 +21,11 @@ namespace Atom
         private List<Particle> excessParticles; //particles that are not part of the atom 
         private float scale = 1;
 
-        //TODO: replace with constants
+        /* Electronic configuration:
         [SerializeField] private Color sBlockColor;
         [SerializeField] private Color pBlockColor;
         [SerializeField] private Color dBlockColor;
-        [SerializeField] private Color fBlockColor;
+        [SerializeField] private Color fBlockColor;*/
 
         public bool Interactable { get { return interactable; } set { interactable = value; } }
         public Nucleus Nucleus { get; private set; }
