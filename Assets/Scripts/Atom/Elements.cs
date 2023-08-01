@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,9 +6,7 @@ namespace Atom
 {
     public static class Elements
     {
-        /// <summary>
-        /// Contains ALL the data about elements
-        /// </summary>
+        /// Summary: contains ALL the data about the periodic table elements.
 
         private static Element[] elements = new Element[]
         {
@@ -1702,34 +1700,34 @@ namespace Atom
             #endregion
         };
 
-        public static Element GetElement(int protonCount)
+        public static Element GetElement(int protonCount) // returns the element with the given proton count
         {
-            if (protonCount > 0 && protonCount <= elements.Length)
+            if (protonCount > 0 && protonCount <= elements.Length) // if the proton count is valid
             {
-                return elements[protonCount - 1];
+                return elements[protonCount - 1]; // return the element
             }
             return null;
         }
 
-        public static int NumElements { get { return elements.Length; } }
+        public static int NumElements { get { return elements.Length; } } // returns the number of elements
 
-        public static int[] sblock = new int[] { 2, 2, 2, 2, 2, 2, 2 };
-        public static int[] pblock = new int[] { 0, 6, 6, 6, 6, 6, 0 };
-        public static int[] dblock = new int[] { 0, 0, 10, 10, 10, 10, 0 };
-        public static int[] fblock = new int[] { 0, 0, 0, 14, 14, 0, 0 };
+        public static int[] sblock = new int[] { 2, 2, 2, 2, 2, 2, 2 }; // number of electrons in the S shell
+        public static int[] pblock = new int[] { 0, 6, 6, 6, 6, 6, 0 }; // number of electrons in the P shell
+        public static int[] dblock = new int[] { 0, 0, 10, 10, 10, 10, 0 }; // number of electrons in the D shell
+        public static int[] fblock = new int[] { 0, 0, 0, 14, 14, 0, 0 }; // number of electrons in the F shell
 
         //Order: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p, 7s, 5f, 6d, 7p
 
-        public static int GetMaxElectrons(int shell, int protonCount)
+        public static int GetMaxElectrons(int shell, int protonCount) // returns the maximum number of electrons in the given shell
         {
-            int e = sblock[shell];
+            int e = sblock[shell]; // start with the number of electrons in the S shell, then P, D and F shells.
             e += protonCount > 2 ? pblock[shell] : 0;
             e += protonCount > 18 ? dblock[shell] : 0;
             e += protonCount > 54 ? fblock[shell] : 0;
             return e;
         }
 
-        public static int GetShells(int protonCount)
+        public static int GetShells(int protonCount) // returns the number of shells in the given element
         {
             if (protonCount == 0)
                 return 0;
@@ -1751,32 +1749,27 @@ namespace Atom
         public string Abbreviation { get; }
         public Isotope[] Isotopes { get; }
 
-        public Element(string name, string abbreviation, Isotope[] isotopes = null)
+        public Element(string name, string abbreviation, Isotope[] isotopes = null) // constructor
         {
             Name = name;
             Abbreviation = abbreviation;
             Isotopes = isotopes; 
         }
 
-        public int MaxIsotope { get { return Isotopes[Isotopes.Length - 1].Mass; } }
-        public int MinIsotope { get { return Isotopes[0].Mass; } }     
+        public int MaxIsotope { get { return Isotopes[Isotopes.Length - 1].Mass; } } // returns the largest isotope of the element
+        public int MinIsotope { get { return Isotopes[0].Mass; } } // returns the smallest isotope of the element
 
-        public Isotope GetIsotope(int mass)
+        public Isotope GetIsotope(int mass) // returns the isotope with the given mass number
         {
-            //make sure there is actually an Isotope
+            // make sure there is actually an isotope
             if (Isotopes != null && mass >= MinIsotope && mass <= MaxIsotope)
             {
-                //index = mass - smallest possible mass
-                return Isotopes[mass- Isotopes[0].Mass];
+                return Isotopes[mass- Isotopes[0].Mass]; // return the isotope
             }
             return null;
         }
 
-        /// <summary>
-        /// gets the most common isotope of the element
-        /// </summary>
-        /// <returns></returns>
-        public Isotope GetCommon()
+        public Isotope GetCommon() // gets the most common isotope of the element (Not Used)
         {
             Isotope common = null;
             foreach(Isotope isotope in Isotopes)
@@ -1790,14 +1783,14 @@ namespace Atom
         }
     }
 
-    public class Isotope
+    public class Isotope // represents an isotope of an element
     {
         public int Mass { get; }
         public bool Stable { get; }
         public float Abundance { get; }
         public string FormalName { get; }
 
-        public Isotope(int mass, bool stable = false, float abundance = 0.0f, string formalName = "")
+        public Isotope(int mass, bool stable = false, float abundance = 0.0f, string formalName = "") // constructor
         {
             Mass = mass;
             Stable = stable;

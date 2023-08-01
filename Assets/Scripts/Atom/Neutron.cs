@@ -6,23 +6,20 @@ namespace Atom
 {
     public class Neutron : Particle
     {
-        /// <summary>
-        /// Handles the bahavior of neutron particles in atom
-        /// </summary>
+        /// Summary: handles the bahavior of neutron particles in atom
 
-        protected override void Awake()
+        protected override void Awake() // called when the neutron is created
         {
             Radius = 0.5f;
-
             base.Awake();
         }
 
-        protected override void PickUpParticle()
+        protected override void PickUpParticle() // called when the neutron is picked up from the atom
         {
-            //check the neutron is part of the atom and can be removed
+            // check if the neutron is part of the atom and can be removed
             if (inAtom && atom.Nucleus.RemoveParticle(this))
             {
-                base.PickUpParticle();
+                base.PickUpParticle(); // pick up the neutron (remove it from the atom)
                 Debug.Log("Neutron Removed");
             }
             else
@@ -31,23 +28,20 @@ namespace Atom
             }
         }
 
-        protected override void DropParticle()
+        protected override void DropParticle() // called when the neutron is dropped into the atom
         {
-            //check not already part of atom, within atom bounds, and can actually be added
+            // check if not already part of the atom, within atom bounds, and can actually be added
             if (!inAtom && (!atom.Interactable || atom.Contains(transform.position) || atom.Nucleus.Mass < atom.Nucleus.MassMin) && atom.Nucleus.AddParticle(this))
             {
-                base.DropParticle();
+                base.DropParticle(); // drop the neutron (add it to the atom)
                 Debug.Log("Neutron Added");
             }
-            //neutron out of bounds or could not be added
+
+            // neutron out of bounds or could not be added
             else
             {
                 atom.AddExcessParticle(this);
             }
         }
     }
-
-    
 }
-
-    

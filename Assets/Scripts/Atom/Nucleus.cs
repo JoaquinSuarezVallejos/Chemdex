@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Physics;
@@ -8,73 +8,67 @@ namespace Atom
     [RequireComponent(typeof(PhysicsObject))]
     public class Nucleus : MonoBehaviour
     {
-        /// <summary>
-        /// Handles the behavior of Atom's nucleus
-        /// </summary>
+        /// Summary: handles the behavior of the atom's nucleus
 
-        private const float particleSpeed = 1.2f; //magnitude of force to center
-        private const float rotationSpeed = 20; //degees to spin 
+        private const float particleSpeed = 1.2f; // speed of particles 
+        private const float rotationSpeed = 20; // speed of rotation of particles
 
-        private List<Particle> particles; //list of all particles in nucleus
-        private float scale = 1;
+        private List<Particle> particles; // list of all particles in the nucleus
+        private float scale = 1; // scale of the nucleus
 
-        public int ProtonCount { get; private set; } = 0;
-        public int NeutronCount { get; private set; } = 0;
-        public int Mass { get { return ProtonCount + NeutronCount; } }
-        public bool Shake { private get; set; }
-        public float Scale
+        public int ProtonCount { get; private set; } = 0; // number of protons in the nucleus
+        public int NeutronCount { get; private set; } = 0; // number of neutrons in the nucleus
+        public int Mass { get { return ProtonCount + NeutronCount; } } // get the total mass of the nucleus
+        public bool Shake { private get; set; } // true when the nucleus is shaking
+        public float Scale // scale of the nucleus
         {
             set
             {
                 scale = value;
-                foreach (Particle particle in particles)
+                foreach (Particle particle in particles) // set the scale of all particles
                 {
-                    particle.Radius = scale / 2;
+                    particle.Radius = scale / 2; // set the radius of the particle
                 }
             }
         }
 
-        public int MassMax { get; set; }
-        public int MassMin { get; set; }
+        // maximum and minimum mass of the nucleus
+        public int MassMax { get; set; } 
+        public int MassMin { get; set; } 
 
         private PhysicsObject physicsObject;
         private Vector3 origin;
 
         private void Awake()
         {
-            physicsObject = GetComponent<PhysicsObject>();
-
-            particles = new List<Particle>();
+            physicsObject = GetComponent<PhysicsObject>(); // get the physics object
+            particles = new List<Particle>(); // create a new list of particles
         }
 
         private void Start()
         {
-            origin = transform.localPosition; 
+            origin = transform.localPosition;  // set the origin of the nucleus
         }
 
-        /// <summary>
-        /// Adds a particle to the nucleus
-        /// </summary>
-        /// <param name="particle">Particle to add</param>
-        /// <returns>true when particle successfully added</returns>
-        public bool AddParticle(Particle particle)
+        public bool AddParticle(Particle particle) // add a particle to the nucleus
         {
-            //check type of particle
-            if (particle.GetType().Equals(typeof(Proton)) && ProtonCount < Elements.NumElements)
+            // check type of particle
+            if (particle.GetType().Equals(typeof(Proton)) && ProtonCount < Elements.NumElements) // check if the particle is a proton and if the nucleus is not full
             {
                 ProtonCount++;
 
-                //add the particle and set the parent
+                // add the particle and set the parent
                 particles.Add(particle);
                 particle.transform.SetParent(transform);
                 particle.Radius = scale / 2;
                 return true;
             }
-            else if (particle.GetType().Equals(typeof(Neutron)) && NeutronCount < MassMax - ProtonCount)
+
+            else if (particle.GetType().Equals(typeof(Neutron)) && NeutronCount < MassMax - ProtonCount) // check if the particle is a neutron and if the nucleus is not full
             {
                 NeutronCount++;
 
-                //add the particle and set the parent
+                // add the particle and set the parent
                 particles.Add(particle);
                 particle.transform.SetParent(transform);
                 particle.Radius = scale / 2;
@@ -83,28 +77,24 @@ namespace Atom
             return false;
         }
 
-        /// <summary>
-        /// try and remove a particle from the nucleus
-        /// </summary>
-        /// <param name="particle">particle to remove</param>
-        /// <returns>removal suceess</returns>
-        public bool RemoveParticle(Particle particle)
+        public bool RemoveParticle(Particle particle) // remove a particle from the nucleus
         {
-            //check type of particle
-            if (particle.GetType().Equals(typeof(Proton)) && particles.Contains(particle))
+            // check type of particle
+            if (particle.GetType().Equals(typeof(Proton)) && particles.Contains(particle)) // check if the particle is a proton and if it is in the nucleus
             {
                 ProtonCount--;
 
-                //add the particle and set the parent
+                // remove the particle (proton) and set the parent
                 particles.Remove(particle);
                 particle.transform.SetParent(null);
                 return true;
             }
-            else if (particle.GetType().Equals(typeof(Neutron)) && particles.Contains(particle))
+
+            else if (particle.GetType().Equals(typeof(Neutron)) && particles.Contains(particle)) // check if the particle is a neutron and if it is in the nucleus
             {
                 NeutronCount--;
 
-                //add the particle and set the parent
+                // remove the particle (neutron) and set the parent
                 particles.Remove(particle);
                 particle.transform.SetParent(null);
                 return true;
@@ -112,11 +102,11 @@ namespace Atom
             return false;
         } 
 
-        public void TrimProtons(int num)
+        public void TrimProtons(int num) // remove protons from the nucleus (Not Used)
         {
             if (num > 0)
             {
-                Particle[] pA = particles.ToArray(); // copy to array so list can be mutated
+                Particle[] pA = particles.ToArray(); 
                 foreach (Particle particle in pA)
                 {
                     if (particle.GetType().Equals(typeof(Proton)))
@@ -131,25 +121,25 @@ namespace Atom
             }
         }
 
-        public void TrimNeutrons()
+        public void TrimNeutrons() // remove neutrons from the nucleus
         {
             int diff = Mass - MassMax;
             TrimNeutrons(diff);
         }
 
-        public void TrimNeutrons(int num)
+        public void TrimNeutrons(int num) // remove neutrons from the nucleus
         {
-            if (num > 0)
+            if (num > 0) // check if the number of neutrons to remove is greater than 0
             {
                 Particle[] pA = particles.ToArray(); // copy to array so list can be mutated
-                foreach (Particle particle in pA)
+                foreach (Particle particle in pA) // iterate through particles
                 {
-                    if (particle.GetType().Equals(typeof(Neutron)))
+                    if (particle.GetType().Equals(typeof(Neutron))) // check if particle is a neutron
                     {
-                        RemoveParticle(particle);
-                        particle.OnDeselect?.Invoke();
+                        RemoveParticle(particle); // remove the particle
+                        particle.OnDeselect?.Invoke(); // invoke the OnDeselect event
 
-                        if (--num <= 0)
+                        if (--num <= 0) // check if the number of neutrons to remove has been reached
                             return;
                     }
                 }
@@ -158,67 +148,69 @@ namespace Atom
 
         void Update()
         {
-            //slowly spin the nucleus
-            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime); // slowly spin/rotate the nucleus
         }
 
         private void FixedUpdate()
         {
-            Vector3 forceToOrigin = origin - transform.localPosition;
-            if (Shake)
+            Vector3 forceToOrigin = origin - transform.localPosition; // calculate the force to the origin
+
+            if (Shake) // check if the nucleus is shaking
             {
-                Vector3 forceToShake = Random.insideUnitSphere;
-                physicsObject.AddForce(forceToShake + forceToOrigin);
+                Vector3 forceToShake = Random.insideUnitSphere; // calculate the force to shake
+                physicsObject.AddForce(forceToShake + forceToOrigin); // add the force to the nucleus
             }
-            else
+
+            else // if the nucleus is not shaking
             {
                 physicsObject.AddForce(forceToOrigin);
             }
 
-            float m = 0;
+            float m = 0; // max distance from origin
 
-            foreach (Particle particle in particles)
+            foreach (Particle particle in particles) // iterate through particles
             {
-                //find the distance from origin
+                // find the distance from origin
                 Vector3 diffOrgin = transform.position - particle.PhysicsObj.Position;
-                //calculate the force to center ( clamp is used so particles slow near center
+                // calculate the force to center (clamp is used so particles slow near center)
                 Vector3 forceToCenter = Vector3.ClampMagnitude(diffOrgin.normalized * (particleSpeed * scale), diffOrgin.magnitude);
 
-                if(diffOrgin.magnitude > m)
+                if (diffOrgin.magnitude > m) // check if the distance from origin is greater than the max distance
                 {
-                    m = diffOrgin.magnitude;
+                    m = diffOrgin.magnitude; // set the max distance
                 }
 
-                //calculate the force to seperate
+                // calculate the force to seperate
                 Vector3 forceToSeperate = Vector3.zero;
                 foreach (Particle other in particles)
                 {
-                    //don't seperate from self
+                    // don't seperate from self
                     if (!particle.Equals(other))
                     {
-                        //find the distance between particles
+                        // find the distance between particles
                         Vector3 diffOther = particle.PhysicsObj.Position - other.PhysicsObj.Position;
                         
-                        //rare occurance, but seperate from identical other
+                        // rare occurance, but seperate from identical other
                         if (diffOther.sqrMagnitude < 0.01)
                         {
                             forceToSeperate = Random.insideUnitSphere;
                         }
+
                         else
                         {
-                            //calculate the amount of overlap
+                            // calculate the amount of overlap
                             float overlap = diffOther.magnitude - particle.Radius - other.Radius;
-                            //check if actually overlapping
+                            // check if actually overlapping
                             if (overlap < 0)
                             {
-                                //add force to seperate
+                                //a dd force to seperate
                                 forceToSeperate -= diffOther.normalized * overlap;
                             }
                         }
                     }
                 }
                 forceToSeperate *= particleSpeed * scale;
-                //apply forces to the particles
+                // apply forces to the particles
                 particle.PhysicsObj.AddForce(forceToCenter + forceToSeperate);
             }
         }

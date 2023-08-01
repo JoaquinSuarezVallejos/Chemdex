@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,46 +6,46 @@ namespace Atom
 {
     public class Shell : MonoBehaviour
     {
-        [SerializeField] private float particleSpeed; //magnitude of force to get into orbit
-        [SerializeField] private float orbitSpeed; //magnitude of orbital force
+        [SerializeField] private float particleSpeed; // how fast the particles move
+        [SerializeField] private float orbitSpeed; // how fast the particles orbit
 
-        private List<Particle> particles; //list of all the particles in this shell
-        private float seperationDistance; //how far apart each electron should be
+        private List<Particle> particles; // list of all the particles in this shell
+        private float seperationDistance; // how far apart each electron should be
         private float scale = 1;
         private float radius;
 
-        public float Radius
+        public float Radius // radius of the shell
         {
-            get { return radius; }
+            get { return radius; } // get the radius
             set
             {
                 radius = value;
-                CalcSeperationDistance();
+                CalcSeperationDistance(); // calculate the separation distance
             }
-        }//desired orbital radius
+        } // desired orbital radius
 
-        public int ElectronCount { get { return particles.Count; } }
-        public Shell NextShell { get; set; }
-        public int MaxParticles { get; set; }
-        public bool Full { get { return ElectronCount == MaxParticles; } }
-        public bool Empty { get { return ElectronCount == 0; } }
-        public Particle[] Particles { get { return particles.ToArray(); } }
-        public float Scale
+        public int ElectronCount { get { return particles.Count; } } // number of electrons in this shell
+        public Shell NextShell { get; set; } // the next shell in the atom
+        public int MaxParticles { get; set; } // the maximum number of particles in this shell
+        public bool Full { get { return ElectronCount == MaxParticles; } } // true if the shell is full
+        public bool Empty { get { return ElectronCount == 0; } } // true if the shell is empty
+        public Particle[] Particles { get { return particles.ToArray(); } } // array of all the particles in this shell
+
+        public float Scale // scale of the shell
         {
             set
             {
                 scale = value;
-                foreach (Electron particle in particles)
+                foreach (Electron particle in particles) // set the scale of each particle
                 {
-                    particle.Radius = scale / 4;
+                    particle.Radius = scale / 4; // set the radius of the particle
                 }
             }
         }
 
-
         private void Awake()
         {
-            particles = new List<Particle>();
+            particles = new List<Particle>(); // create a new list of particles
         }
 
         /// <summary>
@@ -74,32 +74,28 @@ namespace Atom
             return false;
         }
 
-        /// <summary>
-        /// Removes a particle from this shell
-        /// </summary>
-        /// <param name="particle">Particle to remove</param>
-        /// <returns></returns>
-        public bool RemoveParticle(Particle particle)
+        public bool RemoveParticle(Particle particle) // remove a particle from this shell
         {
-            //make sure the particle is an electron and actually in this shell
+            // make sure the particle is an electron and is actually in this shell
             if (particle.GetType().Equals(typeof(Electron)) && particles.Contains(particle))
             {
-                particles.Remove(particle);
-                particle.transform.SetParent(null);
+                particles.Remove(particle); // remove the particle
+                particle.transform.SetParent(null); // remove the parent
 
-                //calculate the new seperation distance
+                // calculate the new separation distance
                 CalcSeperationDistance();
                 return true;
             }
-            //not in shell, check the next one
-            else if (NextShell != null)
+
+            // not in shell, check the next one
+            else if (NextShell != null) 
             {
-                //recursively check if particle in next shell
+                // recursively check if the particle is in the next shell
                 if (NextShell.RemoveParticle(particle))
                 {
-                    if(particles.Count > 0)
+                    if (particles.Count > 0) // if there are particles in this shell
                     {
-                        //replace the removed partcicle with one from this shell
+                        // replace the removed partcicle with one from this shell
                         Particle transferParticle = particles[0];
                         particles.Remove(transferParticle);
                         NextShell.AddParticle(transferParticle);
