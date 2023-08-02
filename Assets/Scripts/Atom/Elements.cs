@@ -1,4 +1,4 @@
-﻿﻿using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -1652,6 +1652,9 @@ namespace Atom
                     new Isotope(146),
                     new Isotope(147)
                 }),
+            #endregion
+        
+            #region Period 6 elements
             new Element("Cesium", "Cs",
                 new Isotope[]{ 
                     new Isotope(112),
@@ -1696,7 +1699,94 @@ namespace Atom
                     new Isotope(151),
                     new Isotope(152),
                     new Isotope(153),
-                })
+                }),
+            new Element("Barium", "Ba",
+                new Isotope[]{ 
+                    new Isotope(114),
+                    new Isotope(115),
+                    new Isotope(116),
+                    new Isotope(117),
+                    new Isotope(118),
+                    new Isotope(119),
+                    new Isotope(120),
+                    new Isotope(121),
+                    new Isotope(122),
+                    new Isotope(123),
+                    new Isotope(124),
+                    new Isotope(125),
+                    new Isotope(126),
+                    new Isotope(127),
+                    new Isotope(128),
+                    new Isotope(129),
+                    new Isotope(130, true, 0.106f),
+                    new Isotope(131),
+                    new Isotope(132),
+                    new Isotope(133),
+                    new Isotope(134, true, 2.417f),
+                    new Isotope(135, true, 6.592f),
+                    new Isotope(136, true, 7.854f),
+                    new Isotope(137, true, 11.232f),
+                    new Isotope(138, true, 71.7f),
+                    new Isotope(139),
+                    new Isotope(140),
+                    new Isotope(141),
+                    new Isotope(142),
+                    new Isotope(143),
+                    new Isotope(144),
+                    new Isotope(145),
+                    new Isotope(146),
+                    new Isotope(147),
+                    new Isotope(148),
+                    new Isotope(149),
+                    new Isotope(150),
+                    new Isotope(151),
+                    new Isotope(152),
+                    new Isotope(153),
+                }),
+            new Element("Lanthanum", "La",
+                new Isotope[]{ 
+                    new Isotope(116),
+                    new Isotope(117),
+                    new Isotope(118),
+                    new Isotope(119),
+                    new Isotope(120),
+                    new Isotope(121),
+                    new Isotope(122),
+                    new Isotope(123),
+                    new Isotope(124),
+                    new Isotope(125),
+                    new Isotope(126),
+                    new Isotope(127),
+                    new Isotope(128),
+                    new Isotope(129),
+                    new Isotope(130),
+                    new Isotope(131),
+                    new Isotope(132),
+                    new Isotope(133),
+                    new Isotope(134),
+                    new Isotope(135),
+                    new Isotope(136),
+                    new Isotope(137),
+                    new Isotope(138),
+                    new Isotope(139, true, 99.91f),
+                    new Isotope(140),
+                    new Isotope(141),
+                    new Isotope(142),
+                    new Isotope(143),
+                    new Isotope(144),
+                    new Isotope(145),
+                    new Isotope(146),
+                    new Isotope(147),
+                    new Isotope(148),
+                    new Isotope(149),
+                    new Isotope(150),
+                    new Isotope(151),
+                    new Isotope(152),
+                    new Isotope(153),
+                    new Isotope(154),
+                    new Isotope(155),
+                }),
+            
             #endregion
         };
 
@@ -1739,7 +1829,9 @@ namespace Atom
                 return 3;
             if(protonCount <= 2 + 8 + 8 + 18)
                 return 4;
-            return 5;
+            if(protonCount <= 2 + 8 + 8 + 18 + 18)
+                return 5;
+            return 6;
         }
     }
 
