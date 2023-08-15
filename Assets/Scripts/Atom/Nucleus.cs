@@ -10,16 +10,16 @@ namespace Atom
     {
         /// Summary: handles the behavior of the atom's nucleus
 
-        private const float particleSpeed = 1.2f; // speed of particles 
-        private const float rotationSpeed = 20; // speed of rotation of particles
+        public const float particleSpeed = 1.2f; // speed of particles 
+        public const float rotationSpeed = 20; // speed of rotation of particles
 
-        private List<Particle> particles; // list of all particles in the nucleus
-        private float scale = 1; // scale of the nucleus
+        public List<Particle> particles; // list of all particles in the nucleus
+        public float scale = 1; // scale of the nucleus
 
         public int ProtonCount { get; private set; } = 0; // number of protons in the nucleus
         public int NeutronCount { get; private set; } = 0; // number of neutrons in the nucleus
         public int Mass { get { return ProtonCount + NeutronCount; } } // get the total mass of the nucleus
-        public bool Shake { private get; set; } // true when the nucleus is shaking
+        public bool Shake { get; set; } // true when the nucleus is shaking
         public float Scale // scale of the nucleus
         {
             set
@@ -36,8 +36,8 @@ namespace Atom
         public int MassMax { get; set; } 
         public int MassMin { get; set; } 
 
-        private PhysicsObject physicsObject;
-        private Vector3 origin;
+        public PhysicsObject physicsObject;
+        public Vector3 origin;
 
         private void Awake()
         {
