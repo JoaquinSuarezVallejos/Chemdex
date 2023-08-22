@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 1092165045}
   - component: {fileID: 1092165044}
   m_Layer: 5
-  m_Name: HydrogenR
+  m_Name: Electrons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1877,8 +1877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 770, y: 480}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 770, y: -270}
+  m_SizeDelta: {x: 210, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092165044
 MonoBehaviour:
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oxygen
+  m_text: Electrons
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3156,7 +3156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 770, y: 480}
+  m_AnchoredPosition: {x: 770, y: 460}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694809547
@@ -4055,7 +4055,7 @@ GameObject:
   - component: {fileID: 1954003281}
   - component: {fileID: 1954003280}
   m_Layer: 5
-  m_Name: HydrogenL
+  m_Name: Hydrogen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4078,8 +4078,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 770, y: 480}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 770, y: 100}
+  m_SizeDelta: {x: 220, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1954003280
 MonoBehaviour:
@@ -4101,7 +4101,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oxygen
+  m_text: 'Hydrogen
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5190,6 +5192,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6155246353498315390, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: NeutronPrefab
+      value: 
+      objectReference: {fileID: 4897893899562432815, guid: ebcaac4a6d97266448db76d366048bc8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b0cbb3c3755e6443971812c5e61d803, type: 3}
 --- !u!1001 &8229583696339575230
