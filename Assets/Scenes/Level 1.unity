@@ -1110,7 +1110,7 @@ PrefabInstance:
         type: 3}
       propertyPath: workbench
       value: 
-      objectReference: {fileID: 1514291370}
+      objectReference: {fileID: 0}
     - target: {fileID: 8229583697720943602, guid: 317b2ad377f0e304ab5fde55502a95b8,
         type: 3}
       propertyPath: interactable
@@ -1680,7 +1680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellTemplate: {fileID: 1682064986}
-  workbench: {fileID: 1514291370}
+  workbench: {fileID: 0}
   seperateSpeed: 0.5
   interactable: 1
 --- !u!1 &1043488773
@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellTemplate: {fileID: 2100570719}
-  workbench: {fileID: 1514291370}
+  workbench: {fileID: 0}
   seperateSpeed: 0.5
   interactable: 1
 --- !u!1 &1355417876
@@ -3040,18 +3040,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6155246352319863508}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1514291370 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6155246353498315390, guid: 2b0cbb3c3755e6443971812c5e61d803,
-    type: 3}
-  m_PrefabInstance: {fileID: 6155246352319863508}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002707915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f107f2d0a254237488cdb48515d10750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1514291373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3228,7 +3216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellTemplate: {fileID: 1396786661}
-  workbench: {fileID: 1514291370}
+  workbench: {fileID: 0}
   seperateSpeed: 0.5
   interactable: 1
 --- !u!1 &1682064986 stripped
@@ -4541,7 +4529,7 @@ PrefabInstance:
         type: 3}
       propertyPath: workbench
       value: 
-      objectReference: {fileID: 1514291370}
+      objectReference: {fileID: 0}
     - target: {fileID: 8229583697720943602, guid: 317b2ad377f0e304ab5fde55502a95b8,
         type: 3}
       propertyPath: interactable
@@ -5346,7 +5334,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4897893899562432815, guid: ebcaac4a6d97266448db76d366048bc8,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6155246353498315390, guid: 2b0cbb3c3755e6443971812c5e61d803, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2b0cbb3c3755e6443971812c5e61d803, type: 3}
 --- !u!1001 &8229583696339575230
 PrefabInstance:
@@ -5399,7 +5388,7 @@ PrefabInstance:
         type: 3}
       propertyPath: workbench
       value: 
-      objectReference: {fileID: 1514291370}
+      objectReference: {fileID: 0}
     - target: {fileID: 8229583697720943602, guid: 317b2ad377f0e304ab5fde55502a95b8,
         type: 3}
       propertyPath: interactable
