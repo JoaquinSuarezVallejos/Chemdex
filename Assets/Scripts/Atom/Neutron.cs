@@ -33,15 +33,8 @@ namespace Atom
             // check if not already part of the atom, within atom bounds, and can actually be added
             if (!inAtom && (!atom.Interactable || atom.Contains(transform.position) || atom.Nucleus.Mass < atom.Nucleus.MassMin) && atom.Nucleus.AddParticle(this))
             {
-                if (atom.Nucleus.NeutronCount == 0)
-                {
-                    base.DropParticle(); // drop the neutron (add it to the atom)
-                    Debug.Log("Neutron Added");
-                }
-                else
-                {
-                    atom.AddExcessParticle(this);
-                }
+                base.DropParticle(); // drop the neutron (add it to the atom)
+                Debug.Log("Neutron Added");
             }
 
             // neutron out of bounds or could not be added
