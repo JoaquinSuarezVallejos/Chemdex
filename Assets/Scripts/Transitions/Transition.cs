@@ -66,7 +66,6 @@ public class AtomTrans
 {
     public Atom.Atom atom;
     public bool interactable;
-
 }
 
 [System.Serializable]
@@ -80,7 +79,6 @@ public class DUITrans
     {
         anchor.MinMax = new Vector2[] { Vector2.Lerp(anchor.MinMax[0], min , p),
                                         Vector2.Lerp(anchor.MinMax[1], max, p) };
-
     }
 }
 
@@ -97,5 +95,4 @@ public class UITrans
         rectTransform.anchorMax = Vector2.Lerp(rectTransform.anchorMax, max, p);
         rectTransform.anchorMin = Vector2.Lerp(rectTransform.anchorMin, min, p);        
     }
-
 }

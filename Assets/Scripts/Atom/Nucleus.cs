@@ -180,38 +180,41 @@ namespace Atom
                     m = diffOrgin.magnitude; // set the max distance
                 }
 
-                // calculate the force to seperate
-                Vector3 forceToSeperate = Vector3.zero;
+                // calculate the force to separate
+                Vector3 forceToSeparate = Vector3.zero;
+                
                 foreach (Particle other in particles)
                 {
-                    // don't seperate from self
+                    // don't separate from self
                     if (!particle.Equals(other))
                     {
                         // find the distance between particles
                         Vector3 diffOther = particle.PhysicsObj.Position - other.PhysicsObj.Position;
                         
-                        // rare occurance, but seperate from identical other
+                        // rare occurance, but separate from identical other
                         if (diffOther.sqrMagnitude < 0.01)
                         {
-                            forceToSeperate = Random.insideUnitSphere;
+                            forceToSeparate = Random.insideUnitSphere;
                         }
 
                         else
                         {
                             // calculate the amount of overlap
                             float overlap = diffOther.magnitude - particle.Radius - other.Radius;
+
                             // check if actually overlapping
                             if (overlap < 0)
                             {
-                                //a dd force to seperate
-                                forceToSeperate -= diffOther.normalized * overlap;
+                                //add force to separate
+                                forceToSeparate -= diffOther.normalized * overlap;
                             }
                         }
                     }
                 }
-                forceToSeperate *= particleSpeed * scale;
+
+                forceToSeparate *= particleSpeed * scale;
                 // apply forces to the particles
-                particle.PhysicsObj.AddForce(forceToCenter + forceToSeperate);
+                particle.PhysicsObj.AddForce(forceToCenter + forceToSeparate);
             }
         }
 
