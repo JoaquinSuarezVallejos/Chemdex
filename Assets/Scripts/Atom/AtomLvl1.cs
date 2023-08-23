@@ -16,7 +16,7 @@ namespace Atom
         [SerializeField] private bool interactable; 
         private Stack<Shell> shells; // stack of electron shells
         private DUIAnchor anchor; // reference to DUI anchor
-        private List<Particle> excessParticles; // particles that are not part of the atom 
+        private List<ParticleLvl1> excessParticles; // particles that are not part of the atom 
         private float scale = 1;
 
         /* Electronic configuration orbit colors:
@@ -46,7 +46,7 @@ namespace Atom
             Nucleus = GetComponentInChildren<NucleusLvl1>(); // gets the nucleus
             shells = new Stack<Shell>(); // creates a new stack of shells
 
-            excessParticles = new List<Particle>(); // creates a new list of excess particles
+            excessParticles = new List<ParticleLvl1>(); // creates a new list of excess particles
 
             // ForceToCommon(1); // force the atom to be hydrogen
         }
@@ -104,8 +104,8 @@ namespace Atom
             if (excessParticles.Count > 0) // if there are excess particles
             {
                 // convert to array to avoid concurrent modification
-                Particle[] excess = excessParticles.ToArray();
-                foreach (Particle particle in excess)
+                ParticleLvl1[] excess = excessParticles.ToArray();
+                foreach (ParticleLvl1 particle in excess)
                 {
                     // calculate the force needed to separate the particle from the atom
                     Vector2 diffToAtom = particle.PhysicsObj.Position - transform.position;
@@ -130,13 +130,13 @@ namespace Atom
             return anchor.Bounds.Contains(pos);
         }
 
-        public void AddExcessParticle(Particle particle) // add a particle to the excess list
+        public void AddExcessParticle(ParticleLvl1 particle) // add a particle to the excess list
         {
             excessParticles.Add(particle);
             particle.transform.SetParent(transform);
         }
 
-        public void RemoveExcessParticle(Particle particle) // remove a particle from the excess list
+        public void RemoveExcessParticle(ParticleLvl1 particle) // remove a particle from the excess list
         {
             if (excessParticles.Contains(particle))
             {
@@ -145,7 +145,7 @@ namespace Atom
             }
         }
 
-        public bool RemoveElectron(Particle particle) // remove a specified electron from the atom
+        public bool RemoveElectron(ParticleLvl1 particle) // remove a specified electron from the atom
         {
             return OuterShell.RemoveParticle(particle);
         }
@@ -153,7 +153,7 @@ namespace Atom
         private void RemoveShell() // remove and destroy the outer electron shell
         {
             // remove any particles in the outer shell
-            foreach (Particle particle in OuterShell.Particles)
+            foreach (ParticleLvl1 particle in OuterShell.Particles)
             {
                 OuterShell.RemoveParticle(particle);
                 AddExcessParticle(particle);
