@@ -23,7 +23,7 @@ namespace Atom
                 Element element = Elements.GetElement(protonCount);
                 if (element != null)
                 {
-                    texts[i].text = element.Abbreviation;
+                    //texts[i].text = element.Abbreviation;
 
                     //Hook up button to show the element data
                     Button b = texts[i].GetComponentInParent<Button>();
