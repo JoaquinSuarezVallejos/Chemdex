@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace Atom
 {
     public class PeriodicTable : MonoBehaviour
     {
         [SerializeField] private Atom atom;
-        private Text[] texts;
+        private TextMeshProUGUI[] texts;
         public Element Element { get; private set; }
 
         private void Awake()
         {
-            texts = GetComponentsInChildren<Text>();
+            texts = GetComponentsInChildren<TextMeshProUGUI>();
 
-            for(int i = 0; i<Elements.NumElements; i++)
+            for (int i = 0; i<Elements.NumElements; i++)
             {
                 int protonCount = i + 1; //create a new int for button to reference
 
@@ -26,13 +27,14 @@ namespace Atom
 
                     //Hook up button to show the element data
                     Button b = texts[i].GetComponentInParent<Button>();
-                    if(b != null)
+
+                    if (b != null)
                     {
                         b.onClick.AddListener(() => SetElement(protonCount));
                     }
                 }
             }
-            for(int i = Elements.NumElements; i< texts.Length; i++)
+            for (int i = Elements.NumElements; i< texts.Length; i++)
             {
                 texts[i].text = "";
             }
