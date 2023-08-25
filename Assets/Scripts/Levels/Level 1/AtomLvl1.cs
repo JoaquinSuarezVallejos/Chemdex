@@ -11,7 +11,7 @@ namespace Atom
         /// Summary: controls the atom.
 
         [SerializeField] private GameObject shellTemplate; // electron shell template
-        [SerializeField] private Workbench workbench;
+        [SerializeField] private WorkbenchLvl1 workbench;
         [SerializeField] private float seperateSpeed; //speed needed for particles to fly away
         [SerializeField] private bool interactable; 
         private Stack<ShellLvl1> shells; // stack of electron shells
@@ -38,7 +38,7 @@ namespace Atom
                 return e;
             }
         }
-        public Element Element { get; private set; } // the element of the atom
+        //public Element Element { get; private set; } // the element of the atom
 
         private void Awake()
         {
@@ -55,34 +55,34 @@ namespace Atom
         {
             //Element = Elements.GetElement(Nucleus.ProtonCount); // gets the element of the atom
             
-            if (Element != null)
-            {
-                // set the nucleus to be unstable if the isotope is unstable
-                Isotope isotope = Element.GetIsotope(Nucleus.Mass);
-                Nucleus.Shake = isotope != null ? !isotope.Stable : true;
+            //if (Element != null)
+            //{
+            //    // set the nucleus to be unstable if the isotope is unstable
+            //    Isotope isotope = Element.GetIsotope(Nucleus.Mass);
+            //    Nucleus.Shake = isotope != null ? !isotope.Stable : true;
 
-                // set the minimum and maximum isotope mass
-                Nucleus.MassMax = Element.MaxIsotope;
-                Nucleus.MassMin = Element.MinIsotope;
+            //    // set the minimum and maximum isotope mass
+            //    Nucleus.MassMax = Element.MaxIsotope;
+            //    Nucleus.MassMin = Element.MinIsotope;
 
-                // auto add neutrons to make a valid isotope
-                if (Nucleus.Mass < Element.MinIsotope)
-                {
-                    workbench.NewAutoNeutron();
-                }
+            //    // auto add neutrons to make a valid isotope
+            //    if (Nucleus.Mass < Element.MinIsotope)
+            //    {
+            //        workbench.NewAutoNeutron();
+            //    }
 
-                // auto remove neutrons to make valid isotope
-                if (Nucleus.Mass > Element.MaxIsotope)
-                {
-                    Nucleus.TrimNeutrons();
-                }
-            }
+            //    // auto remove neutrons to make valid isotope
+            //    if (Nucleus.Mass > Element.MaxIsotope)
+            //    {
+            //        Nucleus.TrimNeutrons();
+            //    }
+            //}
 
-            else // if the element is null
-            {
-                Nucleus.MassMax = 0; 
-                Nucleus.TrimNeutrons(); // remove all neutrons
-            }
+            //else // if the element is null
+            //{
+            //    Nucleus.MassMax = 0; 
+            //    Nucleus.TrimNeutrons(); // remove all neutrons
+            //}
 
             //// add electron shells to match the element period
             //while (shells.Count < Elements.GetShells(Nucleus.ProtonCount))
@@ -92,11 +92,11 @@ namespace Atom
             //}
 
             // remove electron shells to match the element period
-            while (shells.Count > Elements.GetShells(Nucleus.ProtonCount))
-            {
-                RemoveShell();
-                AdjustScale();
-            }
+            //while (shells.Count > Elements.GetShells(Nucleus.ProtonCount))
+            //{
+            //    RemoveShell();
+            //    AdjustScale();
+            //}
         }
 
         private void FixedUpdate()
@@ -150,21 +150,21 @@ namespace Atom
             return OuterShell.RemoveParticle(particle);
         }
 
-        private void RemoveShell() // remove and destroy the outer electron shell
-        {
-            // remove any particles in the outer shell
-            foreach (ParticleLvl1 particle in OuterShell.Particles)
-            {
-                OuterShell.RemoveParticle(particle);
-                AddExcessParticle(particle);
-            }
+        //private void RemoveShell() // remove and destroy the outer electron shell
+        //{
+        //    // remove any particles in the outer shell
+        //    foreach (ParticleLvl1 particle in OuterShell.Particles)
+        //    {
+        //        OuterShell.RemoveParticle(particle);
+        //        AddExcessParticle(particle);
+        //    }
 
-            // destroy the shell object
-            Destroy(shells.Pop().gameObject);
+        //    // destroy the shell object
+        //    Destroy(shells.Pop().gameObject);
 
-            if (shells.Count == 0) // if there are no shells left
-                return; 
-        }
+        //    if (shells.Count == 0) // if there are no shells left
+        //        return; 
+        //}
 
         //private void AddShell() // add a new outer electron shell
         //{    
@@ -190,58 +190,58 @@ namespace Atom
         //    }
         //}
 
-        public void ForceToCommon() 
-        {
-            ForceToCommon(Nucleus.ProtonCount);
-        }
+        //public void ForceToCommon() 
+        //{
+        //    ForceToCommon(Nucleus.ProtonCount);
+        //}
 
         // set the atom to the most common form of the current element (will be used for the Periodic Table)
-        public void ForceToCommon(int protonCount)
-        {
-            // add or remove neutrons to match atomic number
-            int protonDiff = protonCount - Nucleus.ProtonCount; // get the difference in protons
-            workbench.NewAutoProton(protonDiff); // add protons to match atomic number
-            Nucleus.TrimProtons(-protonDiff); // remove protons to match atomic number
+        //public void ForceToCommon(int protonCount)
+        //{
+        //    // add or remove neutrons to match atomic number
+        //    int protonDiff = protonCount - Nucleus.ProtonCount; // get the difference in protons
+        //    workbench.NewAutoProton(protonDiff); // add protons to match atomic number
+        //    Nucleus.TrimProtons(-protonDiff); // remove protons to match atomic number
 
-            // get the most common stable form of the element
-            Element element = Elements.GetElement(protonCount);
+        //    // get the most common stable form of the element
+        //    Element element = Elements.GetElement(protonCount);
 
-            if (element != null) // if the element is not null
-            {
-                // set the minimum and maximum isotope mass
-                Nucleus.MassMax = element.MaxIsotope;
-                Nucleus.MassMin = element.MinIsotope;
+        //    if (element != null) // if the element is not null
+        //    {
+        //        // set the minimum and maximum isotope mass
+        //        Nucleus.MassMax = element.MaxIsotope;
+        //        Nucleus.MassMin = element.MinIsotope;
 
-                Isotope common = element.GetCommon(); // get the most common isotope of the element
+        //        Isotope common = element.GetCommon(); // get the most common isotope of the element
 
-                if (common != null) // if the isotope is not null
-                { 
-                    // add or remove neutrons to match mass
-                    int neutronDiff = (common.Mass - protonCount) - Nucleus.NeutronCount; // get the difference in neutrons
-                    workbench.NewAutoNeutron(neutronDiff); // add neutrons to match mass
-                    Nucleus.TrimNeutrons(-neutronDiff); // remove neutrons to match mass
-                }            
-            }
+        //        if (common != null) // if the isotope is not null
+        //        { 
+        //            // add or remove neutrons to match mass
+        //            int neutronDiff = (common.Mass - protonCount) - Nucleus.NeutronCount; // get the difference in neutrons
+        //            workbench.NewAutoNeutron(neutronDiff); // add neutrons to match mass
+        //            Nucleus.TrimNeutrons(-neutronDiff); // remove neutrons to match mass
+        //        }            
+        //    }
 
-            // add shells to match element period
-            //while (shells.Count < Elements.GetShells(protonCount))
-            //{
-            //    AddShell();
-            //}
+        //    // add shells to match element period
+        //    //while (shells.Count < Elements.GetShells(protonCount))
+        //    //{
+        //    //    AddShell();
+        //    //}
 
-            // remove shells to match element period
-            while (shells.Count > Elements.GetShells(protonCount))
-            {
-                RemoveShell();
-            }
+        //    // remove shells to match element period
+        //    while (shells.Count > Elements.GetShells(protonCount))
+        //    {
+        //        RemoveShell();
+        //    }
 
-            // add or remove electrons to match charge
-            int electronDiff = protonCount - ElectronCount;
-            workbench.NewAutoElectron(electronDiff);
-            OuterShell.TrimElectrons(-electronDiff);
+        //    // add or remove electrons to match charge
+        //    int electronDiff = protonCount - ElectronCount;
+        //    workbench.NewAutoElectron(electronDiff);
+        //    OuterShell.TrimElectrons(-electronDiff);
 
-            AdjustScale();
-        }
+        //    AdjustScale();
+        //}
 
         public void AdjustScale() // adjust the scale of the atom
         {
