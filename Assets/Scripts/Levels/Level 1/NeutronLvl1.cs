@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Atom
 {
-    public class NeutronLvl1 : Particle
+    public class NeutronLvl1 : ParticleLvl1
     {
         /// Summary: handles the bahavior of neutron particles in atom
 
@@ -31,17 +31,8 @@ namespace Atom
         protected override void DropParticle() // called when the neutron is dropped into the atom
         {
             // check if not already part of the atom, within atom bounds, and can actually be added
-            if (!inAtom && (!atom.Interactable || atom.Contains(transform.position) || atom.Nucleus.Mass < atom.Nucleus.MassMin) && atom.Nucleus.AddParticle(this))
+            if (!inAtom && (!atom.Interactable || atom.Contains(transform.position) || (atom.Nucleus.ProtonCount == 0 && atom.Nucleus.NeutronCount == 0)) && atom.Nucleus.AddParticle(this))
             {
-                //if (atom.Nucleus.NeutronCount == 0)
-                //{
-                //    base.DropParticle(); // drop the neutron (add it to the atom)
-                //    Debug.Log("Neutron Added");
-                //}
-                //else
-                //{
-                //    atom.AddExcessParticle(this);
-                //}
                 base.DropParticle(); // drop the neutron (add it to the atom)
                 Debug.Log("Neutron Added");
             }

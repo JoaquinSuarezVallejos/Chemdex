@@ -5262,6 +5262,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 777438007}
     m_Modifications:
+    - target: {fileID: 6155246352319972336, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1514291373}
+    - target: {fileID: 6155246352319972336, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewProton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246352319972336, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Atom.WorkbenchLvl1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246352341266070, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1514291373}
+    - target: {fileID: 6155246352341266070, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewNeutron
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246352341266070, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Atom.WorkbenchLvl1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246353237790137, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1514291373}
+    - target: {fileID: 6155246353237790137, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewElectron
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246353237790137, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Atom.WorkbenchLvl1, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6155246353498315378, guid: 2b0cbb3c3755e6443971812c5e61d803,
         type: 3}
       propertyPath: m_Name

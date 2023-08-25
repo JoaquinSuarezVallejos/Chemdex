@@ -44,7 +44,7 @@ namespace Atom
             for (int i = 0; i < num; i++)
             {
                 Debug.Log("New Proton");
-                Instantiate(ProtonPrefab, transform.GetChild(0)).GetComponent<Proton>().OnDeselect?.Invoke();
+                Instantiate(ProtonPrefab, transform.GetChild(0)).GetComponent<ProtonLvl1>().OnDeselect?.Invoke();
             }
         }
 
@@ -53,7 +53,7 @@ namespace Atom
             for (int i = 0; i < num; i++)
             {
                 Debug.Log("New Neutron");
-                Instantiate(NeutronPrefab, transform.GetChild(1)).GetComponent<Neutron>().OnDeselect?.Invoke();
+                Instantiate(NeutronPrefab, transform.GetChild(1)).GetComponent<NeutronLvl1>().OnDeselect?.Invoke();
             }
         }
 
@@ -62,7 +62,7 @@ namespace Atom
             for (int i = 0; i < num; i++)
             {
                 Debug.Log("New Electron");
-                Instantiate(ElectronPrefab, transform.GetChild(2)).GetComponent<Electron>().OnDeselect?.Invoke();
+                Instantiate(ElectronPrefab, transform.GetChild(2)).GetComponent<ElectronLvl1>().OnDeselect?.Invoke();
             }
         }
         /// <summary>
@@ -74,7 +74,7 @@ namespace Atom
 
             GameObject obj = Instantiate(ProtonPrefab, transform.GetChild(0));
 
-            Proton proton = obj.GetComponent<Proton>();
+            ProtonLvl1 proton = obj.GetComponent<ProtonLvl1>();
             if (proton != null)
             {
                 proton.OnSelect?.Invoke();
@@ -90,7 +90,7 @@ namespace Atom
 
             GameObject obj = Instantiate(NeutronPrefab, transform.GetChild(1));
 
-            Neutron neutron = obj.GetComponent<Neutron>();
+            NeutronLvl1 neutron = obj.GetComponent<NeutronLvl1>();
             if (neutron != null)
             {
                 neutron.OnSelect?.Invoke();
@@ -106,7 +106,7 @@ namespace Atom
 
             GameObject obj = Instantiate(ElectronPrefab, transform.GetChild(2));
 
-            Electron electron = obj.GetComponent<Electron>();
+            ElectronLvl1 electron = obj.GetComponent<ElectronLvl1>();
             if (electron != null)
             {
                 electron.OnSelect?.Invoke();

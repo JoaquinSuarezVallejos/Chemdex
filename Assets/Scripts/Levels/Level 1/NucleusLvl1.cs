@@ -13,7 +13,7 @@ namespace Atom
         private const float particleSpeed = 1.2f; // speed of particles 
         private const float rotationSpeed = 20; // speed of rotation of particles
 
-        private List<Particle> particles; // list of all particles in the nucleus
+        private List<ParticleLvl1> particles; // list of all particles in the nucleus
         private float scale = 1; // scale of the nucleus
 
         public int ProtonCount { get; private set; } = 0; // number of protons in the nucleus
@@ -25,9 +25,9 @@ namespace Atom
             set
             {
                 scale = value;
-                foreach (Particle particle in particles) // set the scale of all particles
+                foreach (ParticleLvl1 particle in particles) // set the scale of all particles
                 {
-                    particle.Radius = scale * 1.5f; // set the radius of the particle
+                    particle.Radius = scale / 2; // set the radius of the particle
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace Atom
         private void Awake()
         {
             physicsObject = GetComponent<PhysicsObject>(); // get the physics object
-            particles = new List<Particle>(); // create a new list of particles
+            particles = new List<ParticleLvl1>(); // create a new list of particles
         }
 
         private void Start()
@@ -50,7 +50,7 @@ namespace Atom
             origin = transform.localPosition;  // set the origin of the nucleus
         }
 
-        public bool AddParticle(Particle particle) // add a particle to the nucleus
+        public bool AddParticle(ParticleLvl1 particle) // add a particle to the nucleus
         {
             // check type of particle
             //if (particle.GetType().Equals(typeof(Proton)) && ProtonCount < Elements.NumElements) // check if the particle is a proton and if the nucleus is not full
@@ -63,12 +63,12 @@ namespace Atom
             //    particle.Radius = scale * 1.5f;
             //    return true;
             //}
-            if (particle.GetType().Equals(typeof(Proton)) && ProtonCount == 0 && NeutronCount == 0)
+            if (particle.GetType().Equals(typeof(ProtonLvl1)) && ProtonCount == 0 && NeutronCount == 0)
             {
                 ProtonCount++;
                 particles.Add(particle);
                 particle.transform.SetParent(transform);
-                particle.Radius = scale * 1.5f;
+                particle.Radius = scale / 2;
                 return true;
             }
 
@@ -82,24 +82,24 @@ namespace Atom
             //    particle.Radius = scale * 1.5f;
             //    return true;
             //}
-            else if (particle.GetType().Equals(typeof(Neutron)) && NeutronCount == 0 && ProtonCount == 0) // check if the particle is a neutron and if the nucleus is not full
+            else if (particle.GetType().Equals(typeof(NeutronLvl1)) && NeutronCount == 0 && ProtonCount == 0) // check if the particle is a neutron and if the nucleus is not full
             {
                 NeutronCount++;
 
                 // add the particle and set the parent
                 particles.Add(particle);
                 particle.transform.SetParent(transform);
-                particle.Radius = scale * 1.5f;
+                particle.Radius = scale / 2;
                 return true;
             }
             
-            else if (particle.GetType().Equals(typeof(Neutron)) && (NeutronCount > 0 || ProtonCount > 0))
+            else if (particle.GetType().Equals(typeof(NeutronLvl1)) && (NeutronCount > 0 || ProtonCount > 0))
             {
                 Debug.Log("Solo puedes colocar un neutron por lugarcito");
                 return false;
             }
 
-            else if (particle.GetType().Equals(typeof(Proton)) && (ProtonCount > 0 || NeutronCount > 0))
+            else if (particle.GetType().Equals(typeof(ProtonLvl1)) && (ProtonCount > 0 || NeutronCount > 0))
             {
                 Debug.Log("Solo puedes colocar un proton por lugarcito");
                 return false;
@@ -108,10 +108,10 @@ namespace Atom
             return false;
         }
 
-        public bool RemoveParticle(Particle particle) // remove a particle from the nucleus
+        public bool RemoveParticle(ParticleLvl1 particle) // remove a particle from the nucleus
         {
             // check type of particle
-            if (particle.GetType().Equals(typeof(Proton)) && particles.Contains(particle)) // check if the particle is a proton and if it is in the nucleus
+            if (particle.GetType().Equals(typeof(ProtonLvl1)) && particles.Contains(particle)) // check if the particle is a proton and if it is in the nucleus
             {
                 ProtonCount--;
 
@@ -121,7 +121,7 @@ namespace Atom
                 return true;
             }
 
-            else if (particle.GetType().Equals(typeof(Neutron)) && particles.Contains(particle)) // check if the particle is a neutron and if it is in the nucleus
+            else if (particle.GetType().Equals(typeof(NeutronLvl1)) && particles.Contains(particle)) // check if the particle is a neutron and if it is in the nucleus
             {
                 NeutronCount--;
 
@@ -137,10 +137,10 @@ namespace Atom
         {
             if (num > 0)
             {
-                Particle[] pA = particles.ToArray(); 
-                foreach (Particle particle in pA)
+                ParticleLvl1[] pA = particles.ToArray(); 
+                foreach (ParticleLvl1 particle in pA)
                 {
-                    if (particle.GetType().Equals(typeof(Proton)))
+                    if (particle.GetType().Equals(typeof(ProtonLvl1)))
                     {
                         RemoveParticle(particle);
                         particle.OnDeselect?.Invoke();
@@ -162,10 +162,10 @@ namespace Atom
         {
             if (num > 0) // check if the number of neutrons to remove is greater than 0
             {
-                Particle[] pA = particles.ToArray(); // copy to array so list can be mutated
-                foreach (Particle particle in pA) // iterate through particles
+                ParticleLvl1[] pA = particles.ToArray(); // copy to array so list can be mutated
+                foreach (ParticleLvl1 particle in pA) // iterate through particles
                 {
-                    if (particle.GetType().Equals(typeof(Neutron))) // check if particle is a neutron
+                    if (particle.GetType().Equals(typeof(NeutronLvl1))) // check if particle is a neutron
                     {
                         RemoveParticle(particle); // remove the particle
                         particle.OnDeselect?.Invoke(); // invoke the OnDeselect event
@@ -199,7 +199,7 @@ namespace Atom
 
             float m = 0; // max distance from origin
 
-            foreach (Particle particle in particles) // iterate through particles
+            foreach (ParticleLvl1 particle in particles) // iterate through particles
             {
                 // find the distance from origin
                 Vector3 diffOrgin = transform.position - particle.PhysicsObj.Position;
@@ -213,7 +213,7 @@ namespace Atom
 
                 // calculate the force to seperate
                 Vector3 forceToSeperate = Vector3.zero;
-                foreach (Particle other in particles)
+                foreach (ParticleLvl1 other in particles)
                 {
                     // don't seperate from self
                     if (!particle.Equals(other))
@@ -250,7 +250,7 @@ namespace Atom
         {
             Gizmos.color = Color.red;
 
-            Gizmos.DrawWireSphere(transform.position, Mathf.Log(Mass, 30 / scale) * scale + (scale * 1.5f));
+            Gizmos.DrawWireSphere(transform.position, Mathf.Log(Mass, 30 / scale) * scale + (scale / 2));
         }
     }
 }

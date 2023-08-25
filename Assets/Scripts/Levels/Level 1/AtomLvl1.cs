@@ -14,7 +14,7 @@ namespace Atom
         [SerializeField] private Workbench workbench;
         [SerializeField] private float seperateSpeed; //speed needed for particles to fly away
         [SerializeField] private bool interactable; 
-        private Stack<Shell> shells; // stack of electron shells
+        private Stack<ShellLvl1> shells; // stack of electron shells
         private DUIAnchor anchor; // reference to DUI anchor
         private List<ParticleLvl1> excessParticles; // particles that are not part of the atom 
         private float scale = 1;
@@ -27,13 +27,13 @@ namespace Atom
 
         public bool Interactable { get { return interactable; } set { interactable = value; } } // true when the atom can be interacted with
         public NucleusLvl1 Nucleus { get; private set; }
-        public Shell OuterShell { get { return shells.Peek(); } } // returns the outermost shell
+        public ShellLvl1 OuterShell { get { return shells.Peek(); } } // returns the outermost shell
         public int ElectronCount // counts the number of electrons in the atom
         {
             get
             {
                 int e = 0;
-                foreach (Shell shell in shells)
+                foreach (ShellLvl1 shell in shells)
                     e += shell.ElectronCount;
                 return e;
             }
@@ -44,7 +44,7 @@ namespace Atom
         {
             anchor = GetComponent<DUIAnchor>(); // gets the DUI anchor
             Nucleus = GetComponentInChildren<NucleusLvl1>(); // gets the nucleus
-            shells = new Stack<Shell>(); // creates a new stack of shells
+            shells = new Stack<ShellLvl1>(); // creates a new stack of shells
 
             excessParticles = new List<ParticleLvl1>(); // creates a new list of excess particles
 
@@ -84,12 +84,12 @@ namespace Atom
                 Nucleus.TrimNeutrons(); // remove all neutrons
             }
 
-            // add electron shells to match the element period
-            while (shells.Count < Elements.GetShells(Nucleus.ProtonCount))
-            {
-                AddShell();
-                AdjustScale();
-            }
+            //// add electron shells to match the element period
+            //while (shells.Count < Elements.GetShells(Nucleus.ProtonCount))
+            //{
+            //    AddShell();
+            //    AdjustScale();
+            //}
 
             // remove electron shells to match the element period
             while (shells.Count > Elements.GetShells(Nucleus.ProtonCount))
@@ -166,29 +166,29 @@ namespace Atom
                 return; 
         }
 
-        private void AddShell() // add a new outer electron shell
-        {    
-            // create a new shell object
-            GameObject obj = Instantiate(shellTemplate, transform);
-            obj.SetActive(true);
-            obj.transform.localPosition = Vector3.zero;
+        //private void AddShell() // add a new outer electron shell
+        //{    
+        //    // create a new shell object
+        //    GameObject obj = Instantiate(shellTemplate, transform);
+        //    obj.SetActive(true);
+        //    obj.transform.localPosition = Vector3.zero;
 
-            // add the new shell to the stack
-            Shell shell = obj.GetComponent<Shell>();
+        //    // add the new shell to the stack
+        //    ShellLvl1 shell = obj.GetComponent<ShellLvl1>();
 
-            // set properties based on shell layer
-            shell.MaxParticles = Elements.GetMaxElectrons(shells.Count, Nucleus.ProtonCount); // set the max number of particles for the shell
-            shell.NextShell = shells.Count == 0 ? null : OuterShell; // set the next shell to the current outer shell
+        //    // set properties based on shell layer
+        //    //shell.MaxParticles = Elements.GetMaxElectrons(shells.Count, Nucleus.ProtonCount); // set the max number of particles for the shell
+        //    //shell.NextShell = shells.Count == 0 ? null : OuterShell; // set the next shell to the current outer shell
 
-            // push the shell to the stack
-            shells.Push(shell);
+        //    // push the shell to the stack
+        //    shells.Push(shell);
 
-            // fill the next shell 
-            if (OuterShell.NextShell != null) // if there is a next shell
-            {
-                workbench.NewAutoElectron(OuterShell.NextShell.MaxParticles - OuterShell.NextShell.ElectronCount); // add electrons to fill the shell
-            }
-        }
+        //    // fill the next shell 
+        //    if (OuterShell.NextShell != null) // if there is a next shell
+        //    {
+        //        workbench.NewAutoElectron(OuterShell.NextShell.MaxParticles - OuterShell.NextShell.ElectronCount); // add electrons to fill the shell
+        //    }
+        //}
 
         public void ForceToCommon() 
         {
@@ -224,10 +224,10 @@ namespace Atom
             }
 
             // add shells to match element period
-            while (shells.Count < Elements.GetShells(protonCount))
-            {
-                AddShell();
-            }
+            //while (shells.Count < Elements.GetShells(protonCount))
+            //{
+            //    AddShell();
+            //}
 
             // remove shells to match element period
             while (shells.Count > Elements.GetShells(protonCount))
@@ -254,7 +254,7 @@ namespace Atom
 
             // update shells to match scale
             int num = shells.Count;
-            foreach (Shell shell in shells)
+            foreach (ShellLvl1 shell in shells)
             {
                 // set the scale
                 shell.Scale = scale;
