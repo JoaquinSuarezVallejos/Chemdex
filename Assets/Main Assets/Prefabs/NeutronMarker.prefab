@@ -7,10 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4897893899562432815, guid: 117bfa51519fa264b97acffa19831c21,
+    - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
         type: 3}
-      propertyPath: m_Name
-      value: NeutronMarker
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
         type: 3}
@@ -29,6 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -40,16 +45,6 @@ PrefabInstance:
     - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61009198515433922, guid: 117bfa51519fa264b97acffa19831c21,
@@ -67,6 +62,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4897893899562432815, guid: 117bfa51519fa264b97acffa19831c21,
+        type: 3}
+      propertyPath: m_Name
+      value: NeutronMarker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917649929263702684, guid: 117bfa51519fa264b97acffa19831c21,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d5b60c2319e97c4581556676d6fb57b, type: 2}
     m_RemovedComponents:
     - {fileID: 8984899706766354285, guid: 117bfa51519fa264b97acffa19831c21, type: 3}
     - {fileID: 1665243208843649543, guid: 117bfa51519fa264b97acffa19831c21, type: 3}

@@ -7,10 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 79452938095344979, guid: 849394ef25dcfb54ea16f1287ccbddf6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb9239b9319ed2d4195b2e98389cd67d, type: 2}
     - target: {fileID: 1224171826986411744, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
       propertyPath: m_Name
       value: ElectronMarker
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
@@ -29,6 +39,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -40,16 +55,6 @@ PrefabInstance:
     - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,

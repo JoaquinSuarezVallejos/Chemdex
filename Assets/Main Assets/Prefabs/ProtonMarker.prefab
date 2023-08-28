@@ -7,10 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6998275977977314380, guid: 3e751ed835e08f544b795314fcd5d2cc,
+    - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
         type: 3}
-      propertyPath: m_Name
-      value: ProtonMarker
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
         type: 3}
@@ -29,6 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -40,16 +45,6 @@ PrefabInstance:
     - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2467605271674827937, guid: 3e751ed835e08f544b795314fcd5d2cc,
@@ -67,6 +62,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6998275977977314380, guid: 3e751ed835e08f544b795314fcd5d2cc,
+        type: 3}
+      propertyPath: m_Name
+      value: ProtonMarker
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140741351615817727, guid: 3e751ed835e08f544b795314fcd5d2cc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e6970dc9273c0d4d97dd57cd25c7970, type: 2}
     m_RemovedComponents:
     - {fileID: 7750653059614048874, guid: 3e751ed835e08f544b795314fcd5d2cc, type: 3}
     - {fileID: -1250333469121385900, guid: 3e751ed835e08f544b795314fcd5d2cc, type: 3}
