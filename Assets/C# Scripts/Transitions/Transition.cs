@@ -17,6 +17,13 @@ public class Transition : MonoBehaviour
 
     public void StartTransition(int index)
     {
+        StartCoroutine(StartTransitionWithDelay(index));
+    }
+
+    private IEnumerator StartTransitionWithDelay(int index) 
+    {
+        yield return new WaitForSeconds(0.0025f);
+
         this.index = index;
         currLerpTime = 0;
 
