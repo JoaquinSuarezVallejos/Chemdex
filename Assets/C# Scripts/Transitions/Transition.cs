@@ -4,6 +4,7 @@ using UnityEngine;
 using DUI;
 using UnityEngine.UI;
 using Atom;
+using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
@@ -77,6 +78,11 @@ public class Transition : MonoBehaviour
         {
             child2.enabled = true;
         }
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene(sceneName:"MainMenu");
     }
 }
 
