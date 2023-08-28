@@ -10,6 +10,8 @@ public class Transition : MonoBehaviour
     [SerializeField] private Trans[] transitions;
 
     private int index = 0;
+    public GameObject atom;
+    private Renderer[] children1, children2;
 
     //Lerp variables
     private const float lerpTime = 1.0f;
@@ -54,6 +56,26 @@ public class Transition : MonoBehaviour
             {
                 transitions[index].atomTransition.atom.AdjustScale();
             }
+        }
+    }
+
+    public void HideMeshRenderer()
+    {   
+        children1 = atom.GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer child in children1)
+        {
+            child.enabled = false;
+        }
+    }
+
+    public void ShowMeshRenderer()
+    {   
+        children2 = atom.GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer child2 in children2)
+        {
+            child2.enabled = true;
         }
     }
 }
