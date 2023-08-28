@@ -102,7 +102,7 @@ namespace Atom
             return false;
         } 
 
-        public void TrimProtons(int num) // remove protons from the nucleus (Not Used)
+        public void TrimProtons(int num) // remove protons from the nucleus 
         {
             if (num > 0)
             {
