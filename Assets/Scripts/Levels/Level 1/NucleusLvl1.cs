@@ -69,6 +69,7 @@ namespace Atom
                 particles.Add(particle);
                 particle.transform.SetParent(transform);
                 particle.Radius = scale / 2;
+                
                 return true;
             }
 

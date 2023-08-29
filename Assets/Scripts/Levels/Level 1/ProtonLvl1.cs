@@ -28,7 +28,7 @@ namespace Atom
             }
         }
 
-        protected override void DropParticle() // called when the proton is dropped into the atom
+        public void DropParticle() // called when the proton is dropped into the atom
         {
             // check if not already part of the atom, within atom bounds, and can actually be added
             if (!inAtom && (!atom.Interactable || atom.Contains(transform.position) || (atom.Nucleus.ProtonCount == 0 && atom.Nucleus.NeutronCount == 0)) && atom.Nucleus.AddParticle(this))
