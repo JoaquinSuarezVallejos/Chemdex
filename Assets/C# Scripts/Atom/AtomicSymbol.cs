@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,11 +9,11 @@ namespace Atom
     public class AtomicSymbol : MonoBehaviour
     {
         [SerializeField] private Atom atom;
-        [SerializeField] private Text nameUI;
-        [SerializeField] private Text abbreviationUI;
-        [SerializeField] private Text atomicNumberUI;
-        [SerializeField] private Text massNumberUI;
-        [SerializeField] private Text chargeUI;
+        [SerializeField] private TextMeshProUGUI nameUI;
+        [SerializeField] private TextMeshProUGUI abbreviationUI;
+        [SerializeField] private TextMeshProUGUI atomicNumberUI;
+        [SerializeField] private TextMeshProUGUI massNumberUI;
+        [SerializeField] private TextMeshProUGUI chargeUI;
 
         /// Summary: sets the UI for the atomic symbol of an atom (element's name, proton count (atomic number), electron count and mass number.
 

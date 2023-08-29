@@ -1,4 +1,5 @@
-﻿﻿using UnityEngine;
+﻿﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Atom
@@ -6,8 +7,8 @@ namespace Atom
     public class AtomicAttributes : MonoBehaviour
     {
         [SerializeField] private Atom atom; 
-        [SerializeField] private Text formalNameUI;
-        [SerializeField] private Text stableUI;
+        [SerializeField] private TextMeshProUGUI formalNameUI;
+        [SerializeField] private TextMeshProUGUI stableUI;
 
         /// Summary: sets the UI for the isotope of an atom, also checks for formal names and stability of the isotope.
 
