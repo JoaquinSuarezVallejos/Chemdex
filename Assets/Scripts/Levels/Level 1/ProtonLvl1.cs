@@ -14,7 +14,7 @@ namespace Atom
             base.Awake();
         }
 
-        protected override void PickUpParticle() // called when the proton is picked up from the atom
+        public void PickUpParticle() // called when the proton is picked up from the atom
         {
             // check if the proton is part of the atom and can be removed
             if (inAtom && atom.Nucleus.RemoveParticle(this))

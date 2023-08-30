@@ -9,26 +9,22 @@ namespace Atom
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
         bool fed = false;
+
         private void Awake()
         {
             parent = GetComponentInParent<Levysabe>();
+            transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         }
+
         private void OnCollisionEnter(Collision coll)
         {
             var part = coll.gameObject.GetComponent<ParticleLvl1>();
             if (part && !fed)
             {
-                Debug.Log(part.GetType());
-                Debug.Log(assignedParticle.GetType());
                 if(part.GetType() == assignedParticle.GetType())
                 {
-                    Debug.Log("eat");
                     fed = true;
                     coll.transform.parent = transform;
-                    if(parent.AddParticle(part))
-                    {
-                        Debug.Log("win");
-                    }
                     Destroy(this);
                 }
             }

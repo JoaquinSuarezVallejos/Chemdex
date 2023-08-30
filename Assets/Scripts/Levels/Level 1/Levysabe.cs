@@ -17,10 +17,6 @@ namespace Atom
             actual = new List<ParticleLvl1>(receta);
         }
         // Update is called once per frame
-        void Update()
-        {
-        
-        }
 
         public bool AddParticle(ParticleLvl1 atom)
         {
@@ -30,6 +26,7 @@ namespace Atom
             }
             if(actual.Count == 0)
             {
+                Debug.Log("win");
                 return true;
             }
             return false;
