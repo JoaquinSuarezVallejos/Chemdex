@@ -25,6 +25,8 @@ namespace Atom
                 {
                     fed = true;
                     coll.transform.parent = transform;
+                    parent.AddParticle(coll.gameObject);
+                    Debug.Log("Se destruyo alguno");
                     Destroy(this);
                 }
             }
