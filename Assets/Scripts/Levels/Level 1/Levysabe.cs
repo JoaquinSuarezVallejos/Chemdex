@@ -11,6 +11,7 @@ namespace Atom
         public Transform[] position;
         [SerializeField] List<ParticleLvl1> actual;
         ProtonLvl1 protonScript;
+        public bool win = false;
         //[SerializeField] ProtonLvl1 protonlvl1;
 
         private void Awake()
@@ -22,7 +23,6 @@ namespace Atom
         public void AddParticle(GameObject particleDropped)
         // Le pasaba ParticleLvl1 atom por parentesis
         {
-            Debug.Log("Se agrego particula random");
             if (particleDropped.name == "Neutron Level 1(Clone)" && particleDropped.GetComponent<NeutronLvl1>() != null && actual.Count > 0) //El objeto dropeado tiene un nuetron.
             {
                 foreach (ParticleLvl1 other in actual)
@@ -30,7 +30,6 @@ namespace Atom
                     //Debug.Log(other);
                     if (other.GetType() == particleDropped.GetComponent<NeutronLvl1>().GetType())
                     {
-                        Debug.Log(particleDropped);
                         Debug.Log("Coincide alguna con la receta");
                         actual.Remove(other);
                         break;
@@ -43,7 +42,6 @@ namespace Atom
                 {
                     if (other.GetType() == particleDropped.GetComponent<ProtonLvl1>().GetType())
                     {
-                        Debug.Log(particleDropped);
                         Debug.Log("Coincide alguna con la receta");
                         actual.Remove(other);
                         break;
@@ -56,7 +54,7 @@ namespace Atom
             //}
             if (actual.Count == 0)
             {
-                Debug.Log("win");
+                win = true;
                 //return true;
             }
             //return false;

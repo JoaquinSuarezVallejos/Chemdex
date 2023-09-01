@@ -80,6 +80,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7745187810454072759}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &6835439931493585299
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4897893899562432815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1665243208843649543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,22 +126,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9970c67bf99d39445af66932ed588526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selected: 0
   OnSelect:
     m_PersistentCalls:
       m_Calls: []
   OnDeselect:
     m_PersistentCalls:
       m_Calls: []
---- !u!135 &6835439931493585299
-SphereCollider:
+--- !u!114 &6991338465050049124
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4897893899562432815}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed52b539d2b1ac94ebf417183c1bcaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,7 +14,7 @@ namespace Atom
             base.Awake();
         }
 
-        public void PickUpParticle() // called when the proton is picked up from the atom
+        new public void PickUpParticle() // called when the proton is picked up from the atom
         {
             // check if the proton is part of the atom and can be removed
             if (inAtom && atom.Nucleus.RemoveParticle(this))
@@ -28,7 +28,7 @@ namespace Atom
             }
         }
 
-        public void DropParticle() // called when the proton is dropped into the atom
+        new public void DropParticle() // called when the proton is dropped into the atom
         {
             // check if not already part of the atom, within atom bounds, and can actually be added
             if (!inAtom && (!atom.Interactable || atom.Contains(transform.position) || (atom.Nucleus.ProtonCount == 0 && atom.Nucleus.NeutronCount == 0)) && atom.Nucleus.AddParticle(this))

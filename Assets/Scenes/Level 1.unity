@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: H
+  m_Text: W
 --- !u!222 &19661947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -376,7 +376,7 @@ Transform:
   m_GameObject: {fileID: 147723389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2130950490}
@@ -459,7 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396c1c229fc40464a8e6cc89c4f56eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellTemplate: {fileID: 2100570719}
   workbench: {fileID: 1514291373}
   seperateSpeed: 0.5
   interactable: 1
@@ -491,7 +490,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 78
   m_CollisionDetection: 0
 --- !u!135 &147723398
 SphereCollider:
@@ -752,7 +751,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stable
+  m_Text: WIN
 --- !u!222 &312817110
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -922,7 +921,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: WIN
 --- !u!222 &375455019
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1002,7 +1001,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Protium
+  m_Text: WIN
 --- !u!222 &490418173
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1446,7 +1445,7 @@ Transform:
   m_GameObject: {fileID: 846792887}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.52, y: 4.1299996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2130950490}
@@ -1529,7 +1528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396c1c229fc40464a8e6cc89c4f56eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellTemplate: {fileID: 1396786661}
   workbench: {fileID: 1514291373}
   seperateSpeed: 0.5
   interactable: 1
@@ -1561,7 +1559,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 78
   m_CollisionDetection: 0
 --- !u!135 &846792896
 SphereCollider:
@@ -2084,7 +2082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396c1c229fc40464a8e6cc89c4f56eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellTemplate: {fileID: 1682064986}
   workbench: {fileID: 1514291373}
   seperateSpeed: 0.5
   interactable: 1
@@ -2476,7 +2473,7 @@ Transform:
   m_GameObject: {fileID: 1136810389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2130950490}
@@ -2559,7 +2556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396c1c229fc40464a8e6cc89c4f56eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellTemplate: {fileID: 1396786661}
   workbench: {fileID: 1514291373}
   seperateSpeed: 0.5
   interactable: 1
@@ -2591,7 +2587,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 78
   m_CollisionDetection: 0
 --- !u!135 &1136810399
 SphereCollider:
@@ -2640,6 +2636,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drag: 0
+--- !u!1 &1174977844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174977846}
+  - component: {fileID: 1174977845}
+  m_Layer: 0
+  m_Name: WinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1174977845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174977844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215af32b0779b1e42be135c05e6b2c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levyScript: {fileID: 2130950491}
+  canvas: {fileID: 1747155994}
+--- !u!4 &1174977846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174977844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215070794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,7 +2899,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: WIN
 --- !u!222 &1249305891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3285,7 +3327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396c1c229fc40464a8e6cc89c4f56eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellTemplate: {fileID: 2100570719}
   workbench: {fileID: 1514291373}
   seperateSpeed: 0.5
   interactable: 1
@@ -3440,7 +3481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: WIN
 --- !u!222 &1390899443
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3449,12 +3490,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390899440}
   m_CullTransparentMesh: 0
---- !u!1 &1396786661 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8229583696858846747, guid: 317b2ad377f0e304ab5fde55502a95b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 8229583696339575230}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1407270081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,16 +3853,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396c1c229fc40464a8e6cc89c4f56eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellTemplate: {fileID: 1396786661}
   workbench: {fileID: 1514291373}
   seperateSpeed: 0.5
   interactable: 1
---- !u!1 &1682064986 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8229583696858846747, guid: 317b2ad377f0e304ab5fde55502a95b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2001185971}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1694809545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,7 +4808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hydrogen
+  m_Text: WIN
 --- !u!222 &1935935134
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5601,12 +5629,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090985044}
   m_CullTransparentMesh: 0
---- !u!1 &2100570719 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8229583696858846747, guid: 317b2ad377f0e304ab5fde55502a95b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 812390597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2117434788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,6 +5766,7 @@ MonoBehaviour:
   - {fileID: 846792888}
   - {fileID: 147723390}
   actual: []
+  win: 0
 --- !u!114 &2130950493
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ namespace Atom
     {
         /// Summary: controls the atom.
 
-        [SerializeField] private GameObject shellTemplate; // electron shell template
+        //[SerializeField] private GameObject shellTemplate; // electron shell template
         [SerializeField] private WorkbenchLvl1 workbench;
         [SerializeField] private float seperateSpeed; //speed needed for particles to fly away
         [SerializeField] private bool interactable; 

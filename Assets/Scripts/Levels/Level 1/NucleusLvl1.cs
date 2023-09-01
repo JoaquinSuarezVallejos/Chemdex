@@ -11,7 +11,7 @@ namespace Atom
         /// Summary: handles the behavior of the atom's nucleus
 
         private const float particleSpeed = 1.2f; // speed of particles 
-        private const float rotationSpeed = 20; // speed of rotation of particles
+        //private const float rotationSpeed = 20; // speed of rotation of particles
 
         private List<ParticleLvl1> particles; // list of all particles in the nucleus
         private float scale = 1; // scale of the nucleus
@@ -52,6 +52,7 @@ namespace Atom
 
         public bool AddParticle(ParticleLvl1 particle) // add a particle to the nucleus
         {
+            Debug.Log("particle added");
             // check type of particle
             //if (particle.GetType().Equals(typeof(Proton)) && ProtonCount < Elements.NumElements) // check if the particle is a proton and if the nucleus is not full
             //{
@@ -178,10 +179,10 @@ namespace Atom
             }
         }
 
-        void Update()
-        {
-            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime); // slowly spin/rotate the nucleus
-        }
+        //void Update()
+        //{
+        //    transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime); // slowly spin/rotate the nucleus
+        //}
 
         private void FixedUpdate()
         {

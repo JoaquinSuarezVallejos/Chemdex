@@ -18,42 +18,47 @@ namespace Atom
             transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         }
 
-        private void OnCollisionEnter(Collision coll)
+        private void OnCollisionStay(Collision coll)
         {
             var part = coll.gameObject.GetComponent<ParticleLvl1>();
             particleCollision = coll.gameObject;
-            if (!fed)
+            if (!particleCollision.GetComponent<ParticleLvl1>().selected && !particleAdded)
             {
-                if(part.GetType() == assignedParticle.GetType())
+                if(transform.childCount > 0)
                 {
-                    fed = true;
+                    Debug.Log("No puede entrar más de una particula por espacio");
+                }
+                else
+                {
+                    particleCollision.transform.parent = gameObject.transform;
+                    particleCollision.transform.position = gameObject.transform.position;
+                    if (part.GetType() == assignedParticle.GetType() && !fed)
+                    {
+                        parent.AddParticle(particleCollision);
+                        enabled = false;
+                        particleAdded = true;
+                        fed = true;
+                    }
                 }
             }
         }
 
         private void OnCollisionExit(Collision coll)
         {
+            Debug.Log("salio");
             fed = false;
+            particleCollision.gameObject.transform.parent = null;
         }
 
         private void Update()
         {
-            if (particleCollision != null)
-            {
-                if (!particleCollision.GetComponent<ParticleLvl1>().selected && fed && !particleAdded)
-                {
-                    particleCollision.transform.parent = transform;
-                    parent.AddParticle(particleCollision);
-                    Debug.Log("Se desactivo alguno");
-                    enabled = false;
-                    particleAdded = true;
-                }
-            }
 
             if (!fed)
             {
                 //se vuelve a activar y se ejecuta una funcion que no se que hace, pero seguro que se necesita para algo, tipo pickupparticle o algo asi.
                 particleAdded = false;
+                enabled = true;
+                //para sacarle el child, moverlo de vuelta a su padre correspondiente. Si es un proton a proton marker, si es un neutron a neutron marker.
             }
         }
     }
