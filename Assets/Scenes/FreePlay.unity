@@ -688,7 +688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 213910133}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &18353389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,7 +2344,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1052800772}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &54696457
 GameObject:
   m_ObjectHideFlags: 0
@@ -3775,7 +3773,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1762164677}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &80644869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,7 +4173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1671449458}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &82147157
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,7 +5049,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 56942902}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &100578430
 GameObject:
   m_ObjectHideFlags: 0
@@ -5252,7 +5247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1640315278}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &101948802
 GameObject:
   m_ObjectHideFlags: 0
@@ -5451,7 +5445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1185207915}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &102043379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6110,7 +6103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1451337940}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &114083334
 GameObject:
   m_ObjectHideFlags: 0
@@ -6309,7 +6301,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 616786859}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &115072738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6986,7 +6977,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1021103315}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &126965585
 GameObject:
   m_ObjectHideFlags: 0
@@ -7185,7 +7175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1192251795}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &134403601
 GameObject:
   m_ObjectHideFlags: 0
@@ -7674,7 +7663,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 487442478}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &146860557
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,7 +8392,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1673995618}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &169325595
 GameObject:
   m_ObjectHideFlags: 0
@@ -9112,7 +9099,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 815113457}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &182536055
 GameObject:
   m_ObjectHideFlags: 0
@@ -10191,7 +10177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 271908907}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &212675831
 GameObject:
   m_ObjectHideFlags: 0
@@ -11299,7 +11284,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 47715418}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &239728120
 GameObject:
   m_ObjectHideFlags: 0
@@ -11755,7 +11739,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1877094034}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &251819048
 GameObject:
   m_ObjectHideFlags: 0
@@ -11954,7 +11937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1819424577}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &254912697
 GameObject:
   m_ObjectHideFlags: 0
@@ -13989,7 +13971,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1625081008}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &305850076
 GameObject:
   m_ObjectHideFlags: 0
@@ -14895,7 +14876,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 439833534}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &323692126
 GameObject:
   m_ObjectHideFlags: 0
@@ -15178,7 +15158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1957928783}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &331165531
 GameObject:
   m_ObjectHideFlags: 0
@@ -15377,7 +15356,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 463045303}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &338966940
 GameObject:
   m_ObjectHideFlags: 0
@@ -16558,7 +16536,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 363515402}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &372716572
 GameObject:
   m_ObjectHideFlags: 0
@@ -16757,7 +16734,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1577424813}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &373618124
 GameObject:
   m_ObjectHideFlags: 0
@@ -17361,7 +17337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1645178435}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &388079030
 GameObject:
   m_ObjectHideFlags: 0
@@ -18343,6 +18318,188 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &417584591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417584592}
+  - component: {fileID: 417584596}
+  - component: {fileID: 417584595}
+  - component: {fileID: 417584594}
+  m_Layer: 5
+  m_Name: Starter_H1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &417584592
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417584591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.383086, y: 3.383086, z: 3.383086}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1405629738}
+  m_Father: {fileID: 1490382302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -72, y: -136}
+  m_SizeDelta: {x: 85.1072, y: 84.7699}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &417584594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417584591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
+    m_PressedColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 417584595}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 792571278}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1551150223}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 112222479}
+        m_TargetAssemblyTypeName: Transition, Assembly-CSharp
+        m_MethodName: StartTransition
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 112222479}
+        m_TargetAssemblyTypeName: Transition, Assembly-CSharp
+        m_MethodName: ShowMeshRenderer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1490382305}
+        m_TargetAssemblyTypeName: Atom.StarterHydrogen, Assembly-CSharp
+        m_MethodName: HideStarterHydrogen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &417584595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417584591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 499fba492d7e93540bd2a8f20f591e56, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &417584596
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417584591}
+  m_CullTransparentMesh: 1
 --- !u!1 &419097289
 GameObject:
   m_ObjectHideFlags: 0
@@ -19471,7 +19628,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2118673962}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &439833534
 GameObject:
   m_ObjectHideFlags: 0
@@ -20280,7 +20436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1257263272}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &455695537
 GameObject:
   m_ObjectHideFlags: 0
@@ -21907,7 +22062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 515963851}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &509271786
 GameObject:
   m_ObjectHideFlags: 0
@@ -23236,7 +23390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 724754412}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &547864401
 GameObject:
   m_ObjectHideFlags: 0
@@ -23679,7 +23832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1300483904}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &554231105
 GameObject:
   m_ObjectHideFlags: 0
@@ -23878,7 +24030,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 740728749}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &557129307
 GameObject:
   m_ObjectHideFlags: 0
@@ -24661,7 +24812,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 908768556}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &577587519
 GameObject:
   m_ObjectHideFlags: 0
@@ -24860,7 +25010,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1620836973}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &582229307
 GameObject:
   m_ObjectHideFlags: 0
@@ -25059,7 +25208,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1174785711}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &582869319
 GameObject:
   m_ObjectHideFlags: 0
@@ -25515,7 +25663,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2051274299}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &600656300
 GameObject:
   m_ObjectHideFlags: 0
@@ -25714,7 +25861,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1492522543}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &609852618
 GameObject:
   m_ObjectHideFlags: 0
@@ -26769,7 +26915,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1872682814}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &641239722
 GameObject:
   m_ObjectHideFlags: 0
@@ -27239,7 +27384,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1835499588}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &648590318
 GameObject:
   m_ObjectHideFlags: 0
@@ -27514,7 +27658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 431991386}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &652418701
 GameObject:
   m_ObjectHideFlags: 0
@@ -28801,7 +28944,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1623159731}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &711355365
 GameObject:
   m_ObjectHideFlags: 0
@@ -29964,7 +30106,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1152814033}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &743874969
 GameObject:
   m_ObjectHideFlags: 0
@@ -30285,7 +30426,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 316746678}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &746110726
 GameObject:
   m_ObjectHideFlags: 0
@@ -31508,7 +31648,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1378034889}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &771800024
 GameObject:
   m_ObjectHideFlags: 0
@@ -32130,7 +32269,7 @@ GameObject:
   - component: {fileID: 792571280}
   - component: {fileID: 792571279}
   m_Layer: 5
-  m_Name: FreePlay Canvas
+  m_Name: AtomConstruction Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32499,7 +32638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2098732248}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &801867479
 GameObject:
   m_ObjectHideFlags: 0
@@ -32862,7 +33000,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 20848723}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &815113457
 GameObject:
   m_ObjectHideFlags: 0
@@ -33756,7 +33893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1564933089}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &836723582
 GameObject:
   m_ObjectHideFlags: 0
@@ -34035,7 +34171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 420476640}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &841217692
 GameObject:
   m_ObjectHideFlags: 0
@@ -34968,7 +35103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1426222838}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &870408723
 GameObject:
   m_ObjectHideFlags: 0
@@ -35648,7 +35782,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1473527021}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &898629272
 GameObject:
   m_ObjectHideFlags: 0
@@ -36641,7 +36774,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 310944042}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &921627288
 GameObject:
   m_ObjectHideFlags: 0
@@ -36962,7 +37094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 923294250}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &923294250
 GameObject:
   m_ObjectHideFlags: 0
@@ -37284,7 +37415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 68404642}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &931948562
 GameObject:
   m_ObjectHideFlags: 0
@@ -39019,7 +39149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1302993127}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &974446810
 GameObject:
   m_ObjectHideFlags: 0
@@ -39783,7 +39912,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 175757505}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &992457913
 GameObject:
   m_ObjectHideFlags: 0
@@ -40201,7 +40329,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1735935991}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &998176494
 GameObject:
   m_ObjectHideFlags: 0
@@ -40636,7 +40763,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1037681762}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1004585649
 GameObject:
   m_ObjectHideFlags: 0
@@ -44292,7 +44418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 144121777}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1118319790
 GameObject:
   m_ObjectHideFlags: 0
@@ -44491,7 +44616,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 993014033}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1120669228
 GameObject:
   m_ObjectHideFlags: 0
@@ -46341,7 +46465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1390144054}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1177404078
 GameObject:
   m_ObjectHideFlags: 0
@@ -47223,7 +47346,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 801867479}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1209102178
 GameObject:
   m_ObjectHideFlags: 0
@@ -47733,7 +47855,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2118919562}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1234877914
 GameObject:
   m_ObjectHideFlags: 0
@@ -48256,7 +48377,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 388921941}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1249673777
 GameObject:
   m_ObjectHideFlags: 0
@@ -48455,7 +48575,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1541033818}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1257263272
 GameObject:
   m_ObjectHideFlags: 0
@@ -48902,7 +49021,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1791691111}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1276773624
 GameObject:
   m_ObjectHideFlags: 0
@@ -49101,7 +49219,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1527225807}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1277273255
 GameObject:
   m_ObjectHideFlags: 0
@@ -49595,7 +49712,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1327366584}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1290236314
 GameObject:
   m_ObjectHideFlags: 0
@@ -49940,7 +50056,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 407804845}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1296090258
 GameObject:
   m_ObjectHideFlags: 0
@@ -50261,7 +50376,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 757942022}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1300483904
 GameObject:
   m_ObjectHideFlags: 0
@@ -51967,7 +52081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2014944553}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1338175008
 GameObject:
   m_ObjectHideFlags: 0
@@ -52457,7 +52570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1277273255}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1358878673
 GameObject:
   m_ObjectHideFlags: 0
@@ -53048,7 +53160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1950804606}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1372421939
 GameObject:
   m_ObjectHideFlags: 0
@@ -53247,7 +53358,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 323692126}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1374795556
 GameObject:
   m_ObjectHideFlags: 0
@@ -53566,7 +53676,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 557339016}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1377580608
 GameObject:
   m_ObjectHideFlags: 0
@@ -54010,7 +54119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 135854124}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1388248460
 GameObject:
   m_ObjectHideFlags: 0
@@ -54352,6 +54460,107 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1394535707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394535711}
+  - component: {fileID: 1394535710}
+  - component: {fileID: 1394535709}
+  - component: {fileID: 1394535708}
+  m_Layer: 5
+  m_Name: IntroductionMenu Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1394535708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394535707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1394535709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394535707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1394535710
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394535707}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1394535711
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394535707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1490382302}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1397257547
 GameObject:
   m_ObjectHideFlags: 0
@@ -54630,7 +54839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1499939445}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1404617768
 GameObject:
   m_ObjectHideFlags: 0
@@ -54753,6 +54961,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404617768}
   m_CullTransparentMesh: 0
+--- !u!1 &1405629737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405629738}
+  - component: {fileID: 1405629740}
+  - component: {fileID: 1405629739}
+  m_Layer: 5
+  m_Name: Element Symbol
+  m_TagString: TableTagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1405629738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405629737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0972, y: 1.0972, z: 1.0972}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417584592}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.2000122, y: 1.0999756}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1405629739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405629737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1405629740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405629737}
+  m_CullTransparentMesh: 1
 --- !u!1 &1411854171
 GameObject:
   m_ObjectHideFlags: 0
@@ -55658,7 +56001,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1832431560}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1431099162
 GameObject:
   m_ObjectHideFlags: 0
@@ -56287,7 +56629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 162476758}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1459763600
 GameObject:
   m_ObjectHideFlags: 0
@@ -57110,7 +57451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1484403030}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1473527021
 GameObject:
   m_ObjectHideFlags: 0
@@ -57557,7 +57897,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1374818116}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
+--- !u!1 &1490382301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1490382302}
+  - component: {fileID: 1490382304}
+  - component: {fileID: 1490382305}
+  m_Layer: 5
+  m_Name: StarterHydrogen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1490382302
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490382301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 417584592}
+  m_Father: {fileID: 1394535711}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 96, y: 120}
+  m_SizeDelta: {x: -192, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1490382304
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490382301}
+  m_CullTransparentMesh: 0
+--- !u!114 &1490382305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490382301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517d406be06dafd4dab3071960a75f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atom: {fileID: 1619073828}
+  Hydrogen: {fileID: 1490382301}
 --- !u!1 &1490457745
 GameObject:
   m_ObjectHideFlags: 0
@@ -59903,7 +60303,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 150872814}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1551150223
 GameObject:
   m_ObjectHideFlags: 0
@@ -59923,7 +60322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1551150224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60214,7 +60613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 456879050}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1564933089
 GameObject:
   m_ObjectHideFlags: 0
@@ -60497,7 +60895,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1647175684}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1569703902
 GameObject:
   m_ObjectHideFlags: 0
@@ -60825,7 +61222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 431962161}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1571522244
 GameObject:
   m_ObjectHideFlags: 0
@@ -61771,7 +62167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 231019765}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1596728638
 GameObject:
   m_ObjectHideFlags: 0
@@ -61970,7 +62365,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 455695537}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1596840832
 GameObject:
   m_ObjectHideFlags: 0
@@ -62249,7 +62643,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 415605805}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1604707884
 GameObject:
   m_ObjectHideFlags: 0
@@ -63038,7 +63431,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 986437219}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1628916379
 GameObject:
   m_ObjectHideFlags: 0
@@ -65409,7 +65801,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 94594667}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1698284593
 GameObject:
   m_ObjectHideFlags: 0
@@ -65608,7 +65999,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1604864448}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1707638669
 GameObject:
   m_ObjectHideFlags: 0
@@ -65932,7 +66322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 173394623}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1720382460
 GameObject:
   m_ObjectHideFlags: 0
@@ -66253,7 +66642,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 388079030}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1723873926
 GameObject:
   m_ObjectHideFlags: 0
@@ -66873,7 +67261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 777221122}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1728926975
 GameObject:
   m_ObjectHideFlags: 0
@@ -67072,7 +67459,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1712315251}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1735935991
 GameObject:
   m_ObjectHideFlags: 0
@@ -67966,7 +68352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 169325595}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1762164677
 GameObject:
   m_ObjectHideFlags: 0
@@ -68834,7 +69219,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1917614799}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1801024147
 GameObject:
   m_ObjectHideFlags: 0
@@ -69277,7 +69661,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 432338447}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1812558448
 GameObject:
   m_ObjectHideFlags: 0
@@ -70666,7 +71049,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 3796198}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1831161762
 GameObject:
   m_ObjectHideFlags: 0
@@ -72117,7 +72499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 689838097}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1864637667
 GameObject:
   m_ObjectHideFlags: 0
@@ -72438,7 +72819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1764378034}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1867954895
 GameObject:
   m_ObjectHideFlags: 0
@@ -72895,7 +73275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1766211740}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1872682814
 GameObject:
   m_ObjectHideFlags: 0
@@ -75090,7 +75469,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1690707794}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1935141550
 GameObject:
   m_ObjectHideFlags: 0
@@ -75289,7 +75667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1263463969}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1936257471
 GameObject:
   m_ObjectHideFlags: 0
@@ -75568,7 +75945,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2096547119}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1938497941
 GameObject:
   m_ObjectHideFlags: 0
@@ -76585,7 +76961,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1241376310}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1954616789
 GameObject:
   m_ObjectHideFlags: 0
@@ -77327,7 +77702,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1495470638}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1973469022
 GameObject:
   m_ObjectHideFlags: 0
@@ -77747,7 +78121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 191268786}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1986470367
 GameObject:
   m_ObjectHideFlags: 0
@@ -78026,7 +78399,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1329333973}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &1994325499
 GameObject:
   m_ObjectHideFlags: 0
@@ -78739,7 +79111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1570231621}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2008174750
 GameObject:
   m_ObjectHideFlags: 0
@@ -78938,7 +79309,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 688919411}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2012898077
 GameObject:
   m_ObjectHideFlags: 0
@@ -79356,7 +79726,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1465712910}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2031919589
 GameObject:
   m_ObjectHideFlags: 0
@@ -79553,7 +79922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 416945388}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2032163442
 GameObject:
   m_ObjectHideFlags: 0
@@ -80500,7 +80868,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 749697170}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2057806970
 GameObject:
   m_ObjectHideFlags: 0
@@ -81268,7 +81635,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 305850076}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2074269067
 GameObject:
   m_ObjectHideFlags: 0
@@ -82577,7 +82943,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 557129307}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2104631037
 GameObject:
   m_ObjectHideFlags: 0
@@ -82856,7 +83221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2137184634}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2112893995
 GameObject:
   m_ObjectHideFlags: 0
@@ -83055,7 +83419,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 1723873926}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2118673962
 GameObject:
   m_ObjectHideFlags: 0
@@ -83557,7 +83920,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 50539446}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2127329611
 GameObject:
   m_ObjectHideFlags: 0
@@ -83756,7 +84118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 2001666694}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2128034674
 GameObject:
   m_ObjectHideFlags: 0
@@ -83955,7 +84316,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementIcon: {fileID: 481760020}
   blankElementIcon: {fileID: 416945388}
-  allElementIcons: []
 --- !u!1 &2137184634
 GameObject:
   m_ObjectHideFlags: 0
