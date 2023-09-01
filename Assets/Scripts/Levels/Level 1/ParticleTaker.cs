@@ -9,6 +9,8 @@ namespace Atom
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
         public bool fed = false;
+        GameObject particleCollision;
+        bool particleAdded = false;
 
         private void Awake()
         {
@@ -19,17 +21,39 @@ namespace Atom
         private void OnCollisionEnter(Collision coll)
         {
             var part = coll.gameObject.GetComponent<ParticleLvl1>();
-            if (part && !fed)
+            particleCollision = coll.gameObject;
+            if (!fed)
             {
                 if(part.GetType() == assignedParticle.GetType())
                 {
                     fed = true;
-                    coll.transform.parent = transform;
-                    parent.AddParticle(coll.gameObject);
-                    Debug.Log("Se desactivo alguno");
-                    this.enabled = false;
-                    fed = true;
                 }
+            }
+        }
+
+        private void OnCollisionExit(Collision coll)
+        {
+            fed = false;
+        }
+
+        private void Update()
+        {
+            if (particleCollision != null)
+            {
+                if (!particleCollision.GetComponent<ParticleLvl1>().selected && fed && !particleAdded)
+                {
+                    particleCollision.transform.parent = transform;
+                    parent.AddParticle(particleCollision);
+                    Debug.Log("Se desactivo alguno");
+                    enabled = false;
+                    particleAdded = true;
+                }
+            }
+
+            if (!fed)
+            {
+                //se vuelve a activar y se ejecuta una funcion que no se que hace, pero seguro que se necesita para algo, tipo pickupparticle o algo asi.
+                particleAdded = false;
             }
         }
     }

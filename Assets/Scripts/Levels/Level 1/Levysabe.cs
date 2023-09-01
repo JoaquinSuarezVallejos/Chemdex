@@ -28,7 +28,7 @@ namespace Atom
                 foreach (ParticleLvl1 other in actual)
                 {
                     //Debug.Log(other);
-                    if (other == particleDropped.GetComponent("NeutronLvl1"))
+                    if (other.GetType() == particleDropped.GetComponent<NeutronLvl1>().GetType())
                     {
                         Debug.Log(particleDropped);
                         Debug.Log("Coincide alguna con la receta");
@@ -41,10 +41,7 @@ namespace Atom
             {
                 foreach (ParticleLvl1 other in actual)
                 {
-                    Debug.Log(other + "este script esta debugeado");
-                    Debug.Log(particleDropped.GetComponent(typeof(ProtonLvl1)) as ProtonLvl1);
-                    protonScript = particleDropped.GetComponent<ProtonLvl1>();
-                    if (other == protonScript)
+                    if (other.GetType() == particleDropped.GetComponent<ProtonLvl1>().GetType())
                     {
                         Debug.Log(particleDropped);
                         Debug.Log("Coincide alguna con la receta");

@@ -7,12 +7,12 @@ namespace Atom
 {
     [RequireComponent(typeof(PhysicsObject))] // requires a physics object component
     [RequireComponent(typeof(DUISphereButton))] // requires a sphere button component
-    public abstract class ParticleLvl1 : MonoBehaviour // subatomic particles: proton, neutron and electron
+    public class ParticleLvl1 : MonoBehaviour // subatomic particles: proton, neutron and electron
     {
         private DUISphereButton sphereButton; // the sphere button component
         private const int releaseSpeed = 20; // speed of release of particles
         protected bool inAtom = false; // true when the particle is in the atom
-        protected bool selected = false; // true when the particle is currently selected
+        public bool selected = false; // true when the particle is currently selected
 
         public UnityEvent OnSelect; // called when the particle is first selected 
         public UnityEvent OnDeselect; // called when the particle is released from selection
