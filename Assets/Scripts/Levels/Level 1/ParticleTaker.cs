@@ -8,7 +8,7 @@ namespace Atom
     {
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
-        bool fed = false;
+        public bool fed = false;
 
         private void Awake()
         {
@@ -26,8 +26,9 @@ namespace Atom
                     fed = true;
                     coll.transform.parent = transform;
                     parent.AddParticle(coll.gameObject);
-                    Debug.Log("Se destruyo alguno");
-                    Destroy(this);
+                    Debug.Log("Se desactivo alguno");
+                    this.enabled = false;
+                    fed = true;
                 }
             }
         }
