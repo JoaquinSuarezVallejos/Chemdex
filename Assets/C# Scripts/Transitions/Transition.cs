@@ -80,10 +80,10 @@ public class Transition : MonoBehaviour
         }
     }
 
-    public void ReturnToMainMenu()
+    /*public void ReturnToMainMenu()
     {
         SceneManager.LoadScene(sceneName:"MainMenu");
-    }
+    }*/
 }
 
 [System.Serializable]

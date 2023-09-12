@@ -9,20 +9,18 @@ namespace Atom
     public class StarterHydrogen : MonoBehaviour
     {
         [SerializeField] private Atom atom;
-        [SerializeField] private GameObject starterHydrogen, chemdexTitle;
+        [SerializeField] private GameObject introductionMenuCanvas;
         private TextMeshProUGUI[] text;
         public Element Element { get; private set; }
 
         private void Start()
         {
-            starterHydrogen.SetActive(true);
-            chemdexTitle.SetActive(true);
+            introductionMenuCanvas.SetActive(true);
         }
 
-        public void HideUIs()
+        public void IfClickedOn()
         {
-            starterHydrogen.SetActive(false);
-            chemdexTitle.SetActive(false);
+            introductionMenuCanvas.SetActive(false);
         }
 
         private void Awake()
