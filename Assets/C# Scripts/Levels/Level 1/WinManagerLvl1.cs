@@ -9,12 +9,6 @@ namespace Atom
         [SerializeField] Levysabe levyScript;
         [SerializeField] GameObject canvas;
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            
-        }
-
         // Update is called once per frame
         void Update()
         {
