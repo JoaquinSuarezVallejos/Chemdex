@@ -11,7 +11,7 @@ public class HydrogenVFX : MonoBehaviour
 
     IEnumerator clickedOn()
     {
-        yield return new WaitForSeconds(0.18f);
+        yield return new WaitForSeconds(0.17f);
         ParticleSystem hydrogenVFX = GameObject.Find("HydrogenVFX").GetComponent<ParticleSystem>();
         hydrogenVFX.Play();
     }
