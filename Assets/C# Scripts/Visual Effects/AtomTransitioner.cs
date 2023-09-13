@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using Atom;
 using UnityEngine.SceneManagement;
 
-public class Transition : MonoBehaviour
+public class AtomTransitioner : MonoBehaviour
 {
     [SerializeField] private Trans[] transitions;
 
