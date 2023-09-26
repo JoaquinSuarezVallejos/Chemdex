@@ -17,30 +17,36 @@ namespace Atom
             parent = GetComponentInParent<Levysabe>();
             transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         }
-
-        private void OnCollisionStay(Collision coll)
+        private void FixedUpdate()
         {
-            var part = coll.gameObject.GetComponent<ParticleLvl1>();
-            particleCollision = coll.gameObject;
-            if (!particleCollision.GetComponent<ParticleLvl1>().selected && !particleAdded)
+            if(particleCollision)
             {
-                if(transform.childCount > 0)
+                if (!particleCollision.GetComponent<ParticleLvl1>().selected && !particleAdded)
                 {
-                    Debug.Log("No puede entrar más de una particula por espacio");
-                }
-                else
-                {
-                    particleCollision.transform.parent = gameObject.transform;
-                    particleCollision.transform.position = gameObject.transform.position;
-                    if (part.GetType() == assignedParticle.GetType() && !fed)
+                    if (transform.childCount > 1)
                     {
-                        parent.AddParticle(particleCollision);
-                        enabled = false;
-                        particleAdded = true;
-                        fed = true;
+                        Debug.Log("No puede entrar más de una particula por espacio");
+                    }
+                    else
+                    {
+                        particleCollision.transform.parent = gameObject.transform;
+                        particleCollision.transform.position = gameObject.transform.position;
+                        if (particleCollision.GetComponent<ParticleLvl1>().GetType() == assignedParticle.GetType() && !fed)
+                        {
+                            parent.AddParticle(particleCollision);
+                            enabled = false;
+                            particleAdded = true;
+                            fed = true;
+                        }
                     }
                 }
             }
+        }
+        private void OnCollisionEnter(Collision coll)
+        {
+            var part = coll.gameObject.GetComponent<ParticleLvl1>();
+            particleCollision = coll.gameObject;
+            
         }
 
         private void OnCollisionExit(Collision coll)
