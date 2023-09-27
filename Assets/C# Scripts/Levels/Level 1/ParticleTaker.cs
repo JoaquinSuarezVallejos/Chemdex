@@ -8,63 +8,65 @@ namespace Atom
     {
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
-        public bool fed = false;
-        GameObject particleCollision;
-        bool particleAdded = false;
-
+        public GameObject particleGO;
         private void Awake()
         {
             parent = GetComponentInParent<Levysabe>();
             transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         }
-        private void FixedUpdate()
+        private void OnCollisionStay(Collision coll)
         {
-            if(particleCollision)
+            var part = coll.gameObject.GetComponent<ParticleLvl1>();
+            if (!part.selected && particleGO == null)
             {
-                if (!particleCollision.GetComponent<ParticleLvl1>().selected && !particleAdded)
+                if (transform.childCount > 1)
                 {
-                    if (transform.childCount > 1)
+                    Debug.Log("No puede entrar más de una particula por espacio");
+                }
+                else
+                {
+                    Debug.Log("puede entrar la particula");
+                    particleGO = part.gameObject;
+                    particleGO.transform.parent = gameObject.transform;
+                    //particleGO.transform.position = gameObject.transform.position;
+                    if (part.GetType() == assignedParticle.GetType())
                     {
-                        Debug.Log("No puede entrar más de una particula por espacio");
-                    }
-                    else
-                    {
-                        particleCollision.transform.parent = gameObject.transform;
-                        particleCollision.transform.position = gameObject.transform.position;
-                        if (particleCollision.GetComponent<ParticleLvl1>().GetType() == assignedParticle.GetType() && !fed)
-                        {
-                            parent.AddParticle(particleCollision);
-                            enabled = false;
-                            particleAdded = true;
-                            fed = true;
-                        }
+                        parent.AddParticle(particleGO);
                     }
                 }
             }
         }
-        private void OnCollisionEnter(Collision coll)
-        {
-            var part = coll.gameObject.GetComponent<ParticleLvl1>();
-            particleCollision = coll.gameObject;
-            
-        }
 
-        private void OnCollisionExit(Collision coll)
-        {
-            Debug.Log("salio");
-            fed = false;
-            particleCollision.gameObject.transform.parent = null;
-        }
+        //private void OnCollisionExit(Collision coll)
+        //{
+        //    Debug.Log("salio");
+        //    fed = false;
+        //    particleCollision.gameObject.transform.parent = null;
+        //}
 
         private void Update()
         {
-
-            if (!fed)
+            Debug.Log(particleGO);
+            if (particleGO != null)
             {
-                //se vuelve a activar y se ejecuta una funcion que no se que hace, pero seguro que se necesita para algo, tipo pickupparticle o algo asi.
-                particleAdded = false;
-                enabled = true;
-                //para sacarle el child, moverlo de vuelta a su padre correspondiente. Si es un proton a proton marker, si es un neutron a neutron marker.
+                Debug.Log("boca boca boca");
+                particleGO.transform.position = Vector3.Lerp(particleGO.transform.position, transform.position, Time.deltaTime * 3);
+                if (Vector3.Distance(transform.position, particleGO.transform.position) > 1.5)
+                {
+                    Debug.Log("me fui");
+                    Debug.Log(particleGO);
+                    //if ()
+                    //{
+                    //    var script = particleGO.GetComponent<>();
+                    //}
+                    //if ()
+                    //{
+                    //    var script = particleGO.GetComponent<>();
+                    //}
+                    //parent.CheckList(script);
+                    particleGO.transform.parent = null;
+                    particleGO = null;
+                }
             }
         }
     }

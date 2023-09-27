@@ -21,43 +21,40 @@ namespace Atom
         // Update is called once per frame
 
         public void AddParticle(GameObject particleDropped)
-        // Le pasaba ParticleLvl1 atom por parentesis
         {
             if (particleDropped.name == "Neutron Level 1(Clone)" && particleDropped.GetComponent<NeutronLvl1>() != null && actual.Count > 0) //El objeto dropeado tiene un nuetron.
             {
-                foreach (ParticleLvl1 other in actual)
+                foreach (ParticleLvl1 other in actual) //Recorro la lista
                 {
-                    //Debug.Log(other);
-                    if (other.GetType() == particleDropped.GetComponent<NeutronLvl1>().GetType())
+                    if (other.GetType() == particleDropped.GetComponent<NeutronLvl1>().GetType()) //Si el objeto que se dropeó está en la lista:
                     {
                         Debug.Log("Coincide alguna con la receta");
-                        actual.Remove(other);
+                        actual.Remove(other); //se borra
                         break;
                     }
                 }
             }
             if (particleDropped.name == "Proton Level 1(Clone)" && particleDropped.GetComponent<ProtonLvl1>() != null && actual.Count > 0) //El objeto dropeado tiene un proton.
             {
-                foreach (ParticleLvl1 other in actual)
+                foreach (ParticleLvl1 other in actual)//Recorro la lista
                 {
-                    if (other.GetType() == particleDropped.GetComponent<ProtonLvl1>().GetType())
+                    if (other.GetType() == particleDropped.GetComponent<ProtonLvl1>().GetType())//Si el objeto que se dropeó está en la lista:
                     {
                         Debug.Log("Coincide alguna con la receta");
-                        actual.Remove(other);
+                        actual.Remove(other);//se borra
                         break;
                     }
                 }
             }
-            //if (actual is atom && actual.Count > 0)
-            //{
-            //    actual.Remove(atom);
-            //}
             if (actual.Count == 0)
             {
                 win = true;
-                //return true;
             }
-            //return false;
+        }
+
+        public void CheckList(ParticleLvl1 script)
+        {
+
         }
     }
 

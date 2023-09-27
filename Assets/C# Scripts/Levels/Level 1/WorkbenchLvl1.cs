@@ -70,7 +70,7 @@ namespace Atom
         /// </summary>
         public void NewProton()
         {
-            Debug.Log("New Proton");
+            //Debug.Log("New Proton");
 
             GameObject obj = Instantiate(ProtonPrefab, transform.GetChild(0));
 
