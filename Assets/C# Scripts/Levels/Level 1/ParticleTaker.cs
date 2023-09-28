@@ -9,8 +9,6 @@ namespace Atom
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
         public GameObject particleGO;
-        [SerializeField] NeutronLvl1 neutronScript;
-        [SerializeField] ProtonLvl1 protonScript;
 
 
         private void Awake()
@@ -60,13 +58,13 @@ namespace Atom
                     particleGO.transform.parent = null;
                     if (particleGO.GetComponent<NeutronLvl1>() != null)
                     {
-                        neutronScript = particleGO.GetComponent<NeutronLvl1>();
-                        parent.CheckList(neutronScript);
+                        //neutronScript = particleGO.GetComponent<NeutronLvl1>();
+                        parent.CheckList();
                     }
                     else if (particleGO.GetComponent<ProtonLvl1>() != null)
                     {
-                        protonScript = particleGO.GetComponent<ProtonLvl1>();
-                        parent.CheckList(protonScript);
+                        //protonScript = particleGO.GetComponent<ProtonLvl1>();
+                        parent.CheckList();
                     }
                     //Destroy(particleGO.gameObject); Si la destruyo se destruye el script.
                     particleGO = null;

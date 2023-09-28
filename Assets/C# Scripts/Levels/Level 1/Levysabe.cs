@@ -12,7 +12,8 @@ namespace Atom
         [SerializeField] List<ParticleLvl1> actual;
         ProtonLvl1 protonScript;
         public bool win = false;
-        //[SerializeField] ProtonLvl1 protonlvl1;
+        [SerializeField] ProtonLvl1 protonlvl1;
+        [SerializeField] NeutronLvl1 neutronLvl1;
 
         private void Awake()
         {
@@ -52,7 +53,7 @@ namespace Atom
             }
         }
 
-        public void CheckList(ParticleLvl1 script)
+        public void CheckList()
         {
             if (actual.Count == receta.Length)
             {
@@ -70,11 +71,15 @@ namespace Atom
             }
             else
             {
-                //if ()
-                //{
-
-                //}
-                actual.Add(script);
+                for (int i = 0; i<actual.Count; i++)
+                {
+                    if (actual[i] != receta[i]) //VER COMO MIERDA CHEQUEAR LA RECETA Y ACTUAL.
+                    {
+                        break;
+                    }
+                    Debug.Log(receta[i]);
+                }
+                //actual.Add(script);
             }
         }
     }
