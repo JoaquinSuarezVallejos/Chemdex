@@ -54,7 +54,28 @@ namespace Atom
 
         public void CheckList(ParticleLvl1 script)
         {
+            if (actual.Count == receta.Length)
+            {
+                for (int i = 0; i < receta.Length; i++)
+                {
+                    if (actual[i] == receta[i])
+                    {
+                        Debug.Log("son iguales");
+                    }
+                    else
+                    {
+                        Debug.Log("no iguales");
+                    }
+                }
+            }
+            else
+            {
+                //if ()
+                //{
 
+                //}
+                actual.Add(script);
+            }
         }
     }
 

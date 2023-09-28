@@ -9,6 +9,10 @@ namespace Atom
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
         public GameObject particleGO;
+        [SerializeField] NeutronLvl1 neutronScript;
+        [SerializeField] ProtonLvl1 protonScript;
+
+
         private void Awake()
         {
             parent = GetComponentInParent<Levysabe>();
@@ -51,20 +55,20 @@ namespace Atom
             {
                 Debug.Log("boca boca boca");
                 particleGO.transform.position = Vector3.Lerp(particleGO.transform.position, transform.position, Time.deltaTime * 3);
-                if (Vector3.Distance(transform.position, particleGO.transform.position) > 1.5)
+                if (Vector3.Distance(transform.position, particleGO.transform.position) > 1 && !particleGO.GetComponent<ParticleLvl1>().selected)
                 {
-                    Debug.Log("me fui");
-                    Debug.Log(particleGO);
-                    //if ()
-                    //{
-                    //    var script = particleGO.GetComponent<>();
-                    //}
-                    //if ()
-                    //{
-                    //    var script = particleGO.GetComponent<>();
-                    //}
-                    //parent.CheckList(script);
                     particleGO.transform.parent = null;
+                    if (particleGO.GetComponent<NeutronLvl1>() != null)
+                    {
+                        neutronScript = particleGO.GetComponent<NeutronLvl1>();
+                        parent.CheckList(neutronScript);
+                    }
+                    else if (particleGO.GetComponent<ProtonLvl1>() != null)
+                    {
+                        protonScript = particleGO.GetComponent<ProtonLvl1>();
+                        parent.CheckList(protonScript);
+                    }
+                    //Destroy(particleGO.gameObject); Si la destruyo se destruye el script.
                     particleGO = null;
                 }
             }
