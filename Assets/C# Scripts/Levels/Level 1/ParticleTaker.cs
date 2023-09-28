@@ -9,7 +9,7 @@ namespace Atom
         Levysabe parent;
         public ParticleLvl1 assignedParticle;
         public GameObject particleGO;
-
+        public bool wasCorrect = false;
 
         private void Awake()
         {
@@ -33,7 +33,7 @@ namespace Atom
                     //particleGO.transform.position = gameObject.transform.position;
                     if (part.GetType() == assignedParticle.GetType())
                     {
-                        parent.AddParticle(particleGO);
+                        parent.AddParticle(particleGO, this);
                     }
                 }
             }
@@ -48,25 +48,22 @@ namespace Atom
 
         private void Update()
         {
-            Debug.Log(particleGO);
             if (particleGO != null)
             {
-                Debug.Log("boca boca boca");
                 particleGO.transform.position = Vector3.Lerp(particleGO.transform.position, transform.position, Time.deltaTime * 3);
                 if (Vector3.Distance(transform.position, particleGO.transform.position) > 1 && !particleGO.GetComponent<ParticleLvl1>().selected)
                 {
                     particleGO.transform.parent = null;
                     if (particleGO.GetComponent<NeutronLvl1>() != null)
                     {
-                        //neutronScript = particleGO.GetComponent<NeutronLvl1>();
-                        parent.CheckList();
+                        parent.CheckList(wasCorrect, particleGO);
                     }
                     else if (particleGO.GetComponent<ProtonLvl1>() != null)
                     {
-                        //protonScript = particleGO.GetComponent<ProtonLvl1>();
-                        parent.CheckList();
+                        parent.CheckList(wasCorrect, particleGO);
                     }
                     //Destroy(particleGO.gameObject); Si la destruyo se destruye el script.
+                    wasCorrect = false;
                     particleGO = null;
                 }
             }

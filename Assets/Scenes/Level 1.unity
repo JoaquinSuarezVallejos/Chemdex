@@ -312,6 +312,7 @@ MonoBehaviour:
   assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
     type: 3}
   particleGO: {fileID: 0}
+  wasCorrect: 0
 --- !u!114 &147723395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,6 +1038,7 @@ MonoBehaviour:
   assignedParticle: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
     type: 3}
   particleGO: {fileID: 0}
+  wasCorrect: 0
 --- !u!114 &846792893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,6 +1553,7 @@ MonoBehaviour:
   assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
     type: 3}
   particleGO: {fileID: 0}
+  wasCorrect: 0
 --- !u!114 &1136810396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2811,7 +2814,7 @@ MonoBehaviour:
   - {fileID: 147723390}
   actual: []
   win: 0
-  protonlvl1: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
+  protonLvl1: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
     type: 3}
   neutronLvl1: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
     type: 3}
