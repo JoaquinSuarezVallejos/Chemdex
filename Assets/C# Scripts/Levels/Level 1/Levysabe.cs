@@ -6,32 +6,79 @@ namespace Atom
 {
     public class Levysabe : MonoBehaviour
     {
-        // Start is called before the first frame update
+        #region Win or Lose
+        public bool win = false;
+        public bool lose = false;
+        bool listIsNull = false;
+        bool holdersAreFull = false;
+        [SerializeField] GameObject[] holders;
+        #endregion
+        #region Ideal molecule
         public ParticleLvl1[] receta;
         public Transform[] position;
         [SerializeField] List<ParticleLvl1> actual;
-        public bool win = false;
-        bool listIsNull = false;
         bool listModified = false;
         private bool protonScript;
         private bool neutronScript;
         [SerializeField] ProtonLvl1 protonLvl1;
         [SerializeField] NeutronLvl1 neutronLvl1;
+        #endregion
 
         private void Awake()
         {
             actual = new List<ParticleLvl1>(receta);
+            holders = GameObject.FindGameObjectsWithTag("Holder");
         }
-        // Update is called once per frame
+
+        private void Update()
+        {
+            #region Winning Check
+            foreach (ParticleLvl1 scrit in actual)
+            {
+                if (scrit != null)
+                {
+                    listIsNull = false;
+                    break;
+                }
+                else //if all 3 are null you win.
+                {
+                    listIsNull = true;
+                }
+            }
+            if (listIsNull)
+            {
+                win = true;
+            }
+            #endregion
+            #region Losing Check
+            foreach (GameObject holder in holders)
+            {
+                if (!holder.GetComponent<ParticleTaker>().isOccupied)
+                {
+                    holdersAreFull = false;
+                    break;
+                }
+                else
+                {
+                    holdersAreFull = true;
+                }
+            }
+            if (holdersAreFull)
+            {
+                lose = true;
+            }
+            #endregion
+        }
 
         public void AddParticle(GameObject particleDropped, ParticleTaker script)
         {
+            #region Is a Neutron?
             if (particleDropped.name == "Neutron Level 1(Clone)" && particleDropped.GetComponent<NeutronLvl1>() != null && actual.Count > 0) //El objeto dropeado tiene un nuetron.
             {
                 //foreach (ParticleLvl1 other in actual) //Recorro la lista
                 for (int i = 0; i < actual.Count; i++)
                 {
-                    if(actual[i] != null)
+                    if (actual[i] != null)
                     {
                         if (actual[i].GetType() == particleDropped.GetComponent<NeutronLvl1>().GetType()) //Si el objeto que se dropeó está en la lista:
                         {
@@ -44,12 +91,13 @@ namespace Atom
                     }
                 }
             }
+            #endregion
+            #region Is a Proton?
             if (particleDropped.name == "Proton Level 1(Clone)" && particleDropped.GetComponent<ProtonLvl1>() != null && actual.Count > 0) //El objeto dropeado tiene un proton.
             {
-                //foreach (ParticleLvl1 other in actual)//Recorro la lista
-                for(int i = 0; i < actual.Count; i++)
+                for (int i = 0; i < actual.Count; i++)
                 {
-                    if(actual[i] != null)
+                    if (actual[i] != null)
                     {
                         if (actual[i].GetType() == particleDropped.GetComponent<ProtonLvl1>().GetType())//Si el objeto que se dropeó está en la lista:
                         {
@@ -62,37 +110,21 @@ namespace Atom
                     }
                 }
             }
-            foreach (ParticleLvl1 scrit in actual)
-            {
-                if (scrit != null)
-                {
-                    listIsNull = false;
-                    break;
-                }
-                else
-                {
-                    listIsNull = true;
-                }
-            }
-            if (listIsNull)
-            {
-                win = true;
-            }
+            #endregion
         }
 
         public void CheckList(bool wasCorrect, GameObject particleOUT)
         {
+            #region Neutron or proton?
             neutronScript = particleOUT.GetComponent<NeutronLvl1>();
             protonScript = particleOUT.GetComponent<ProtonLvl1>();
-
+            #endregion
+            #region Reset recipe if list was modified
             if (actual.Count == receta.Length)
             {
                 for (int i = 0; i < receta.Length; i++)
                 {
-                    if (actual[i] == receta[i])
-                    {
-                    }
-                    else if (actual[i] != receta [i] && !listModified)
+                    if (actual[i] != receta [i] && !listModified)
                     {
                         ResetearLista(wasCorrect);
                     }
@@ -103,6 +135,7 @@ namespace Atom
             {
                 ResetearLista(wasCorrect);
             }
+            #endregion
         }
 
         void ResetearLista(bool wasCorrect)

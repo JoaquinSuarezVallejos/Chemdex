@@ -10,6 +10,7 @@ namespace Atom
         public ParticleLvl1 assignedParticle;
         public GameObject particleGO;
         public bool wasCorrect = false;
+        public bool isOccupied = false;
 
         private void Awake()
         {
@@ -30,6 +31,7 @@ namespace Atom
                     Debug.Log("puede entrar la particula");
                     particleGO = part.gameObject;
                     particleGO.transform.parent = gameObject.transform;
+                    isOccupied = true;
                     //particleGO.transform.position = gameObject.transform.position;
                     if (part.GetType() == assignedParticle.GetType())
                     {
@@ -65,6 +67,7 @@ namespace Atom
                     //Destroy(particleGO.gameObject); Si la destruyo se destruye el script.
                     wasCorrect = false;
                     particleGO = null;
+                    isOccupied = false;
                 }
             }
         }
