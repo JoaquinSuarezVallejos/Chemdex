@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TableTagged
   - ElementBigIcon
+  - Holder
   layers:
   - Default
   - TransparentFX
