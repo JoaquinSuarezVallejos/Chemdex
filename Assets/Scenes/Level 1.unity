@@ -2480,6 +2480,7 @@ MonoBehaviour:
   winCanvas: {fileID: 577422147}
   loseCanvas: {fileID: 1797426679}
   texts: {fileID: 1855300388}
+  level: 1
 --- !u!4 &1174977846
 Transform:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ namespace Atom
         [SerializeField] GameObject winCanvas;
         [SerializeField] GameObject loseCanvas;
         [SerializeField] GameObject texts;
+        LevelSelector levelSelector;
+        [SerializeField] private int level;
 
         private void Awake()
         {
@@ -44,6 +46,15 @@ namespace Atom
         {
             texts.SetActive(false);
             winCanvas.SetActive(true);
+            if (levelSelector == null)
+            {
+                levelSelector = GameObject.Find("LevelSelectorManager").GetComponent<LevelSelector>();
+                levelSelector.lastLevelPassed = level;
+            }
+            else
+            {
+                levelSelector.lastLevelPassed = level;
+            }
         }
 
         public void TryAgain()
