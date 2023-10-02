@@ -53,7 +53,7 @@ namespace Atom
 
         public void MainMenu()
         {
-            SceneManager.LoadScene("FreePlay");
+            SceneManager.LoadScene(0);
         }
     }
 }
