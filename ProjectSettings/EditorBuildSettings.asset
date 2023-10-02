@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FreePlay.unity
-    guid: dd7a174cc13e02b4c9d2ac4c6b3de5e7
-  - enabled: 0
-    path: Assets/Scenes/AtomConstruction.unity
-    guid: 998df78134b851c4a99bf3ec29f2631e
-  - enabled: 0
+    path: Assets/Scenes/Main Menu.unity
+    guid: 58ae0f4cf62ad814f8ff339266107bcb
+  - enabled: 1
+    path: Assets/Scenes/GameplaySelector.unity
+    guid: 169eb8e29da11564ab220844da33afa1
+  - enabled: 1
+    path: Assets/Scenes/LevelSelector.unity
+    guid: 960994d9299cda04a87b5e42f904cfc7
+  - enabled: 1
     path: Assets/Scenes/PeriodicTable.unity
     guid: 36745ed8152454f43a95a1addf51a9f3
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 0b61979a83e3dd948a1c26a5e6dcc029
+    path: Assets/Scenes/FreePlay.unity
+    guid: dd7a174cc13e02b4c9d2ac4c6b3de5e7
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 0510bd83e6c6d374d8132594a1b1b209
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: dc6754d84c01a3f42a8a951040ab1588
   m_configObjects: {}

@@ -26,12 +26,10 @@ namespace Atom
         {
             if (levyScript.win)
             {
-                //canvas.SetActive(true);
                 Win();
             }
             else if (levyScript.lose)
             {
-                //canvas.SetActive(true);
                 Lose();
             }
         }
@@ -40,19 +38,22 @@ namespace Atom
         {
             texts.SetActive(false);
             loseCanvas.SetActive(true);
-            //show losing canvas
         }
 
         private void Win()
         {
             texts.SetActive(false);
             winCanvas.SetActive(true);
-            //show winning canvas
         }
 
         public void TryAgain()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        public void MainMenu()
+        {
+            SceneManager.LoadScene("FreePlay");
         }
     }
 }

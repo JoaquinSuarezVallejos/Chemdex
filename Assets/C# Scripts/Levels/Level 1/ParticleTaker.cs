@@ -52,7 +52,7 @@ namespace Atom
         {
             if (particleGO != null)
             {
-                particleGO.transform.position = Vector3.Lerp(particleGO.transform.position, transform.position, Time.deltaTime * 3);
+                particleGO.transform.position = Vector3.Lerp(particleGO.transform.position, transform.position, Time.deltaTime * 1.5f);
                 if (Vector3.Distance(transform.position, particleGO.transform.position) > 1 && !particleGO.GetComponent<ParticleLvl1>().selected)
                 {
                     particleGO.transform.parent = null;
