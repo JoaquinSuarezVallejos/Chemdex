@@ -66,6 +66,11 @@ namespace Atom
         {
             SceneManager.LoadScene(0);
         }
+
+        public void NextLevel(string levelName)
+        {
+            SceneManager.LoadScene(levelName);
+        }
     }
 }
 
