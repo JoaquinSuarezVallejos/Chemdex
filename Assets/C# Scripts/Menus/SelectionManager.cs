@@ -7,21 +7,16 @@ public class SelectionManager : MonoBehaviour
 {
     public void Levels()
     {
-        SceneManager.LoadScene(2);
-    }
-    
-    public void PeriodicTable()
-    {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("LevelSelector");
     }
     
     public void AtomConstruction()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("FreePlay");
     }
     
     public void Settings()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("Settings");
     }
 }
