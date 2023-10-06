@@ -12,6 +12,7 @@ public class LevelSelector : MonoBehaviour
     public static LevelSelector instance;
     GameObject level;
     string sceneName;
+    [SerializeField] Sprite normalUI;
 
     // Start is called before the first frame update
     void Awake()
@@ -60,7 +61,11 @@ public class LevelSelector : MonoBehaviour
         level.SetActive(true);
         foreach (GameObject level in levels)
         {
-            level.SetActive(false);
+            level.SetActive(true);
+            level.GetComponent<Button>().interactable = false;
+            Color col = level.GetComponent<Image>().color;
+            col.a = 1;
+            level.GetComponent<Image>().color = col;
         }
         if (levelAvaible <= lastLevelPassed)
         {
@@ -71,7 +76,11 @@ public class LevelSelector : MonoBehaviour
             for (int i = 0; i < levelAvaible; i++)
             {
                 Debug.Log("hola");
-                levels[i].SetActive(true);
+                levels[i].GetComponent<Image>().sprite = normalUI;
+                Color col = levels[i].GetComponent<Image>().color;
+                col.a = 0;
+                levels[i].GetComponent<Image>().color = col;
+                levels[i].GetComponent<Button>().interactable = true;
             }
         }
     }
