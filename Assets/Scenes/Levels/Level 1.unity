@@ -1782,7 +1782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Make/form O<sub>3</sub> molecule
+  m_text: 'Form O<sub>3</sub> molecule
 
 '
   m_isRightToLeft: 0
