@@ -39,6 +39,9 @@ namespace Atom
         private PhysicsObject physicsObject;
         private Vector3 origin;
 
+        private float currentTime = 0f;
+        private float startingTime = 30f;
+
         private void Awake()
         {
             physicsObject = GetComponent<PhysicsObject>(); // get the physics object
@@ -48,6 +51,7 @@ namespace Atom
         private void Start()
         {
             origin = transform.localPosition;  // set the origin of the nucleus
+            currentTime = startingTime;
         }
 
         public bool AddParticle(Particle particle) // add a particle to the nucleus
@@ -149,9 +153,15 @@ namespace Atom
         void Update()
         {
             transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime); // slowly spin/rotate the nucleus
+            currentTime -= 1 * Time.deltaTime;
+
+            if (currentTime < 0)
+            {
+                currentTime = 0;
+            }
         }
 
-        private void FixedUpdate()
+        /*private void FixedUpdate()
         {
             Vector3 forceToOrigin = origin - transform.localPosition; // calculate the force to the origin
 
@@ -170,6 +180,7 @@ namespace Atom
 
             foreach (Particle particle in particles) // iterate through particles
             {
+
                 // find the distance from origin
                 Vector3 diffOrgin = transform.position - particle.PhysicsObj.Position;
                 // calculate the force to center (clamp is used so particles slow near center)
@@ -216,6 +227,22 @@ namespace Atom
                 // apply forces to the particles
                 particle.PhysicsObj.AddForce(forceToCenter + forceToSeparate);
             }
+        }*/
+
+        private void FixedUpdate()
+        {
+            Debug.Log(currentTime);
+
+            if (currentTime > 0)
+            {
+               UpdateNucleusRoutine();
+            }
+
+            else
+            {
+                Debug.Log("UpdateNucleusRoutine stopped");
+            }
+            
         }
 
         private void OnDrawGizmosSelected()
@@ -224,5 +251,74 @@ namespace Atom
 
             Gizmos.DrawWireSphere(transform.position, Mathf.Log(Mass, 30 / scale) * scale + (scale / 2));
         }
+
+        private void UpdateNucleusRoutine()
+        {
+            Vector3 forceToOrigin = origin - transform.localPosition; // calculate the force to the origin
+
+            if (Shake) // check if the nucleus is shaking
+            {
+                Vector3 forceToShake = Random.insideUnitSphere; // calculate the force to shake
+                physicsObject.AddForce(forceToShake + forceToOrigin); // add the force to the nucleus
+            }
+
+            else // if the nucleus is not shaking
+            {
+                physicsObject.AddForce(forceToOrigin);
+            }
+
+            float m = 0; // max distance from origin
+
+            foreach (Particle particle in particles) // iterate through particles
+            {
+
+                // find the distance from origin
+                Vector3 diffOrgin = transform.position - particle.PhysicsObj.Position;
+                // calculate the force to center (clamp is used so particles slow near center)
+                Vector3 forceToCenter = Vector3.ClampMagnitude(diffOrgin.normalized * (particleSpeed * scale), diffOrgin.magnitude);
+
+                if (diffOrgin.magnitude > m) // check if the distance from origin is greater than the max distance
+                {
+                    m = diffOrgin.magnitude; // set the max distance
+                }
+
+                // calculate the force to separate
+                Vector3 forceToSeparate = Vector3.zero;
+
+                foreach (Particle other in particles)
+                {
+                    // don't separate from self
+                    if (!particle.Equals(other))
+                    {
+                        // find the distance between particles
+                        Vector3 diffOther = particle.PhysicsObj.Position - other.PhysicsObj.Position;
+
+                        // rare occurance, but separate from identical other
+                        if (diffOther.sqrMagnitude < 0.01)
+                        {
+                            forceToSeparate = Random.insideUnitSphere;
+                        }
+
+                        else
+                        {
+                            // calculate the amount of overlap
+                            float overlap = diffOther.magnitude - particle.Radius - other.Radius;
+
+                            // check if actually overlapping
+                            if (overlap < 0)
+                            {
+                                //add force to separate
+                                forceToSeparate -= diffOther.normalized * overlap;
+                            }
+                        }
+                    }
+                }
+
+                forceToSeparate *= particleSpeed * scale;
+                // apply forces to the particles
+                particle.PhysicsObj.AddForce(forceToCenter + forceToSeparate);
+            }
+        }
+
     }
 }
