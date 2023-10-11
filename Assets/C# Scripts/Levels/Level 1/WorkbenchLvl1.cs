@@ -14,6 +14,7 @@ namespace Atom
         [SerializeField] private GameObject ProtonPrefab;
         [SerializeField] private GameObject NeutronPrefab;
         [SerializeField] private GameObject ElectronPrefab;
+        [SerializeField] private GameObject ThirdParticlePrefab;
         [Space(5)]
         [SerializeField] private GameObject ProtonMarker;
         [SerializeField] private GameObject NeutronMarker;
@@ -110,6 +111,18 @@ namespace Atom
             if (electron != null)
             {
                 electron.OnSelect?.Invoke();
+            }
+        }
+        public void NewThirdParticle()
+        {
+            Debug.Log("New Third Particle");
+
+            GameObject obj = Instantiate(ThirdParticlePrefab, GameObject.Find("Third Marker").transform);
+
+            NeutronLvl1 neutron = obj.GetComponent<NeutronLvl1>();
+            if (neutron != null)
+            {
+                neutron.OnSelect?.Invoke();
             }
         }
     }

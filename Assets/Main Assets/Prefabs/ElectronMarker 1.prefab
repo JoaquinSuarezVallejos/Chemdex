@@ -15,12 +15,27 @@ PrefabInstance:
     - target: {fileID: 1224171826986411744, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
       propertyPath: m_Name
-      value: ElectronMarker
+      value: ElectronMarker 1
       objectReference: {fileID: 0}
     - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6043072920344030733, guid: 849394ef25dcfb54ea16f1287ccbddf6,
         type: 3}
