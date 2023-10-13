@@ -10,7 +10,7 @@ namespace Atom
         [SerializeField] private float orbitSpeed; // how fast the particles orbit
 
         private List<Particle> particles; // list of all the particles in this shell
-        private float seperationDistance; // how far apart each electron should be
+        private float separationDistance; // how far apart each electron should be
         private float scale = 1;
         private float radius;
 
@@ -20,7 +20,7 @@ namespace Atom
             set
             {
                 radius = value;
-                CalcSeperationDistance(); // calculate the separation distance
+                CalcSeparationDistance(); // calculate the separation distance
             }
         } // desired orbital radius
 
@@ -67,8 +67,8 @@ namespace Atom
                 particle.transform.SetParent(transform);
                 particle.Radius = scale / 4;
 
-                //calculate the new seperation distance
-                CalcSeperationDistance();
+                //calculate the new separation distance
+                CalcSeparationDistance();
                 return true;
             }
             return false;
@@ -83,7 +83,7 @@ namespace Atom
                 particle.transform.SetParent(null); // remove the parent
 
                 // calculate the new separation distance
-                CalcSeperationDistance();
+                CalcSeparationDistance();
                 return true;
             }
 
@@ -100,7 +100,7 @@ namespace Atom
                         particles.Remove(transferParticle);
                         NextShell.AddParticle(transferParticle);
 
-                        CalcSeperationDistance();
+                        CalcSeparationDistance();
                     }
                     return true;
                 }
@@ -119,38 +119,38 @@ namespace Atom
                 //calculate force to maintain orbit
                 Vector2 forceToOrbit = new Vector2(-diffRadius.y, diffRadius.x).normalized * orbitSpeed * scale;
 
-                //calculate the force to seperate
-                Vector2 forceToSeperate = Vector3.zero;
+                //calculate the force to separate
+                Vector2 forceToSeparate = Vector3.zero;
                 foreach (Particle other in particles)
                 {
-                    //don't seperate from self
+                    //don't separate from self
                     if (!particle.Equals(other))
                     {
                         //find the distance between particles
                         Vector2 diffOther = particle.PhysicsObj.Position - other.PhysicsObj.Position;
 
-                        //rare occurance, but seperate from identical other
+                        //rare occurance, but separate from identical other
                         if (diffOther.sqrMagnitude < 0.01)
                         {
-                            forceToSeperate = Random.insideUnitSphere;
+                            forceToSeparate = Random.insideUnitSphere;
                         }
                         else
                         {
                             //calculate the amount of overlap
-                            float overlap = diffOther.magnitude - seperationDistance;
+                            float overlap = diffOther.magnitude - separationDistance;
 
                             if (overlap < 0)
                             {
-                                //add force to seperate
-                                forceToSeperate -= diffOther.normalized * overlap;
+                                //add force to separate
+                                forceToSeparate -= diffOther.normalized * overlap;
                             }
                         }
                     }
                 }
-                forceToSeperate *= particleSpeed;
+                forceToSeparate *= particleSpeed;
 
                 //apply forces to the particles
-                particle.PhysicsObj.AddForce(forceToRadius + forceToOrbit + forceToSeperate);
+                particle.PhysicsObj.AddForce(forceToRadius + forceToOrbit + forceToSeparate);
             }
         }
 
@@ -178,9 +178,9 @@ namespace Atom
         /// </summary>
         /// <param name="n">number of points on circle</param>
         /// <returns>distance between points</returns>
-        private void CalcSeperationDistance()
+        private void CalcSeparationDistance()
         {
-            seperationDistance = 2 * Radius * Mathf.Sin(Mathf.PI / particles.Count);
+            separationDistance = 2 * Radius * Mathf.Sin(Mathf.PI / particles.Count);
         }
 
         private void OnDrawGizmosSelected()
