@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HydrogenVFX : MonoBehaviour
+public class AtomVFX : MonoBehaviour
 {
-    void Start()
+    public void PlayVFX()
     {
         StartCoroutine(clickedOn());
     }
@@ -12,7 +12,7 @@ public class HydrogenVFX : MonoBehaviour
     IEnumerator clickedOn()
     {
         yield return new WaitForSeconds(0.17f);
-        ParticleSystem hydrogenVFX = GameObject.Find("HydrogenVFX").GetComponent<ParticleSystem>();
-        hydrogenVFX.Play();
+        ParticleSystem atomVFX = GameObject.Find("AtomVFX").GetComponent<ParticleSystem>();
+        atomVFX.Play();
     }
 }

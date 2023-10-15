@@ -6,7 +6,7 @@ namespace Atom
 {
     public static class Elements
     {
-        /// Summary: contains ALL the data about the periodic table elements.
+        /// Summary: contains ALL data about the periodic table elements.
 
         private static Element[] elements = new Element[]
         {
@@ -3582,7 +3582,7 @@ namespace Atom
         public static int NumElements { get { return elements.Length; } } // returns the number of elements
 
         public static int[] sblock = new int[] { 2, 2, 2, 2, 2, 2, 2 }; // number of electrons in the S shell
-        public static int[] pblock = new int[] { 0, 6, 6, 6, 6, 6, 0 }; // number of electrons in the P shell
+        public static int[] pblock = new int[] { 0, 6, 6, 6, 6, 6, 6 }; // number of electrons in the P shell
         public static int[] dblock = new int[] { 0, 0, 10, 10, 10, 10, 0 }; // number of electrons in the D shell
         public static int[] fblock = new int[] { 0, 0, 0, 14, 14, 0, 0 }; // number of electrons in the F shell
 
@@ -3607,11 +3607,11 @@ namespace Atom
                 return 2;
             if (protonCount <= 2 + 8 + 8)
                 return 3;
-            if(protonCount <= 2 + 8 + 8 + 18)
+            if (protonCount <= 2 + 8 + 8 + 18)
                 return 4;
-            if(protonCount <= 2 + 8 + 8 + 18 + 18)
+            if (protonCount <= 2 + 8 + 8 + 18 + 18)
                 return 5;
-            if(protonCount <= 2 + 8 + 8 + 18 + 18 + 32)
+            if (protonCount <= 2 + 8 + 8 + 18 + 18 + 32)
                 return 6;
             return 7; 
         }

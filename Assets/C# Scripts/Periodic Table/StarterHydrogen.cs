@@ -46,7 +46,7 @@ namespace Atom
         {
             Debug.Log("Show element: " + Elements.GetElement(protonCount).Name);
 
-            if(atom != null)
+            if (atom != null)
             {
                 atom.ForceToCommon(protonCount);
             }
