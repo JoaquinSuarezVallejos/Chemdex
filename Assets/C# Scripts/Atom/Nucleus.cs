@@ -167,6 +167,7 @@ namespace Atom
             }
 
             float m = 0; // max distance from origin
+            
 
             foreach (Particle particle in particles) // iterate through particles
             {
@@ -200,7 +201,7 @@ namespace Atom
                         else
                         {
                             // calculate the amount of overlap
-                            float overlap = diffOther.magnitude - particle.Radius - other.Radius; // intentar sacar esto del foreach
+                            float overlap = diffOther.magnitude - particle.Radius - other.Radius;
 
                             // check if actually overlapping
                             if (overlap < 0)
