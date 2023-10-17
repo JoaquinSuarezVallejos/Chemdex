@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e70a1298ba76b4094bfd76e49693c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
+  assignedParticle: {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4,
     type: 3}
   particleGO: {fileID: 0}
   wasCorrect: 0
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e70a1298ba76b4094bfd76e49693c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
+  assignedParticle: {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4,
     type: 3}
   particleGO: {fileID: 0}
   wasCorrect: 0
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e70a1298ba76b4094bfd76e49693c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
+  assignedParticle: {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4,
     type: 3}
   particleGO: {fileID: 0}
   wasCorrect: 0
@@ -5148,10 +5148,10 @@ MonoBehaviour:
   lose: 0
   holders: []
   receta:
-  - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
+  - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
   - {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633, type: 3}
-  - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
-  - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
+  - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
+  - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
   - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
   position:
   - {fileID: 1136810390}
@@ -5161,6 +5161,8 @@ MonoBehaviour:
   protonLvl1: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
     type: 3}
   neutronLvl1: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
+    type: 3}
+  thirdParticleLvl1: {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4,
     type: 3}
 --- !u!114 &2130950493
 MonoBehaviour:

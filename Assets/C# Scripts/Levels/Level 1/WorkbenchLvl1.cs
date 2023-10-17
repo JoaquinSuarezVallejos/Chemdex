@@ -98,9 +98,6 @@ namespace Atom
             }
         }
 
-        /// <summary>
-        /// create a new electron
-        /// </summary>
         public void NewElectron()
         {
             Debug.Log("New Electron");
@@ -113,16 +110,17 @@ namespace Atom
                 electron.OnSelect?.Invoke();
             }
         }
+
         public void NewThirdParticle()
         {
             Debug.Log("New Third Particle");
 
             GameObject obj = Instantiate(ThirdParticlePrefab, GameObject.Find("Third Marker").transform);
 
-            NeutronLvl1 neutron = obj.GetComponent<NeutronLvl1>();
-            if (neutron != null)
+            ThirdParticleLvl1 third = obj.GetComponent<ThirdParticleLvl1>();
+            if (third != null)
             {
-                neutron.OnSelect?.Invoke();
+                third.OnSelect?.Invoke();
             }
         }
     }

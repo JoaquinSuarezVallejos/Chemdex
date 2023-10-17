@@ -20,8 +20,10 @@ namespace Atom
         bool listModified = false;
         private bool protonScript;
         private bool neutronScript;
+        private bool thirdScript;
         [SerializeField] ProtonLvl1 protonLvl1;
         [SerializeField] NeutronLvl1 neutronLvl1;
+        [SerializeField] ThirdParticleLvl1 thirdParticleLvl1;
         #endregion
 
         private void Awake()
@@ -115,9 +117,10 @@ namespace Atom
 
         public void CheckList(bool wasCorrect, GameObject particleOUT)
         {
-            #region Neutron or proton?
+            #region Wich particle type?
             neutronScript = particleOUT.GetComponent<NeutronLvl1>();
             protonScript = particleOUT.GetComponent<ProtonLvl1>();
+            thirdScript = particleOUT.GetComponent<ThirdParticleLvl1>();
             #endregion
             #region Reset recipe if list was modified
             if (actual.Count == receta.Length)
@@ -162,6 +165,21 @@ namespace Atom
                     for (int i = 0; i < receta.Length; i++)
                     {
                         if (actual[i] != receta[i] && !listModified && receta[i].GetType() == neutronLvl1.GetType())
+                        {
+                            actual[i] = receta[i];
+                            listModified = true;
+                        }
+                    }
+                }
+            }
+
+            else if (thirdScript)
+            {
+                if (wasCorrect && !listModified)
+                {
+                    for (int i = 0; i < receta.Length; i++)
+                    {
+                        if (actual[i] != receta[i] && !listModified && receta[i].GetType() == thirdParticleLvl1.GetType())
                         {
                             actual[i] = receta[i];
                             listModified = true;
