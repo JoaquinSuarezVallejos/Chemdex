@@ -12,7 +12,9 @@ public class LevelSelector : MonoBehaviour
     public static LevelSelector instance;
     GameObject level;
     string sceneName;
-    [SerializeField] Sprite normalUI;
+    [SerializeField] Sprite clickableUI;
+    [SerializeField] Sprite clickedUI;
+    [SerializeField] Sprite lockedUI;
 
     // Start is called before the first frame update
     void Awake()
@@ -62,10 +64,10 @@ public class LevelSelector : MonoBehaviour
         foreach (GameObject level in levels)
         {
             level.SetActive(true);
-            level.GetComponent<Button>().interactable = false;
-            Color col = level.GetComponent<Image>().color;
-            col.a = 1;
-            level.GetComponent<Image>().color = col;
+            //level.GetComponent<Button>().interactable = false; //No interactable, set image to "locked" level.
+            //Color col = level.GetComponent<Image>().color;
+            //col.a = 1;
+            //level.GetComponent<Image>().color = col;
         }
         if (levelAvaible <= lastLevelPassed)
         {
@@ -75,14 +77,18 @@ public class LevelSelector : MonoBehaviour
         {
             for (int i = 0; i < levelAvaible; i++)
             {
-                Debug.Log("hola");
-                levels[i].GetComponent<Image>().sprite = normalUI;
-                Color col = levels[i].GetComponent<Image>().color;
-                col.a = 0;
-                levels[i].GetComponent<Image>().color = col;
+                levels[i].GetComponent<Image>().sprite = clickableUI;
+                //Color col = levels[i].GetComponent<Image>().color;
+                //col.a = 0;
+                //levels[i].GetComponent<Image>().color = col;
                 levels[i].GetComponent<Button>().interactable = true;
             }
         }
+    }
+
+    public void OnClicked(GameObject objet)
+    {
+        objet.GetComponent<Image>().sprite = clickedUI;
     }
 
     public void OnOtherSceneLoaded()

@@ -112,7 +112,28 @@ namespace Atom
                     }
                 }
             }
+            
             #endregion
+            #region Is a Third Particle?
+            if (particleDropped.name == "Third Particle Level(Clone)" && particleDropped.GetComponent<ThirdParticleLvl1>() != null && actual.Count > 0) //El objeto dropeado tiene un third particle.
+            {
+                for (int i = 0; i < actual.Count; i++)
+                {
+                    if (actual[i] != null)
+                    {
+                        if (actual[i].GetType() == particleDropped.GetComponent<ThirdParticleLvl1>().GetType())//Si el objeto que se dropeó está en la lista:
+                        {
+                            Debug.Log("Coincide alguna con la receta");
+                            script.wasCorrect = true;
+                            //actual.Remove(other);//se borra
+                            actual[i] = null;
+                            break;
+                        }
+                    }
+                }
+            }
+            #endregion
+
         }
 
         public void CheckList(bool wasCorrect, GameObject particleOUT)
