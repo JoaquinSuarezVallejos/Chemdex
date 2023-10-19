@@ -70,6 +70,16 @@ namespace Atom
                     isOccupied = false;
                 }
             }
+
+            if (isOccupied)
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
+
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
         }
     }
     
