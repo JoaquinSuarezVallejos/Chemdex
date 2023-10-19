@@ -64,7 +64,7 @@ public class LevelSelector : MonoBehaviour
         foreach (GameObject level in levels)
         {
             level.SetActive(true);
-            //level.GetComponent<Button>().interactable = false; //No interactable, set image to "locked" level.
+            level.GetComponent<Button>().interactable = false; //No interactable, set image to "locked" level.
             //Color col = level.GetComponent<Image>().color;
             //col.a = 1;
             //level.GetComponent<Image>().color = col;
@@ -86,9 +86,20 @@ public class LevelSelector : MonoBehaviour
         }
     }
 
-    public void OnClicked(GameObject objet)
+    public void OnPressed(GameObject objet)
     {
-        objet.GetComponent<Image>().sprite = clickedUI;
+        if (objet.GetComponent<Button>().interactable)
+        {
+            objet.GetComponent<Image>().sprite = clickedUI;
+        }
+    }
+
+    public void OnNotPressed(GameObject objet)
+    {
+        if (objet.GetComponent<Button>().interactable)
+        {
+            objet.GetComponent<Image>().sprite = clickableUI;
+        }
     }
 
     public void OnOtherSceneLoaded()
