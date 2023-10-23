@@ -12,9 +12,9 @@ public class LevelSelector : MonoBehaviour
     public static LevelSelector instance;
     GameObject level;
     string sceneName;
-    [SerializeField] Sprite clickableUI;
-    [SerializeField] Sprite clickedUI;
-    [SerializeField] Sprite lockedUI;
+    //[SerializeField] Sprite clickableUI;
+    //[SerializeField] Sprite clickedUI;
+    //[SerializeField] Sprite lockedUI;
 
     // Start is called before the first frame update
     void Awake()
@@ -58,16 +58,13 @@ public class LevelSelector : MonoBehaviour
         }
     }
 
-    public void OnLevelSelectorLoaded()
+    public void OnLevelSelectorLoaded(Sprite notPassedClickableUI = default(Sprite))
     {
         level.SetActive(true);
         foreach (GameObject level in levels)
         {
             level.SetActive(true);
             level.GetComponent<Button>().interactable = false; //No interactable, set image to "locked" level.
-            //Color col = level.GetComponent<Image>().color;
-            //col.a = 1;
-            //level.GetComponent<Image>().color = col;
         }
         if (levelAvaible <= lastLevelPassed)
         {
@@ -77,16 +74,13 @@ public class LevelSelector : MonoBehaviour
         {
             for (int i = 0; i < levelAvaible; i++)
             {
-                levels[i].GetComponent<Image>().sprite = clickableUI;
-                //Color col = levels[i].GetComponent<Image>().color;
-                //col.a = 0;
-                //levels[i].GetComponent<Image>().color = col;
+                levels[i].GetComponent<Image>().sprite = notPassedClickableUI;
                 levels[i].GetComponent<Button>().interactable = true;
             }
         }
     }
 
-    public void OnPressed(GameObject objet)
+    public void OnPressed(GameObject objet, Sprite clickedUI)
     {
         if (objet.GetComponent<Button>().interactable)
         {
@@ -94,11 +88,15 @@ public class LevelSelector : MonoBehaviour
         }
     }
 
-    public void OnNotPressed(GameObject objet)
+    public void OnNotPressed(GameObject objet, Sprite clickableUI, Sprite notClickableUI)
     {
         if (objet.GetComponent<Button>().interactable)
         {
             objet.GetComponent<Image>().sprite = clickableUI;
+        }
+        else
+        {
+            objet.GetComponent<Image>().sprite = notClickableUI;
         }
     }
 
