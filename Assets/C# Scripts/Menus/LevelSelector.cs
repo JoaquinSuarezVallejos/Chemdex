@@ -11,10 +11,8 @@ public class LevelSelector : MonoBehaviour
     [SerializeField] int levelAvaible = 0;
     public static LevelSelector instance;
     GameObject level;
-    string sceneName;
-    //[SerializeField] Sprite clickableUI;
-    //[SerializeField] Sprite clickedUI;
-    //[SerializeField] Sprite lockedUI;
+    public bool onLevelSelector;
+    bool modificados = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -31,12 +29,31 @@ public class LevelSelector : MonoBehaviour
         level = gameObject.transform.GetChild(0).gameObject;
         levels = GameObject.FindGameObjectsWithTag("Levels");
     }
+    
     void Update()
     {
-        if (sceneName != SceneManager.GetActiveScene().name)
+        if(SceneManager.GetActiveScene().name == "LevelSelector")
         {
-            OnSceneLoaded();
-            sceneName = SceneManager.GetActiveScene().name;
+            level.SetActive(true);
+        }
+
+        if (onLevelSelector && !modificados)
+        {
+            foreach (GameObject level in levels)
+            {
+                if (level.GetComponent<Button>().interactable)
+                {
+                    level.GetComponent<Image>().sprite = level.GetComponent<LevelClickListener>().NotPassedClickeableUI;
+                    Debug.Log("paso a gris clickeable");
+                }
+
+                if (level.GetComponent<LevelClickListener>().levelPassed)
+                {
+                    level.GetComponent<Image>().sprite = level.GetComponent<LevelClickListener>().PassedClickeableUI;
+                    Debug.Log("paso a verde clickeable");
+                }
+            }
+            modificados = true;
         }
     }
 
@@ -45,26 +62,13 @@ public class LevelSelector : MonoBehaviour
         SceneManager.LoadScene("Level " + levelIndex);
     }
 
-    public void OnSceneLoaded()
+    public void OnLevelSelectorLoaded(GameObject objet, Sprite notPassedClickableUI, Sprite passedClickableUI)
     {
-        if (SceneManager.GetActiveScene().name == "LevelSelector")
-        {
-            OnLevelSelectorLoaded();
-        }
-
-        else
-        {
-            OnOtherSceneLoaded();
-        }
-    }
-
-    public void OnLevelSelectorLoaded(Sprite notPassedClickableUI = default(Sprite))
-    {
-        level.SetActive(true);
+        onLevelSelector = true;
+        modificados = false;
         foreach (GameObject level in levels)
         {
-            level.SetActive(true);
-            level.GetComponent<Button>().interactable = false; //No interactable, set image to "locked" level.
+            level.GetComponent<Button>().interactable = false;
         }
         if (levelAvaible <= lastLevelPassed)
         {
@@ -72,31 +76,55 @@ public class LevelSelector : MonoBehaviour
         }
         if (levelAvaible <= levels.Length)
         {
-            for (int i = 0; i < levelAvaible; i++)
+            for (int i = 0; i < levelAvaible; i++) //Todos los niveles disponibles pueden ser clickeables.
             {
-                levels[i].GetComponent<Image>().sprite = notPassedClickableUI;
                 levels[i].GetComponent<Button>().interactable = true;
+            }
+
+            for (int i = 0; i < lastLevelPassed; i++) //Todos los niveles disponibles pueden ser clickeables.
+            {
+                levels[i].GetComponent<LevelClickListener>().levelPassed = true;
             }
         }
     }
 
-    public void OnPressed(GameObject objet, Sprite clickedUI)
+    public void OnPressed(GameObject objet, Sprite notPassedClickedUI, Sprite passedClickedUI, Sprite lockedUI)
     {
         if (objet.GetComponent<Button>().interactable)
         {
-            objet.GetComponent<Image>().sprite = clickedUI;
-        }
-    }
-
-    public void OnNotPressed(GameObject objet, Sprite clickableUI, Sprite notClickableUI)
-    {
-        if (objet.GetComponent<Button>().interactable)
-        {
-            objet.GetComponent<Image>().sprite = clickableUI;
+            if (objet.GetComponent<LevelClickListener>().levelPassed)
+            {
+                objet.GetComponent<Image>().sprite = passedClickedUI; //lo cambio a verde clickeado.
+            }
+            else
+            {
+                objet.GetComponent<Image>().sprite = notPassedClickedUI; //lo cambio a gris clickeado.
+            }
         }
         else
         {
-            objet.GetComponent<Image>().sprite = notClickableUI;
+            objet.GetComponent<Image>().sprite = lockedUI; //si no es interactuable, lo paso a bloqueado.
+        }
+    }
+
+    public void OnNotPressed(GameObject objet, Sprite notPassedClickeableUI, Sprite passedClickeableUI, Sprite lockedUI)
+    {
+        if (objet.GetComponent<Button>().interactable)
+        {
+            if (objet.GetComponent<LevelClickListener>().levelPassed)
+            {
+                objet.GetComponent<Image>().sprite = passedClickeableUI;
+                Debug.Log("paso a verde clickeable");
+            }
+            if (!objet.GetComponent<LevelClickListener>().levelPassed)
+            {
+                objet.GetComponent<Image>().sprite = notPassedClickeableUI;
+                Debug.Log("paso a gris clickeable");
+            }
+        }
+        else
+        {
+            objet.GetComponent<Image>().sprite = lockedUI;
         }
     }
 

@@ -11,7 +11,7 @@ public class LevelSelectorManagerCaller : MonoBehaviour
     }
     private void Update()
     {
-        levelSelector.OnSceneLoaded();
+        //levelSelector.OnSceneLoaded();
         Destroy(this);
     }
 }

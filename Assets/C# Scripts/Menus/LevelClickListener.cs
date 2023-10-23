@@ -2,30 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelClickListener : MonoBehaviour
 {
     LevelSelector script;
     [SerializeField] GameObject scriptObject;
-    [SerializeField] Sprite PassedClickeableUI;
-    [SerializeField] Sprite PassedClickedUI;
-    [SerializeField] Sprite lockedUI;
-    [SerializeField] Sprite NotPassedClickeableUI;
-    [SerializeField] Sprite NotPassedAndPressedUI;
+    public Sprite PassedClickeableUI;
+    public Sprite PassedClickedUI;
+    public Sprite lockedUI;
+    public Sprite NotPassedClickeableUI;
+    public Sprite NotPassedAndPressedUI;
+    private string sceneName;
+    public bool levelPassed;
 
     private void Awake()
     {
         script = scriptObject.GetComponent<LevelSelector>();
-        script.OnLevelSelectorLoaded(NotPassedClickeableUI);
+    }
+
+    void Update()
+    {
+        if (sceneName != SceneManager.GetActiveScene().name)
+        {
+            OnSceneLoaded();
+            sceneName = SceneManager.GetActiveScene().name;
+        }
+    }
+
+    public void OnSceneLoaded()
+    {
+        if (SceneManager.GetActiveScene().name == "LevelSelector")
+        {
+            script.OnLevelSelectorLoaded(gameObject, NotPassedClickeableUI, PassedClickeableUI);
+        }
+
+        else
+        {
+            script.OnOtherSceneLoaded();
+            script.onLevelSelector = false;
+        }
     }
 
     public void OnMouseOverAndPressed()
     {
-        script.OnPressed(gameObject, PassedClickedUI);
+        script.OnPressed(gameObject, NotPassedAndPressedUI, PassedClickedUI, lockedUI);
     }
 
     public void OnMouseLeftOrUP()
     {
-        script.OnNotPressed(gameObject, PassedClickeableUI, lockedUI);
+        script.OnNotPressed(gameObject, NotPassedClickeableUI, PassedClickeableUI ,lockedUI);
     }
 }
