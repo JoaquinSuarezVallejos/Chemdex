@@ -19,4 +19,9 @@ public class SelectionManager : MonoBehaviour
     {
         SceneManager.LoadScene("Settings");
     }
+    
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }

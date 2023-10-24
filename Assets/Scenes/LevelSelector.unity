@@ -783,7 +783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb603b3610f2adb4886deba883c709dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -814,6 +814,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: d4ce78949b1f91146971c1cc9600d0c1, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 86bca6c4abd502d4099a91bf1f08e346, type: 3}
+  lockedUI: {fileID: 21300000, guid: fb603b3610f2adb4886deba883c709dc, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: e24edb140125eb0479da4a6b335d2e44,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: 6ecd072cff033bd4cb7cf312421392d8,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &348597869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +1013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2b50dbb5ce168c479d8bbec00dd1c79, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1036,6 +1044,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 3060822e17f14364680cfc6c07e8bc1d, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 19b7142a74243a8468b2b574c087375e, type: 3}
+  lockedUI: {fileID: 21300000, guid: c2b50dbb5ce168c479d8bbec00dd1c79, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 2e14e06727b58d74697a2d9f0065f858,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: bba9ce14a85fd8343bd0c2b9cb4b9188,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &372104389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,7 +1513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 958c35d8e87628346ab367445367e516, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1528,6 +1544,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 0b4a6c03a97fbc644bc9453b8dfe53fe, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 81b060b4faacd49479c75bdf4f41c7c1, type: 3}
+  lockedUI: {fileID: 21300000, guid: 958c35d8e87628346ab367445367e516, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 6cf1cf5b1749abf4e8b48548c8a14efe,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: d8495a06af80c9f4f9fa5f3853c67dd9,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &502634876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2259,7 +2283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11880721f2e67fb4387b5bdf9766db05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2290,6 +2314,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 1ee6f560d5b6d6c4e81e12ada0aa6076, type: 3}
+  PassedClickedUI: {fileID: 0}
+  lockedUI: {fileID: 21300000, guid: 11880721f2e67fb4387b5bdf9766db05, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 73a65099eef6cc44f995f191ade111a8,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: 11e55be1436804941b6c97903cf61f7c,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &670035610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2783,7 +2815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 958d2e9de291c3f4cba17804a1311b73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2814,6 +2846,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: f8a09227a763c414c814bf47a5b195ba, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: f8cb7eff57f9d3147a70176bb5a7906f, type: 3}
+  lockedUI: {fileID: 21300000, guid: 958d2e9de291c3f4cba17804a1311b73, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 8989439817e2f2248818f138768c11c4,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: f6cdef89fcb0c6043854f98bd94d02e0,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &767303546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3184,7 +3224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 29964ca358de5714187c8e461d12c270, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3215,6 +3255,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: b9434b02c8263c245b30214f40d3c5bc, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 9b14b5e85f327d64ca8643a7df65937b, type: 3}
+  lockedUI: {fileID: 21300000, guid: 29964ca358de5714187c8e461d12c270, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 9faac28ca327c7c4ab98995dbd15c1c8,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: f8f9de351f1c35145b412cfad6514eae,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &834502191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3811,7 +3859,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81b081bd84638f743b88a2a1a303051c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 839210352ef10c9448504322df19ce03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3842,6 +3890,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 81b081bd84638f743b88a2a1a303051c, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 77dfa1e8cf3e2074583f43078c2e8855, type: 3}
+  lockedUI: {fileID: 0}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 839210352ef10c9448504322df19ce03,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: 0e037ed06c0401047ba964a3daefd32a,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &980158256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,7 +4219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14b355f49185d16419076b7a29537337, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4194,6 +4250,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: c68cc2616cd3902408a94cbeca74ca49, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: dfc92c0dc8d181843acd8793de5fe054, type: 3}
+  lockedUI: {fileID: 21300000, guid: 14b355f49185d16419076b7a29537337, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: d877464c7fc1594418b240643fee4ef4,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: fffff6d77364c984090949b01d81e9b7,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1032892040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5009,7 +5073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce538b154eee75b428661dd1c5d63f32, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5040,6 +5104,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: e0ff203ec9ce8f94c807dcded502d0c9, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 10a70bcfbd75d7840bb93a75ecaf867f, type: 3}
+  lockedUI: {fileID: 21300000, guid: ce538b154eee75b428661dd1c5d63f32, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: b413a345e25dbb1409bfd63c3bbe4362,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: 7067056eed4c2c94693eaa6176ca383c,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1316623684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5231,7 +5303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37acb92e0cfa620448d33c9e48050e81, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5262,6 +5334,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 1e14ffdfa7c415343834f6cf3813ac5a, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 5136d2344a36f55449b2a9dedec444b8, type: 3}
+  lockedUI: {fileID: 21300000, guid: 37acb92e0cfa620448d33c9e48050e81, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: e62b1fdd44034064e9308c1e039cfbad,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: b1c3eb790385cbb49bc832e6eef77df3,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1377988308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5453,7 +5533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf7f1d5f70f0283439317ad8461c84a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5484,6 +5564,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: f2d47f228e9c3774e90d98007df0e40e, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 96a8cba8836ac1449a2fad65d45d2a9d, type: 3}
+  lockedUI: {fileID: 21300000, guid: cf7f1d5f70f0283439317ad8461c84a7, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: fbc447e02e3962a4b9aae8c7b81962b3,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: 7899c1141663eb74e9862a2c25741806,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1511694096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5675,7 +5763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7415a87d108144245b72480d1c67081c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5706,6 +5794,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 2bf8387c57fb5d74eabc2b8f27b50714, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 2265b1c97dd174a49987d939af69ea02, type: 3}
+  lockedUI: {fileID: 21300000, guid: 7415a87d108144245b72480d1c67081c, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 430c199fee95c214ea8f1162d1d881dc,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: ee46b4d350fd84141a9b3a434002407c,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1579856403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6302,7 +6398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35844a151ca709c41bbd7de16a2e164d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6333,6 +6429,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: d945baa5e9755294aaf1c3ed4eb11cae, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: e01a72f3f0009d44d8fd118654b56783, type: 3}
+  lockedUI: {fileID: 21300000, guid: 35844a151ca709c41bbd7de16a2e164d, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: c21b3e4ff8570bb489f81f1438c924fa,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: e16d59205e8700446b33ee827ef991e6,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1679743338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6524,7 +6628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 206ba49ff7a59a04fbd6ad60b8cfecae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6555,6 +6659,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 3610015c16a072b4dadd3452f0dca876, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: b9dc7e96a0b366645bba33ce52537782, type: 3}
+  lockedUI: {fileID: 21300000, guid: 206ba49ff7a59a04fbd6ad60b8cfecae, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: e27a4500887735849910c197476a92aa,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: 4f5ebc6bbec5e9546b7b3e81f563eb9a,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1687098635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7188,9 +7300,7 @@ MonoBehaviour:
   levels: []
   lastLevelPassed: 0
   levelAvaible: 0
-  clickableUI: {fileID: 21300000, guid: 81b081bd84638f743b88a2a1a303051c, type: 3}
-  clickedUI: {fileID: 21300000, guid: 77dfa1e8cf3e2074583f43078c2e8855, type: 3}
-  lockedUI: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  onLevelSelector: 0
 --- !u!4 &1867382238
 Transform:
   m_ObjectHideFlags: 0
@@ -7337,7 +7447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7f75e430a3478f46aec3d5350466339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b51d9be1d30ed654fb0537c66836c5ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7368,6 +7478,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptObject: {fileID: 1867382236}
+  PassedClickeableUI: {fileID: 21300000, guid: 748522209f4c4204ea6189a0863682d3, type: 3}
+  PassedClickedUI: {fileID: 21300000, guid: 1b4799e1ebce46348bdc60760980b334, type: 3}
+  lockedUI: {fileID: 21300000, guid: b51d9be1d30ed654fb0537c66836c5ec, type: 3}
+  NotPassedClickeableUI: {fileID: 21300000, guid: 20cfda099c1c814438830e98a13e3ab5,
+    type: 3}
+  NotPassedAndPressedUI: {fileID: 21300000, guid: d397c51d48fa2964abc9c8131e0e00d5,
+    type: 3}
+  levelPassed: 0
 --- !u!114 &1875246778
 MonoBehaviour:
   m_ObjectHideFlags: 0
