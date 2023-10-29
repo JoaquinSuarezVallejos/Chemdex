@@ -62,9 +62,9 @@ namespace Atom
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        public void MainMenu()
+        public void LevelSelector()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("LevelSelector");
         }
 
         public void NextLevel(string levelName)

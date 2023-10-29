@@ -64,7 +64,7 @@ namespace Atom
                     {
                         parent.CheckList(wasCorrect, particleGO);
                     }
-                    //Destroy(particleGO.gameObject); Si la destruyo se destruye el script.
+                    //Destroy(particleGO.gameObject); //Si la destruyo se destruye el script.
                     wasCorrect = false;
                     particleGO = null;
                     isOccupied = false;

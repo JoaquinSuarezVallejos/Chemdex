@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,50 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &254826104
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 254826106}
-  - component: {fileID: 254826105}
-  m_Layer: 0
-  m_Name: SelectionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &254826105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254826104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 449accc9c07fc7348a65bfef092279d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &254826106
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254826104}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 675.94824, y: 427.21216, z: 103.094696}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &259674172
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +137,7 @@ GameObject:
   - component: {fileID: 259674174}
   - component: {fileID: 259674178}
   - component: {fileID: 259674177}
+  - component: {fileID: 259674179}
   m_Layer: 5
   m_Name: Levels
   m_TagString: Untagged
@@ -252,7 +209,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 254826105}
+      - m_Target: {fileID: 259674179}
         m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
         m_MethodName: Levels
         m_Mode: 1
@@ -377,6 +334,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &259674179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259674172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449accc9c07fc7348a65bfef092279d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &348370898
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +360,7 @@ GameObject:
   - component: {fileID: 348370902}
   - component: {fileID: 348370901}
   - component: {fileID: 348370900}
+  - component: {fileID: 348370905}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -537,7 +507,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 254826105}
+      - m_Target: {fileID: 348370905}
         m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -587,6 +557,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348370898}
   m_CullTransparentMesh: 1
+--- !u!114 &348370905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348370898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449accc9c07fc7348a65bfef092279d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1308406145
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +865,7 @@ GameObject:
   - component: {fileID: 1633620579}
   - component: {fileID: 1633620583}
   - component: {fileID: 1633620582}
+  - component: {fileID: 1633620584}
   m_Layer: 5
   m_Name: Feeplay
   m_TagString: Untagged
@@ -954,7 +937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 254826105}
+      - m_Target: {fileID: 1633620584}
         m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
         m_MethodName: AtomConstruction
         m_Mode: 1
@@ -1079,6 +1062,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1633620584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633620577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449accc9c07fc7348a65bfef092279d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1666870340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1088,7 @@ GameObject:
   - component: {fileID: 1666870342}
   - component: {fileID: 1666870346}
   - component: {fileID: 1666870345}
+  - component: {fileID: 1666870347}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1164,7 +1160,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 254826105}
+      - m_Target: {fileID: 1666870347}
         m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
         m_MethodName: Settings
         m_Mode: 1
@@ -1289,6 +1285,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressedUI: {fileID: 21300000, guid: 832b14120469d714db003fc7edeb2777, type: 3}
   notPressedUI: {fileID: 21300000, guid: 641aa423baf713b4fad16ddf3ab8c9e4, type: 3}
+--- !u!114 &1666870347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666870340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449accc9c07fc7348a65bfef092279d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1841993517
 GameObject:
   m_ObjectHideFlags: 0
