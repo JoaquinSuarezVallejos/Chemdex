@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Form NH<sub>3</sub> molecule
+  m_text: 'Form CH<sub>4</sub> molecule
 
 '
   m_isRightToLeft: 0
