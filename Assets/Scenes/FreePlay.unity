@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -243,7 +243,7 @@ RectTransform:
   - {fileID: 1945228859}
   - {fileID: 213910134}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1055,7 +1055,7 @@ RectTransform:
   - {fileID: 243863375}
   - {fileID: 1052800773}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1325,7 +1325,7 @@ GameObject:
   - component: {fileID: 57694553}
   m_Layer: 5
   m_Name: Period 3
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1857,7 +1857,7 @@ RectTransform:
   - {fileID: 1791621711}
   - {fileID: 1671449459}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7292,7 +7292,7 @@ GameObject:
   - component: {fileID: 94975835}
   m_Layer: 5
   m_Name: Be4
-  m_TagString: Untagged
+  m_TagString: Alkaline_earth_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7732,7 +7732,7 @@ RectTransform:
   - {fileID: 461945242}
   - {fileID: 1185207916}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9181,7 +9181,7 @@ RectTransform:
   - {fileID: 1816279085}
   - {fileID: 1192251796}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10061,7 +10061,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &156620999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11012,7 +11012,7 @@ GameObject:
   - component: {fileID: 176110505}
   m_Layer: 5
   m_Name: Ba56
-  m_TagString: Untagged
+  m_TagString: Alkaline_earth_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12098,7 +12098,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &220368853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12985,7 +12985,7 @@ GameObject:
   - component: {fileID: 254912698}
   m_Layer: 5
   m_Name: Period 5
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13136,7 +13136,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &259998508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13352,7 +13352,7 @@ RectTransform:
   - {fileID: 331165532}
   - {fileID: 1824737486}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14604,7 +14604,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &313577342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17454,7 +17454,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1707638670}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &416945390
 SpriteRenderer:
@@ -24554,7 +24554,7 @@ GameObject:
   - component: {fileID: 476839371}
   m_Layer: 5
   m_Name: Period 7
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24573,7 +24573,6 @@ RectTransform:
   m_Children:
   - {fileID: 211795414}
   - {fileID: 1569556494}
-  - {fileID: 1449751809}
   - {fileID: 1644000941}
   - {fileID: 1935141551}
   - {fileID: 80816028}
@@ -25354,7 +25353,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &509080789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26015,7 +26014,7 @@ RectTransform:
   - {fileID: 30499529}
   - {fileID: 724754413}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26508,7 +26507,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &552800235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26570,7 +26569,7 @@ RectTransform:
   - {fileID: 1210247703}
   - {fileID: 740728750}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27845,12 +27844,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1868084522}
-  m_RootOrder: 2
+  m_Father: {fileID: 1707638670}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -701.5, y: 119.8}
+  m_AnchoredPosition: {x: -701.5, y: -119.100006}
   m_SizeDelta: {x: 85.1072, y: 84.7699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582869322
@@ -28822,7 +28821,7 @@ RectTransform:
   - {fileID: 1504017181}
   - {fileID: 1872682815}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30331,7 +30330,7 @@ RectTransform:
   - {fileID: 1920972963}
   - {fileID: 1623159732}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30909,7 +30908,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &733416064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32145,7 +32144,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &782614965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32311,7 +32310,7 @@ RectTransform:
   - {fileID: 215902379}
   - {fileID: 2098732249}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35219,7 +35218,7 @@ RectTransform:
   - {fileID: 1091501937}
   - {fileID: 310944043}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -41998,7 +41997,7 @@ RectTransform:
   - {fileID: 1724036145}
   - {fileID: 175757506}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -49117,7 +49116,7 @@ GameObject:
   - component: {fileID: 1092541214}
   m_Layer: 5
   m_Name: Period 1
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50739,7 +50738,7 @@ RectTransform:
   - {fileID: 862772457}
   - {fileID: 1390144055}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -51422,7 +51421,7 @@ RectTransform:
   - {fileID: 466057487}
   - {fileID: 801867480}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -51608,7 +51607,7 @@ GameObject:
   - component: {fileID: 1209102179}
   m_Layer: 5
   m_Name: Period 4
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52104,7 +52103,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &1237725665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53833,7 +53832,7 @@ RectTransform:
   - {fileID: 825611063}
   - {fileID: 407804846}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -55600,7 +55599,7 @@ RectTransform:
   - {fileID: 1302219491}
   - {fileID: 2014944554}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -56471,7 +56470,7 @@ RectTransform:
   - {fileID: 1521479269}
   - {fileID: 1950804607}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -56975,7 +56974,7 @@ RectTransform:
   - {fileID: 2091494174}
   - {fileID: 557339017}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -57681,7 +57680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1394535708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58364,7 +58363,7 @@ RectTransform:
   - {fileID: 1469672324}
   - {fileID: 1832431561}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -58704,12 +58703,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 476839371}
+  m_Father: {fileID: 1707638670}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -701.5, y: 119.8}
+  m_AnchoredPosition: {x: -701.5, y: -220.20003}
   m_SizeDelta: {x: 85.1072, y: 84.7699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449751810
@@ -61257,7 +61256,7 @@ RectTransform:
   - {fileID: 974446811}
   - {fileID: 150872815}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -61451,7 +61450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1551150224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61855,7 +61854,7 @@ GameObject:
   - component: {fileID: 1569556498}
   m_Layer: 5
   m_Name: Ra88
-  m_TagString: Untagged
+  m_TagString: Alkaline_earth_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62080,7 +62079,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1707638670}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1569703905
 MonoBehaviour:
@@ -64315,7 +64314,7 @@ RectTransform:
   - {fileID: 123577988}
   - {fileID: 1385833140}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -65553,7 +65552,7 @@ RectTransform:
   - {fileID: 273915450}
   - {fileID: 1604864449}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -65757,6 +65756,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1335240685}
+  - {fileID: 582869320}
+  - {fileID: 1449751809}
   - {fileID: 1569703903}
   - {fileID: 416945389}
   m_Father: {fileID: 1551150227}
@@ -65866,7 +65867,7 @@ GameObject:
   - component: {fileID: 1718663806}
   m_Layer: 5
   m_Name: Sr38
-  m_TagString: Untagged
+  m_TagString: Alkaline_earth_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67918,7 +67919,7 @@ MonoBehaviour:
   Noble_gases: []
   Lanthanides: []
   Actinides: []
-  allElements: []
+  periodicTable: {fileID: 1335240684}
 --- !u!61 &1796436077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67980,7 +67981,7 @@ RectTransform:
   - {fileID: 1909687591}
   - {fileID: 1917614800}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -68170,7 +68171,7 @@ GameObject:
   - component: {fileID: 1809687824}
   m_Layer: 5
   m_Name: Ca20
-  m_TagString: Untagged
+  m_TagString: Alkaline_earth_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68595,7 +68596,7 @@ GameObject:
   - component: {fileID: 1820896837}
   m_Layer: 5
   m_Name: Period 2
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69691,7 +69692,7 @@ RectTransform:
   - {fileID: 1666418237}
   - {fileID: 1764378035}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -69877,7 +69878,7 @@ GameObject:
   - component: {fileID: 1868084522}
   m_Layer: 5
   m_Name: Period 6
-  m_TagString: Untagged
+  m_TagString: Period
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69896,7 +69897,6 @@ RectTransform:
   m_Children:
   - {fileID: 866248472}
   - {fileID: 176110501}
-  - {fileID: 582869320}
   - {fileID: 266222410}
   - {fileID: 990781781}
   - {fileID: 2068679092}
@@ -71168,7 +71168,7 @@ RectTransform:
   - {fileID: 992457914}
   - {fileID: 1263463970}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -71378,7 +71378,7 @@ RectTransform:
   - {fileID: 911336958}
   - {fileID: 2096547120}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -73501,7 +73501,7 @@ RectTransform:
   - {fileID: 349329384}
   - {fileID: 1329333974}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -74065,7 +74065,7 @@ RectTransform:
   - {fileID: 988322181}
   - {fileID: 1570231622}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -81214,7 +81214,7 @@ RectTransform:
   - {fileID: 1358878674}
   - {fileID: 305850077}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -82928,7 +82928,7 @@ RectTransform:
   - {fileID: 373618125}
   - {fileID: 50539447}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -83138,7 +83138,7 @@ RectTransform:
   - {fileID: 171034961}
   - {fileID: 2001666695}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -83328,7 +83328,7 @@ GameObject:
   - component: {fileID: 2128034679}
   m_Layer: 5
   m_Name: Mg12
-  m_TagString: Untagged
+  m_TagString: Alkaline_earth_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

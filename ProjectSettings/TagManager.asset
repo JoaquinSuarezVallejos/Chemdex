@@ -18,6 +18,7 @@ TagManager:
   - Noble_gases
   - Lanthanides
   - Actinides
+  - Period
   layers:
   - Default
   - TransparentFX
