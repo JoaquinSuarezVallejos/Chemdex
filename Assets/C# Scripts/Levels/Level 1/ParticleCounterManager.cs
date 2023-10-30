@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ParticleCounterManager : MonoBehaviour
 {
-    //[SerializeField] int maxProtons;
-    //[SerializeField] int maxNeutrons;
+
     [SerializeField] GameObject[] protonsOnScreen;
     [SerializeField] GameObject[] neutronsOnScreen;
     bool full = false;
+    bool destroyed = false;
 
     public void newProtonOnScreen(GameObject proton)
     {
@@ -44,40 +44,61 @@ public class ParticleCounterManager : MonoBehaviour
                 {
                     Destroy(protonsOnScreen[i].gameObject);
                     protonsOnScreen[i] = proton;
+                    destroyed = true;
+                    break;
+                }
+            }
+            if (!destroyed)
+            {
+                Destroy(proton);
+            }
+            destroyed = false;
+        }
+    }
+
+    public void newNeutronOnScreen(GameObject neutron)
+    {
+        full = true;
+        for (int i = 0; i < neutronsOnScreen.Length; i++)
+        {
+            if (neutronsOnScreen[i] == null)
+            {
+                full = false;
+                Debug.Log("no lleno");
+                break;
+            }
+        }
+
+        if (!full)
+        {
+            for (int i = 0; i < neutronsOnScreen.Length; i++)
+            {
+                if (neutronsOnScreen[i] == null)
+                {
+                    neutronsOnScreen[i] = neutron;
                     break;
                 }
             }
         }
 
-
-        //for (int i = 0; i < protonsOnScreen.Length; i++)
-        //{
-        //    if (protonsOnScreen[i] == null)
-        //    {
-        //        protonsOnScreen[i] = proton; //When new proton is created, it adds it to the array, if it can.
-        //    }
-        //    if (i + 1 == protonsOnScreen.Length)
-        //    {
-        //        Debug.Log("Is full");
-        //        full = true;
-        //    }
-        //    break;
-        //}
-
-        //if (full)
-        //{
-        //    Debug.Log("is filled");
-        //}
-
-        //else
-        //{
-        //    Debug.Log("Not filled");
-
-        //}
-    }
-
-    public void newNeutronOnScreen(GameObject neutron)
-    {
-
+        if (full)
+        {
+            Debug.Log("lleno");
+            for (int i = 0; i < neutronsOnScreen.Length; i++)
+            {
+                if (neutronsOnScreen[i].transform.parent == null || neutronsOnScreen[i].transform.parent.name == "Neutron Marker")
+                {
+                    Destroy(neutronsOnScreen[i].gameObject);
+                    neutronsOnScreen[i] = neutron;
+                    destroyed = true;
+                    break;
+                }
+            }
+            if (!destroyed)
+            {
+                Destroy(neutron);
+            }
+            destroyed = false;
+        }
     }
 }
