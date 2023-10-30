@@ -9,7 +9,7 @@ public class ColoredSquares : MonoBehaviour
         Post_Transition_metals, Metalloids, Nonmetals, 
         Halogens, Noble_gases, Lanthanides, Actinides;
 
-    [SerializeField] GameObject periodicTable;
+    [SerializeField] GameObject periodicTable, UIArrows;
 
     private Image image;
     private Image[] allImagesOfElements;
@@ -99,6 +99,7 @@ public class ColoredSquares : MonoBehaviour
             Color tempColor = image.color;
             tempColor.a = 1f;
             image.color = tempColor;
+            UIArrows.GetComponent<Image>().enabled = true;
         }
     }
 
@@ -110,6 +111,7 @@ public class ColoredSquares : MonoBehaviour
             Color tempColor = image.color;
             tempColor.a = 0.3f;
             image.color = tempColor;
+            UIArrows.GetComponent<Image>().enabled = false;
         }
     }
 
