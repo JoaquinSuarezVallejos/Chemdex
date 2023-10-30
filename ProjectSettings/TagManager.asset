@@ -8,16 +8,16 @@ TagManager:
   - ElementBigIcon
   - Holder
   - Levels
-  - RedShape
-  - OrangeShape
-  - YellowShape
-  - GreenShape
-  - CyanShape
-  - BlueShape
-  - LightPurpleShape
-  - PurpleShape
-  - GrayShape
-  - TulipanVioletShape
+  - Alkali_metals
+  - Alkaline_earth_metals
+  - Transition_metals
+  - Post_Transition_metals
+  - Metalloids
+  - Nonmetals
+  - Halogens
+  - Noble_gases
+  - Lanthanides
+  - Actinides
   layers:
   - Default
   - TransparentFX
