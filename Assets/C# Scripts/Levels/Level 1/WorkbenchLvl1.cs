@@ -7,9 +7,6 @@ namespace Atom
     [RequireComponent(typeof(DUIAnchor))]
     public class WorkbenchLvl1 : MonoBehaviour
     {
-        /// <summary>
-        /// handles the 
-        /// </summary>
 
         [SerializeField] private GameObject ProtonPrefab;
         [SerializeField] private GameObject NeutronPrefab;
@@ -20,7 +17,7 @@ namespace Atom
         [SerializeField] private GameObject NeutronMarker;
         [SerializeField] private GameObject ElectronMarker;
 
-        //private AtomLvl1 atom;
+        private ParticleCounterManager particleCounter;
 
         private void Awake()
         {
@@ -38,6 +35,11 @@ namespace Atom
                 GameObject electron = Instantiate(ElectronMarker, transform.GetChild(2));
                 electron.transform.localPosition = Vector3.zero;
             }
+        }
+
+        private void Start()
+        {
+            particleCounter = GameObject.Find("ParticleCounterManager").GetComponent<ParticleCounterManager>();
         }
 
         public void NewAutoProton(int num = 1)
@@ -66,13 +68,9 @@ namespace Atom
                 Instantiate(ElectronPrefab, transform.GetChild(2)).GetComponent<ElectronLvl1>().OnDeselect?.Invoke();
             }
         }
-        /// <summary>
-        /// create a new proton
-        /// </summary>
+
         public void NewProton()
         {
-            //Debug.Log("New Proton");
-
             GameObject obj = Instantiate(ProtonPrefab, transform.GetChild(0));
 
             ProtonLvl1 proton = obj.GetComponent<ProtonLvl1>();
@@ -80,15 +78,12 @@ namespace Atom
             {
                 proton.OnSelect?.Invoke();
             }
+
+            particleCounter.newProtonOnScreen(obj);
         }
 
-        /// <summary>
-        /// create a new neutron
-        /// </summary>
         public void NewNeutron()
         {
-            Debug.Log("New Neutron");
-
             GameObject obj = Instantiate(NeutronPrefab, transform.GetChild(1));
 
             NeutronLvl1 neutron = obj.GetComponent<NeutronLvl1>();
@@ -96,12 +91,12 @@ namespace Atom
             {
                 neutron.OnSelect?.Invoke();
             }
+
+            particleCounter.newNeutronOnScreen(obj);
         }
 
         public void NewElectron()
         {
-            Debug.Log("New Electron");
-
             GameObject obj = Instantiate(ElectronPrefab, transform.GetChild(2));
 
             ElectronLvl1 electron = obj.GetComponent<ElectronLvl1>();
@@ -113,8 +108,6 @@ namespace Atom
 
         public void NewThirdParticle()
         {
-            Debug.Log("New Third Particle");
-
             GameObject obj = Instantiate(ThirdParticlePrefab, GameObject.Find("Third Marker").transform);
 
             ThirdParticleLvl1 third = obj.GetComponent<ThirdParticleLvl1>();
@@ -122,6 +115,8 @@ namespace Atom
             {
                 third.OnSelect?.Invoke();
             }
+
+            //llamo a que se agregó un nuevo thirdParticle.
         }
     }
 }
