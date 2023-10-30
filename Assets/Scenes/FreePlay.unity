@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 15752768}
   m_Layer: 5
   m_Name: Ds110
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ RectTransform:
   - {fileID: 1945228859}
   - {fileID: 213910134}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 53475862}
   m_Layer: 5
   m_Name: Mc115
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,7 +1055,7 @@ RectTransform:
   - {fileID: 243863375}
   - {fileID: 1052800773}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1627,7 +1627,7 @@ GameObject:
   - component: {fileID: 76893745}
   m_Layer: 5
   m_Name: Sc21
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1837,7 +1837,7 @@ GameObject:
   - component: {fileID: 80816032}
   m_Layer: 5
   m_Name: Db105
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1857,7 +1857,7 @@ RectTransform:
   - {fileID: 1791621711}
   - {fileID: 1671449459}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7502,7 +7502,7 @@ GameObject:
   - component: {fileID: 100578435}
   m_Layer: 5
   m_Name: Fm100
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7712,7 +7712,7 @@ GameObject:
   - component: {fileID: 101948807}
   m_Layer: 5
   m_Name: Bi83
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7732,7 +7732,7 @@ RectTransform:
   - {fileID: 461945242}
   - {fileID: 1185207916}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8260,7 +8260,7 @@ GameObject:
   - component: {fileID: 112906627}
   m_Layer: 5
   m_Name: Cm96
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8470,7 +8470,7 @@ GameObject:
   - component: {fileID: 114083339}
   m_Layer: 5
   m_Name: Si14
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8951,7 +8951,7 @@ GameObject:
   - component: {fileID: 123577992}
   m_Layer: 5
   m_Name: No102
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9161,7 +9161,7 @@ GameObject:
   - component: {fileID: 126965590}
   m_Layer: 5
   m_Name: Ts117
-  m_TagString: Untagged
+  m_TagString: Halogens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9181,7 +9181,7 @@ RectTransform:
   - {fileID: 1816279085}
   - {fileID: 1192251796}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9539,7 +9539,7 @@ GameObject:
   - component: {fileID: 144325603}
   m_Layer: 5
   m_Name: He2
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10062,6 +10062,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &156620999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10415,7 +10416,7 @@ GameObject:
   - component: {fileID: 167012335}
   m_Layer: 5
   m_Name: Am95
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12099,6 +12100,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &220368853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12224,7 +12226,7 @@ GameObject:
   - component: {fileID: 239652736}
   m_Layer: 5
   m_Name: Pd46
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12569,7 +12571,7 @@ GameObject:
   - component: {fileID: 250541962}
   m_Layer: 5
   m_Name: Te52
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12779,7 +12781,7 @@ GameObject:
   - component: {fileID: 251819053}
   m_Layer: 5
   m_Name: Gd64
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13137,6 +13139,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &259998508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13352,7 +13355,7 @@ RectTransform:
   - {fileID: 331165532}
   - {fileID: 1824737486}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14133,7 +14136,7 @@ GameObject:
   - component: {fileID: 303351330}
   m_Layer: 5
   m_Name: Se34
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14605,6 +14608,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &313577342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14865,7 +14869,7 @@ GameObject:
   - component: {fileID: 322191746}
   m_Layer: 5
   m_Name: Tb65
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15159,7 +15163,7 @@ GameObject:
   - component: {fileID: 329994393}
   m_Layer: 5
   m_Name: Cf98
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15369,7 +15373,7 @@ GameObject:
   - component: {fileID: 331165536}
   m_Layer: 5
   m_Name: Yb70
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16278,7 +16282,7 @@ GameObject:
   - component: {fileID: 372716577}
   m_Layer: 5
   m_Name: Zn30
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16893,7 +16897,7 @@ GameObject:
   - component: {fileID: 384971857}
   m_Layer: 5
   m_Name: Ce58
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17454,7 +17458,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1707638670}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &416945390
 SpriteRenderer:
@@ -17684,7 +17688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 499fba492d7e93540bd2a8f20f591e56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: edcb405aa402e8e4ab86fdeb8cd08810, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23397,7 +23401,7 @@ GameObject:
   - component: {fileID: 433346451}
   m_Layer: 5
   m_Name: Ne10
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23691,7 +23695,7 @@ GameObject:
   - component: {fileID: 452704185}
   m_Layer: 5
   m_Name: Mn25
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24573,6 +24577,7 @@ RectTransform:
   m_Children:
   - {fileID: 211795414}
   - {fileID: 1569556494}
+  - {fileID: 1449751809}
   - {fileID: 1644000941}
   - {fileID: 1935141551}
   - {fileID: 80816028}
@@ -25050,7 +25055,7 @@ GameObject:
   - component: {fileID: 505747923}
   m_Layer: 5
   m_Name: Bk97
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25354,6 +25359,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &509080789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25994,7 +26000,7 @@ GameObject:
   - component: {fileID: 536316035}
   m_Layer: 5
   m_Name: Po84
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26014,7 +26020,7 @@ RectTransform:
   - {fileID: 30499529}
   - {fileID: 724754413}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26204,7 +26210,7 @@ GameObject:
   - component: {fileID: 551624143}
   m_Layer: 5
   m_Name: Al13
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26508,6 +26514,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &552800235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26549,7 +26556,7 @@ GameObject:
   - component: {fileID: 554231110}
   m_Layer: 5
   m_Name: Os76
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26569,7 +26576,7 @@ RectTransform:
   - {fileID: 1210247703}
   - {fileID: 740728750}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27199,7 +27206,7 @@ GameObject:
   - component: {fileID: 575713971}
   m_Layer: 5
   m_Name: Cu29
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27409,7 +27416,7 @@ GameObject:
   - component: {fileID: 577587524}
   m_Layer: 5
   m_Name: I53
-  m_TagString: Untagged
+  m_TagString: Halogens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27619,7 +27626,7 @@ GameObject:
   - component: {fileID: 582229312}
   m_Layer: 5
   m_Name: Pm61
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27844,12 +27851,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1707638670}
-  m_RootOrder: 1
+  m_Father: {fileID: 1868084522}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -701.5, y: -119.100006}
+  m_AnchoredPosition: {x: -701.5, y: 119.8}
   m_SizeDelta: {x: 85.1072, y: 84.7699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582869322
@@ -28086,7 +28093,7 @@ GameObject:
   - component: {fileID: 597555122}
   m_Layer: 5
   m_Name: Pr59
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28296,7 +28303,7 @@ GameObject:
   - component: {fileID: 600656305}
   m_Layer: 5
   m_Name: As33
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28801,7 +28808,7 @@ GameObject:
   - component: {fileID: 640664976}
   m_Layer: 5
   m_Name: Rg111
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28821,7 +28828,7 @@ RectTransform:
   - {fileID: 1504017181}
   - {fileID: 1872682815}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29282,7 +29289,7 @@ GameObject:
   - component: {fileID: 643245038}
   m_Layer: 5
   m_Name: S16
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29492,7 +29499,7 @@ GameObject:
   - component: {fileID: 651152406}
   m_Layer: 5
   m_Name: Ge32
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30310,7 +30317,7 @@ GameObject:
   - component: {fileID: 707016960}
   m_Layer: 5
   m_Name: Mt109
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30330,7 +30337,7 @@ RectTransform:
   - {fileID: 1920972963}
   - {fileID: 1623159732}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30909,6 +30916,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &733416064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31034,7 +31042,7 @@ GameObject:
   - component: {fileID: 740782000}
   m_Layer: 5
   m_Name: B5
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31244,7 +31252,7 @@ GameObject:
   - component: {fileID: 745857777}
   m_Layer: 5
   m_Name: Np93
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31757,7 +31765,7 @@ GameObject:
   - component: {fileID: 771252902}
   m_Layer: 5
   m_Name: Ni28
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32145,6 +32153,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &782614965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32290,7 +32299,7 @@ GameObject:
   - component: {fileID: 801748284}
   m_Layer: 5
   m_Name: Pb82
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32310,7 +32319,7 @@ RectTransform:
   - {fileID: 215902379}
   - {fileID: 2098732249}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32584,7 +32593,7 @@ GameObject:
   - component: {fileID: 807361426}
   m_Layer: 5
   m_Name: Cr24
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33287,7 +33296,7 @@ GameObject:
   - component: {fileID: 832353403}
   m_Layer: 5
   m_Name: Md101
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33497,7 +33506,7 @@ GameObject:
   - component: {fileID: 837553453}
   m_Layer: 5
   m_Name: Ag47
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34769,7 +34778,7 @@ GameObject:
   - component: {fileID: 885780943}
   m_Layer: 5
   m_Name: Er68
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35198,7 +35207,7 @@ GameObject:
   - component: {fileID: 921433371}
   m_Layer: 5
   m_Name: Pt78
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35218,7 +35227,7 @@ RectTransform:
   - {fileID: 1091501937}
   - {fileID: 310944043}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35408,7 +35417,7 @@ GameObject:
   - component: {fileID: 922659386}
   m_Layer: 5
   m_Name: Ac89
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35702,7 +35711,7 @@ GameObject:
   - component: {fileID: 929221156}
   m_Layer: 5
   m_Name: C6
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41977,7 +41986,7 @@ GameObject:
   - component: {fileID: 990781785}
   m_Layer: 5
   m_Name: Hf72
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41997,7 +42006,7 @@ RectTransform:
   - {fileID: 1724036145}
   - {fileID: 175757506}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -42616,7 +42625,7 @@ GameObject:
   - component: {fileID: 1003944757}
   m_Layer: 5
   m_Name: Ru44
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49331,7 +49340,7 @@ GameObject:
   - component: {fileID: 1112113537}
   m_Layer: 5
   m_Name: V23
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49541,7 +49550,7 @@ GameObject:
   - component: {fileID: 1118319795}
   m_Layer: 5
   m_Name: Nd60
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50718,7 +50727,7 @@ GameObject:
   - component: {fileID: 1175891088}
   m_Layer: 5
   m_Name: Cn112
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50738,7 +50747,7 @@ RectTransform:
   - {fileID: 862772457}
   - {fileID: 1390144055}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -51401,7 +51410,7 @@ GameObject:
   - component: {fileID: 1206252809}
   m_Layer: 5
   m_Name: Au79
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51421,7 +51430,7 @@ RectTransform:
   - {fileID: 466057487}
   - {fileID: 801867480}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -51800,7 +51809,7 @@ GameObject:
   - component: {fileID: 1220713331}
   m_Layer: 5
   m_Name: Nb41
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52104,6 +52113,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &1237725665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52229,7 +52239,7 @@ GameObject:
   - component: {fileID: 1248681210}
   m_Layer: 5
   m_Name: In49
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52439,7 +52449,7 @@ GameObject:
   - component: {fileID: 1249673782}
   m_Layer: 5
   m_Name: Co27
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52817,7 +52827,7 @@ GameObject:
   - component: {fileID: 1275732649}
   m_Layer: 5
   m_Name: Y39
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53027,7 +53037,7 @@ GameObject:
   - component: {fileID: 1276773629}
   m_Layer: 5
   m_Name: Tc43
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53456,7 +53466,7 @@ GameObject:
   - component: {fileID: 1285374383}
   m_Layer: 5
   m_Name: Dy66
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53812,7 +53822,7 @@ GameObject:
   - component: {fileID: 1295403128}
   m_Layer: 5
   m_Name: Nh113
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53832,7 +53842,7 @@ RectTransform:
   - {fileID: 825611063}
   - {fileID: 407804846}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -54022,7 +54032,7 @@ GameObject:
   - component: {fileID: 1298267513}
   m_Layer: 5
   m_Name: O8
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55579,7 +55589,7 @@ GameObject:
   - component: {fileID: 1336996119}
   m_Layer: 5
   m_Name: Sg106
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55599,7 +55609,7 @@ RectTransform:
   - {fileID: 1302219491}
   - {fileID: 2014944554}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -55970,7 +55980,7 @@ GameObject:
   - component: {fileID: 1358014452}
   m_Layer: 5
   m_Name: Br35
-  m_TagString: Untagged
+  m_TagString: Halogens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56450,7 +56460,7 @@ GameObject:
   - component: {fileID: 1372059183}
   m_Layer: 5
   m_Name: Bh107
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56470,7 +56480,7 @@ RectTransform:
   - {fileID: 1521479269}
   - {fileID: 1950804607}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -56660,7 +56670,7 @@ GameObject:
   - component: {fileID: 1372421944}
   m_Layer: 5
   m_Name: Pa91
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56954,7 +56964,7 @@ GameObject:
   - component: {fileID: 1374851646}
   m_Layer: 5
   m_Name: Og118
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56974,7 +56984,7 @@ RectTransform:
   - {fileID: 2091494174}
   - {fileID: 557339017}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -57248,7 +57258,7 @@ GameObject:
   - component: {fileID: 1385833144}
   m_Layer: 5
   m_Name: Lr103
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57680,7 +57690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1394535708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57779,7 +57789,7 @@ GameObject:
   - component: {fileID: 1401166752}
   m_Layer: 5
   m_Name: H1
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57942,7 +57952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 499fba492d7e93540bd2a8f20f591e56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: edcb405aa402e8e4ab86fdeb8cd08810, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -58343,7 +58353,7 @@ GameObject:
   - component: {fileID: 1427826386}
   m_Layer: 5
   m_Name: Hs108
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58363,7 +58373,7 @@ RectTransform:
   - {fileID: 1469672324}
   - {fileID: 1832431561}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -58703,12 +58713,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1707638670}
+  m_Father: {fileID: 476839371}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -701.5, y: -220.20003}
+  m_AnchoredPosition: {x: -701.5, y: 119.80003}
   m_SizeDelta: {x: 85.1072, y: 84.7699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449751810
@@ -58983,7 +58993,7 @@ GameObject:
   - component: {fileID: 1458396075}
   m_Layer: 5
   m_Name: Sb51
-  m_TagString: Untagged
+  m_TagString: Metalloids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59412,7 +59422,7 @@ GameObject:
   - component: {fileID: 1471509938}
   m_Layer: 5
   m_Name: Ga31
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59790,7 +59800,7 @@ GameObject:
   - component: {fileID: 1484769383}
   m_Layer: 5
   m_Name: Kr36
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61236,7 +61246,7 @@ GameObject:
   - component: {fileID: 1548757049}
   m_Layer: 5
   m_Name: W74
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61256,7 +61266,7 @@ RectTransform:
   - {fileID: 974446811}
   - {fileID: 150872815}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -61450,7 +61460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1551150224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61560,7 +61570,7 @@ GameObject:
   - component: {fileID: 1558026398}
   m_Layer: 5
   m_Name: F9
-  m_TagString: Untagged
+  m_TagString: Halogens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62079,7 +62089,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1707638670}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1569703905
 MonoBehaviour:
@@ -62193,7 +62203,7 @@ GameObject:
   - component: {fileID: 1570819753}
   m_Layer: 5
   m_Name: Mo42
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62784,7 +62794,7 @@ GameObject:
   - component: {fileID: 1596318879}
   m_Layer: 5
   m_Name: Zr40
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62994,7 +63004,7 @@ GameObject:
   - component: {fileID: 1596728643}
   m_Layer: 5
   m_Name: P15
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63204,7 +63214,7 @@ GameObject:
   - component: {fileID: 1601700221}
   m_Layer: 5
   m_Name: Ho67
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63768,7 +63778,7 @@ GameObject:
   - component: {fileID: 1627041084}
   m_Layer: 5
   m_Name: N7
-  m_TagString: Untagged
+  m_TagString: Nonmetals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64314,7 +64324,7 @@ RectTransform:
   - {fileID: 123577988}
   - {fileID: 1385833140}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -65322,7 +65332,7 @@ GameObject:
   - component: {fileID: 1698235643}
   m_Layer: 5
   m_Name: Xe54
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65532,7 +65542,7 @@ GameObject:
   - component: {fileID: 1698284598}
   m_Layer: 5
   m_Name: Re75
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65552,7 +65562,7 @@ RectTransform:
   - {fileID: 273915450}
   - {fileID: 1604864449}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -65756,8 +65766,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1335240685}
-  - {fileID: 582869320}
-  - {fileID: 1449751809}
   - {fileID: 1569703903}
   - {fileID: 416945389}
   m_Father: {fileID: 1551150227}
@@ -66077,7 +66085,7 @@ GameObject:
   - component: {fileID: 1721755223}
   m_Layer: 5
   m_Name: Sn50
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66506,7 +66514,7 @@ GameObject:
   - component: {fileID: 1728732962}
   m_Layer: 5
   m_Name: Es99
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66716,7 +66724,7 @@ GameObject:
   - component: {fileID: 1728926980}
   m_Layer: 5
   m_Name: Sm62
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67145,7 +67153,7 @@ GameObject:
   - component: {fileID: 1756702584}
   m_Layer: 5
   m_Name: La57
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67920,6 +67928,7 @@ MonoBehaviour:
   Lanthanides: []
   Actinides: []
   periodicTable: {fileID: 1335240684}
+  UIArrows: {fileID: 512958347}
 --- !u!61 &1796436077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67961,7 +67970,7 @@ GameObject:
   - component: {fileID: 1798764824}
   m_Layer: 5
   m_Name: Tl81
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67981,7 +67990,7 @@ RectTransform:
   - {fileID: 1909687591}
   - {fileID: 1917614800}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -68644,7 +68653,7 @@ GameObject:
   - component: {fileID: 1824737490}
   m_Layer: 5
   m_Name: Lu71
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69672,7 +69681,7 @@ GameObject:
   - component: {fileID: 1865298643}
   m_Layer: 5
   m_Name: Rn86
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69692,7 +69701,7 @@ RectTransform:
   - {fileID: 1666418237}
   - {fileID: 1764378035}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -69897,6 +69906,7 @@ RectTransform:
   m_Children:
   - {fileID: 866248472}
   - {fileID: 176110501}
+  - {fileID: 582869320}
   - {fileID: 266222410}
   - {fileID: 990781781}
   - {fileID: 2068679092}
@@ -69936,7 +69946,7 @@ GameObject:
   - component: {fileID: 1872132915}
   m_Layer: 5
   m_Name: Cd48
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70938,7 +70948,7 @@ GameObject:
   - component: {fileID: 1922482729}
   m_Layer: 5
   m_Name: Tm69
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71148,7 +71158,7 @@ GameObject:
   - component: {fileID: 1935141555}
   m_Layer: 5
   m_Name: Rf104
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71168,7 +71178,7 @@ RectTransform:
   - {fileID: 992457914}
   - {fileID: 1263463970}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -71358,7 +71368,7 @@ GameObject:
   - component: {fileID: 1937234521}
   m_Layer: 5
   m_Name: Lv116
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71378,7 +71388,7 @@ RectTransform:
   - {fileID: 911336958}
   - {fileID: 2096547120}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -72230,7 +72240,7 @@ GameObject:
   - component: {fileID: 1953066998}
   m_Layer: 5
   m_Name: U92
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72840,7 +72850,7 @@ GameObject:
   - component: {fileID: 1972222814}
   m_Layer: 5
   m_Name: Eu63
-  m_TagString: Untagged
+  m_TagString: Lanthanides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73271,7 +73281,7 @@ GameObject:
   - component: {fileID: 1985580599}
   m_Layer: 5
   m_Name: Pu94
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73481,7 +73491,7 @@ GameObject:
   - component: {fileID: 1993357388}
   m_Layer: 5
   m_Name: Hg80
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73501,7 +73511,7 @@ RectTransform:
   - {fileID: 349329384}
   - {fileID: 1329333974}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -74045,7 +74055,7 @@ GameObject:
   - component: {fileID: 2004894204}
   m_Layer: 5
   m_Name: Fl114
-  m_TagString: Untagged
+  m_TagString: Post_Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74065,7 +74075,7 @@ RectTransform:
   - {fileID: 988322181}
   - {fileID: 1570231622}
   m_Father: {fileID: 476839371}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -74255,7 +74265,7 @@ GameObject:
   - component: {fileID: 2008174755}
   m_Layer: 5
   m_Name: Fe26
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74583,7 +74593,7 @@ GameObject:
   - component: {fileID: 2019435443}
   m_Layer: 5
   m_Name: Ar18
-  m_TagString: Untagged
+  m_TagString: Noble_gases
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80574,7 +80584,7 @@ GameObject:
   - component: {fileID: 2055972735}
   m_Layer: 5
   m_Name: Th90
-  m_TagString: Untagged
+  m_TagString: Actinides
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81194,7 +81204,7 @@ GameObject:
   - component: {fileID: 2068679096}
   m_Layer: 5
   m_Name: Ta73
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81214,7 +81224,7 @@ RectTransform:
   - {fileID: 1358878674}
   - {fileID: 305850077}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -81975,7 +81985,7 @@ GameObject:
   - component: {fileID: 2103139308}
   m_Layer: 5
   m_Name: Ti22
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82185,7 +82195,7 @@ GameObject:
   - component: {fileID: 2112389471}
   m_Layer: 5
   m_Name: Cl17
-  m_TagString: Untagged
+  m_TagString: Halogens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82395,7 +82405,7 @@ GameObject:
   - component: {fileID: 2112894000}
   m_Layer: 5
   m_Name: Rh45
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82908,7 +82918,7 @@ GameObject:
   - component: {fileID: 2120318938}
   m_Layer: 5
   m_Name: Ir77
-  m_TagString: Untagged
+  m_TagString: Transition_metals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82928,7 +82938,7 @@ RectTransform:
   - {fileID: 373618125}
   - {fileID: 50539447}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -83118,7 +83128,7 @@ GameObject:
   - component: {fileID: 2127329616}
   m_Layer: 5
   m_Name: At85
-  m_TagString: Untagged
+  m_TagString: Halogens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83138,7 +83148,7 @@ RectTransform:
   - {fileID: 171034961}
   - {fileID: 2001666695}
   m_Father: {fileID: 1868084522}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -119762,7 +119772,7 @@ Transform:
   m_GameObject: {fileID: 8284717352223690685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.066666, y: 2.58, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6156486565724306450}
