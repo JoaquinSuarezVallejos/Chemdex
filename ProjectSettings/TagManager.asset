@@ -8,6 +8,16 @@ TagManager:
   - ElementBigIcon
   - Holder
   - Levels
+  - RedShape
+  - OrangeShape
+  - YellowShape
+  - GreenShape
+  - CyanShape
+  - BlueShape
+  - LightPurpleShape
+  - PurpleShape
+  - GrayShape
+  - TulipanVioletShape
   layers:
   - Default
   - TransparentFX

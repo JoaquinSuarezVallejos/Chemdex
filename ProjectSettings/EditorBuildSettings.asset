@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelector.unity
     guid: 960994d9299cda04a87b5e42f904cfc7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PeriodicTable.unity
     guid: 36745ed8152454f43a95a1addf51a9f3
   - enabled: 1
