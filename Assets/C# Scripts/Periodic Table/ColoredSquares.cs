@@ -13,6 +13,7 @@ public class ColoredSquares : MonoBehaviour
 
     private Image image;
     private Image[] allImagesOfElements;
+    private bool allImagesHided, anyShapeSelected = false;
 
     private void Start()
     {
@@ -30,66 +31,98 @@ public class ColoredSquares : MonoBehaviour
         allImagesOfElements = periodicTable.GetComponentsInChildren<Image>();
     }
 
-    private void OnMouseOver()
+    private void Update()
+    {
+        if (allImagesHided == false && anyShapeSelected == true)
+        {
+            HideAllImages();
+        }
+
+        else if (allImagesHided == true && anyShapeSelected == false)
+        {
+            ShowAllImages();
+        }          
+    }
+
+
+    private void OnMouseDown()
     {
         switch (gameObject.name)
         {
             case "RedShapeTable": //Alkali_metals
-                HideAllImages();
-                ShowAllImagesOfThisElement(Alkali_metals);
+                allImagesHided = true;
+                anyShapeSelected = true;
+                ShowAllImagesOfThisElement(Alkali_metals);                
             break;
 
             case "OrangeShapeTable": // Alkaline_earth_metals
-                HideAllImages();
-                ShowAllImagesOfThisElement(Alkaline_earth_metals);
-            break;
+                allImagesHided = true;
+                anyShapeSelected = true; ;
+                ShowAllImagesOfThisElement(Alkaline_earth_metals);                
+                break;
 
             case "YellowShapeTable": // Transition_metals
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Transition_metals);
-            break;
+                
+                break;
 
             case "GreenShapeTable": // Post_Transition_metals
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Post_Transition_metals);
-            break;
+                
+                break;
 
             case "CyanShapeTable": // Metalloids
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Metalloids);
-            break;
+                
+                break;
 
             case "BlueShapeTable": // Nonmetals
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Nonmetals);
-            break;
+                
+                break;
 
             case "LightPurpleShapeTable": // Halogens
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Halogens);
-            break;
+                
+                break;
 
             case "PurpleShapeTable": // Noble_gases
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Noble_gases);
-            break;
+                
+                break;
 
             case "GrayShapeTable": // Lanthanides
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Lanthanides);
-            break;
+                
+                break;
 
             case "TulipanVioletShapeTable": // Actinides
-                HideAllImages();
+                allImagesHided = true;
+                anyShapeSelected = true;
                 ShowAllImagesOfThisElement(Actinides);
-            break;
+                
+                break;
         }
     }
 
-    private void OnMouseExit()
+    /*private void OnMouseExit()
     {
         ShowAllImages();
-    }
+    }*/
 
     private void ShowAllImages()
     {
