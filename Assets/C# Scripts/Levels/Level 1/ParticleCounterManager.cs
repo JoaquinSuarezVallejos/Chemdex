@@ -40,7 +40,7 @@ public class ParticleCounterManager : MonoBehaviour
             Debug.Log("lleno");
             for (int i = 0; i < protonsOnScreen.Length; i++)
             {
-                if (protonsOnScreen[i].transform.parent == null || protonsOnScreen[i].transform.parent.name == "Proton Marker")
+                if (protonsOnScreen[i].transform.parent == null || protonsOnScreen[i].transform.parent.name == "First Marker")
                 {
                     Destroy(protonsOnScreen[i].gameObject);
                     protonsOnScreen[i] = proton;
@@ -86,7 +86,7 @@ public class ParticleCounterManager : MonoBehaviour
             Debug.Log("lleno");
             for (int i = 0; i < neutronsOnScreen.Length; i++)
             {
-                if (neutronsOnScreen[i].transform.parent == null || neutronsOnScreen[i].transform.parent.name == "Neutron Marker")
+                if (neutronsOnScreen[i].transform.parent == null || neutronsOnScreen[i].transform.parent.name == "Second Marker")
                 {
                     Destroy(neutronsOnScreen[i].gameObject);
                     neutronsOnScreen[i] = neutron;

@@ -2502,7 +2502,7 @@ MonoBehaviour:
   winCanvas: {fileID: 577422147}
   loseCanvas: {fileID: 1797426679}
   texts: {fileID: 733635650}
-  level: 4
+  level: 5
 --- !u!4 &1174977846
 Transform:
   m_ObjectHideFlags: 0
@@ -3018,7 +3018,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 5
+          m_StringArgument: Level 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1302780496
@@ -4575,6 +4575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155246352319972341, guid: 2b0cbb3c3755e6443971812c5e61d803,
         type: 3}
+      propertyPath: m_Name
+      value: First Marker
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246352319972341, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -4595,6 +4600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155246352341266155, guid: 2b0cbb3c3755e6443971812c5e61d803,
         type: 3}
+      propertyPath: m_Name
+      value: Second Marker
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246352341266155, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -4612,6 +4622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Atom.WorkbenchLvl1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155246353237790142, guid: 2b0cbb3c3755e6443971812c5e61d803,
+        type: 3}
+      propertyPath: m_Name
+      value: Third Marker
       objectReference: {fileID: 0}
     - target: {fileID: 6155246353237790142, guid: 2b0cbb3c3755e6443971812c5e61d803,
         type: 3}
