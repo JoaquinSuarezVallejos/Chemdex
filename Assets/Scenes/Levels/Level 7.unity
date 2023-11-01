@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -235,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13309388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.63, y: 1.71, z: 0}
+  m_LocalPosition: {x: 5.04, y: 1.71, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e70a1298ba76b4094bfd76e49693c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedParticle: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
+  assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
     type: 3}
   particleGO: {fileID: 0}
   wasCorrect: 0
@@ -435,6 +435,7 @@ MonoBehaviour:
   protonsOnScreen:
   - {fileID: 0}
   neutronsOnScreen:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!4 &38153528
@@ -510,7 +511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level selecto
+  m_text: Level selector
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -587,6 +588,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103802058}
   m_CullTransparentMesh: 1
+--- !u!1 &106616155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106616156}
+  - component: {fileID: 106616157}
+  m_Layer: 0
+  m_Name: Bond2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &106616156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106616155}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9063079, w: 0.42261827}
+  m_LocalPosition: {x: 4.24, y: 2.71, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.506769, z: 0.50676894}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1949277511}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 130}
+--- !u!212 &106616157
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106616155}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 91a3b35489c08c4419e4b505d10e076b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &164074094
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Methane molecule
+  m_text: Ammonia molecule
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1052,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e70a1298ba76b4094bfd76e49693c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedParticle: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
+  assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
     type: 3}
   particleGO: {fileID: 0}
   wasCorrect: 0
@@ -1985,7 +2070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215af32b0779b1e42be135c05e6b2c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levyScript: {fileID: 0}
+  levyScript: {fileID: 1949277513}
   winCanvas: {fileID: 577422147}
   loseCanvas: {fileID: 1797426679}
   texts: {fileID: 1855300388}
@@ -2576,7 +2661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466326716}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.21, y: 1.75, z: 0}
+  m_LocalPosition: {x: 1.7, y: 1.75, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2739,7 +2824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e70a1298ba76b4094bfd76e49693c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedParticle: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
+  assignedParticle: {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8,
     type: 3}
   particleGO: {fileID: 0}
   wasCorrect: 0
@@ -2826,8 +2911,7 @@ MonoBehaviour:
     type: 3}
   ElectronPrefab: {fileID: 1224171826986411744, guid: e02874ce0a7b1f64aa90152c88659f92,
     type: 3}
-  ThirdParticlePrefab: {fileID: 4897893899562432815, guid: e2d4bb462f1bab249959f06a4ea109d4,
-    type: 3}
+  ThirdParticlePrefab: {fileID: 0}
   ProtonMarker: {fileID: 3965595725863801107, guid: c07dd431d43703944ab4d97083fffdd8,
     type: 3}
   NeutronMarker: {fileID: 6297887613777241037, guid: 116ee691b5a9ffc4290581a416ac4a57,
@@ -2992,14 +3076,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685383902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.17, y: 3.7700005, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.506769, z: 0.50676894}
+  m_LocalRotation: {x: 0, y: 0, z: 0.70090926, w: 0.71325046}
+  m_LocalPosition: {x: 3.37, y: 2.18, z: 0}
+  m_LocalScale: {x: 0.57, y: 0.506769, z: 0.50676894}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949277511}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89}
 --- !u!212 &1685383904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3064,7 +3148,7 @@ GameObject:
   - component: {fileID: 1694809548}
   - component: {fileID: 1694809547}
   m_Layer: 5
-  m_Name: Carbon
+  m_Name: Nitrogen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3088,7 +3172,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 770, y: 479.7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 220, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694809547
 MonoBehaviour:
@@ -3110,7 +3194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Carbon
+  m_text: Nitrogen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3443,7 +3527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1828596101
 Transform:
   m_ObjectHideFlags: 0
@@ -3996,7 +4080,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1174977845}
         m_TargetAssemblyTypeName: Atom.WinManagerLvl1, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: LevelSelector
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4080,6 +4164,7 @@ Transform:
   - {fileID: 1685383903}
   - {fileID: 1466326717}
   - {fileID: 291783455}
+  - {fileID: 106616156}
   m_Father: {fileID: 777438007}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4113,7 +4198,9 @@ MonoBehaviour:
   holders: []
   receta:
   - {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633, type: 3}
-  - {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633, type: 3}
+  - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
+  - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
+  - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
   position:
   - {fileID: 936289148}
   - {fileID: 13309389}
@@ -4284,14 +4371,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085754345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.17, y: 3.5300002, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.506769, z: 0.50676894}
+  m_LocalRotation: {x: -0, y: -0, z: 0.3995079, w: 0.91672975}
+  m_LocalPosition: {x: 2.5, y: 2.71, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.506769, z: 0.50676894}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949277511}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.095}
 --- !u!212 &2085754347
 SpriteRenderer:
   m_ObjectHideFlags: 0
