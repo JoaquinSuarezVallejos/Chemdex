@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class TitleChanger : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI levelMolecule;
-    //LevelClickListener isLevelPassedScript;
+    private string molecule;
+    [SerializeField] float counter;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +17,21 @@ public class TitleChanger : MonoBehaviour
         //isLevelPassedScript = GetComponent<LevelClickListener>();
     }
 
-    public void ChangeTitleWhileOver(string molecule)
+    public void ChangeTitleWhileOver(string _molecule)
     {
+        molecule = _molecule;
+        StartCoroutine(MouseOverLevelButton());
+    }
+
+    public void ChangeTitleWhenOut()
+    {
+        StopAllCoroutines();
+        levelMolecule.text = "SELECT A LEVEL";
+    }
+
+    IEnumerator MouseOverLevelButton()
+    {
+        yield return new WaitForSeconds(counter);
         if (GetComponent<Button>().interactable)
         {
             levelMolecule.text = molecule;
@@ -27,10 +41,5 @@ public class TitleChanger : MonoBehaviour
         {
             levelMolecule.text = "???";
         }
-    }
-
-    public void ChangeTitleWhenOut()
-    {
-        levelMolecule.text = "SELECT A LEVEL";
     }
 }
