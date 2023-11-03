@@ -14,7 +14,6 @@ public class TitleChanger : MonoBehaviour
     void Start()
     {
         levelMolecule.text = "SELECT A LEVEL";
-        //isLevelPassedScript = GetComponent<LevelClickListener>();
     }
 
     public void ChangeTitleWhileOver(string _molecule)
