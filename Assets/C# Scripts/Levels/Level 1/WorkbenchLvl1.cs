@@ -116,7 +116,7 @@ namespace Atom
                 third.OnSelect?.Invoke();
             }
 
-            //llamo a que se agregó un nuevo thirdParticle.
+            particleCounter.newThirdParticleOnScreen(obj);
         }
     }
 }

@@ -7,6 +7,7 @@ public class ParticleCounterManager : MonoBehaviour
 
     [SerializeField] GameObject[] protonsOnScreen;
     [SerializeField] GameObject[] neutronsOnScreen;
+    [SerializeField] GameObject[] thirdParticleOnScreen;
     bool full = false;
     bool destroyed = false;
 
@@ -101,4 +102,51 @@ public class ParticleCounterManager : MonoBehaviour
             destroyed = false;
         }
     }
+
+    public void newThirdParticleOnScreen(GameObject particle)
+    {
+        full = true;
+        for (int i = 0; i < thirdParticleOnScreen.Length; i++)
+        {
+            if (thirdParticleOnScreen[i] == null)
+            {
+                full = false;
+                Debug.Log("no lleno");
+                break;
+            }
+        }
+
+        if (!full)
+        {
+            for (int i = 0; i < thirdParticleOnScreen.Length; i++)
+            {
+                if (thirdParticleOnScreen[i] == null)
+                {
+                    thirdParticleOnScreen[i] = particle;
+                    break;
+                }
+            }
+        }
+
+        if (full)
+        {
+            Debug.Log("lleno");
+            for (int i = 0; i < thirdParticleOnScreen.Length; i++)
+            {
+                if (thirdParticleOnScreen[i].transform.parent == null || thirdParticleOnScreen[i].transform.parent.name == "Third Marker")
+                {
+                    Destroy(thirdParticleOnScreen[i].gameObject);
+                    thirdParticleOnScreen[i] = particle;
+                    destroyed = true;
+                    break;
+                }
+            }
+            if (!destroyed)
+            {
+                Destroy(particle);
+            }
+            destroyed = false;
+        }
+    }
 }
+
