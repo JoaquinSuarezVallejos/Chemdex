@@ -9,6 +9,7 @@ public class ColoredSquareManager : MonoBehaviour
     private Image image;
     private Image[] allImagesOfElements;
     [SerializeField] GameObject periodicTable, UIArrows;
+    [SerializeField] int counter;
 
     private void Awake()
     {
@@ -17,11 +18,56 @@ public class ColoredSquareManager : MonoBehaviour
 
     public void OnClicked(GameObject[] hidingList)
     {
-        if (!firstMouseDownClick)
+        if (!firstMouseDownClick && hidingList != null)
         {
             HideAllImages();
             ShowAllImagesOfThisElement(hidingList);
             firstMouseDownClick = true;
+            counter += 1;
+            return;
+        }
+
+        if (hidingList != null)
+        {
+            Debug.Log("no nula");
+            if (hidingList[0].GetComponent<Image>().color.a == 1) //esta mostrado
+            {
+                Debug.Log("oculta lo mostrado");
+                HideAllImagesOfThisElement(hidingList);
+                counter -= 1;
+            }
+            else if (hidingList[0].GetComponent<Image>().color.a == 0.3f) //esta oculto
+            {
+                Debug.Log("muestra lo oculto");
+                ShowAllImagesOfThisElement(hidingList);
+                counter += 1;
+            }
+
+            if (counter == 10)
+            {
+                Debug.Log("vuelve a la normalidad");
+                //borro los ticks.
+                ShowAllImages();
+                firstMouseDownClick = false;
+                counter = 0;
+            }
+
+            if (counter == 0)
+            {
+                Debug.Log("vuelve a la normalidad");
+                //borro los ticks.
+                ShowAllImages();
+                firstMouseDownClick = false;
+                counter = 0;
+            }
+        }
+
+        if (hidingList == null)
+        {
+            ShowAllImages();
+            Debug.Log("reseteo");
+            firstMouseDownClick = false;
+            counter = 0;
         }
     }
 
@@ -45,6 +91,29 @@ public class ColoredSquareManager : MonoBehaviour
             tempColor.a = 0.3f;
             image.color = tempColor;
             UIArrows.GetComponent<Image>().enabled = false;
+        }
+    }
+
+    private void HideAllImagesOfThisElement(GameObject[] ElementList)
+    {
+        foreach (GameObject element in ElementList)
+        {
+            image = element.GetComponent<Image>();
+            Color tempColor = image.color;
+            tempColor.a = 0.3f;
+            image.color = tempColor;
+        }
+    }
+
+    private void ShowAllImages()
+    {
+        for (int i = 0; i < allImagesOfElements.Length; i++)
+        {
+            image = allImagesOfElements[i].GetComponent<Image>();
+            Color tempColor = image.color;
+            tempColor.a = 1f;
+            image.color = tempColor;
+            UIArrows.GetComponent<Image>().enabled = true;
         }
     }
 }

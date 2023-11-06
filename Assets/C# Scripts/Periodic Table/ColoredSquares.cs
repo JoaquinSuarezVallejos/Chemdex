@@ -17,6 +17,8 @@ public class ColoredSquares : MonoBehaviour
 
     private ColoredSquareManager managerScript;
 
+    GameObject[] reset;
+
     private void Start()
     {
         Alkali_metals = GameObject.FindGameObjectsWithTag("Alkali_metals");
@@ -32,6 +34,8 @@ public class ColoredSquares : MonoBehaviour
 
         allImagesOfElements = periodicTable.GetComponentsInChildren<Image>();
 
+        //reset = periodicTable. 
+
         managerScript = GameObject.Find("Square Color Manager").GetComponent<ColoredSquareManager>();
     }
 
@@ -40,84 +44,42 @@ public class ColoredSquares : MonoBehaviour
         managerScript.OnClicked(ReturnColorType());
     }
 
-    private void ShowAllImages()
-    {
-        for (int i = 0; i < allImagesOfElements.Length; i++)
-        {
-            image = allImagesOfElements[i].GetComponent<Image>();
-            Color tempColor = image.color;
-            tempColor.a = 1f;
-            image.color = tempColor;
-            UIArrows.GetComponent<Image>().enabled = true;
-        }
-    }
-
-    private void HideAllImages()
-    {
-        for (int i = 0; i < allImagesOfElements.Length; i++)
-        {
-            image = allImagesOfElements[i].GetComponent<Image>();
-            Color tempColor = image.color;
-            tempColor.a = 0.3f;
-            image.color = tempColor;
-            UIArrows.GetComponent<Image>().enabled = false;
-        }
-    }
-
-    private void ShowAllImagesOfThisElement(GameObject[] ElementList)
-    {
-        foreach (GameObject element in ElementList)
-        {
-            image = element.GetComponent<Image>();
-            Color tempColor = image.color;
-            tempColor.a = 1f;
-            image.color = tempColor;
-        }
-    }
-
     GameObject[] ReturnColorType()
     {
         switch (gameObject.name)
         {
             case "RedShapeTable": //Alkali_metals
-                ShowAllImagesOfThisElement(Alkali_metals);
                 return Alkali_metals;
 
             case "OrangeShapeTable": // Alkaline_earth_metals
-                ShowAllImagesOfThisElement(Alkaline_earth_metals);
                 return Alkaline_earth_metals;
 
             case "YellowShapeTable": // Transition_metals
-                ShowAllImagesOfThisElement(Transition_metals);
                 return Transition_metals;
 
             case "GreenShapeTable": // Post_Transition_metals
-                ShowAllImagesOfThisElement(Post_Transition_metals);
                 return Post_Transition_metals;
 
             case "CyanShapeTable": // Metalloids
-                ShowAllImagesOfThisElement(Metalloids);
                 return Metalloids;
 
             case "BlueShapeTable": // Nonmetals
-                ShowAllImagesOfThisElement(Nonmetals);
                 return Nonmetals;
 
             case "LightPurpleShapeTable": // Halogens
-                ShowAllImagesOfThisElement(Halogens);
                 return Halogens;
 
             case "PurpleShapeTable": // Noble_gases
-                ShowAllImagesOfThisElement(Noble_gases);
                 return Noble_gases;
 
             case "GrayShapeTable": // Lanthanides
-                ShowAllImagesOfThisElement(Lanthanides);
                 return Lanthanides;
 
             case "TulipanVioletShapeTable": // Actinides
-                ShowAllImagesOfThisElement(Actinides);
                 return Actinides;
+
+            case "Reset":
+                return null;
         }
         return null;
     }
