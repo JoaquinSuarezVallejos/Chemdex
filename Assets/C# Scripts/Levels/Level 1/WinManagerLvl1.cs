@@ -15,12 +15,17 @@ namespace Atom
         [SerializeField] GameObject texts;
         LevelSelector levelSelector;
         [SerializeField] private int level;
+        public float counter = 1;
+        [SerializeField] GameObject[] confetti;
+
+        Animator anim;
 
         private void Awake()
         {
             winCanvas.SetActive(false);
             loseCanvas.SetActive(false);
             texts.SetActive(true);
+            anim = winCanvas.GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -44,17 +49,12 @@ namespace Atom
 
         private void Win()
         {
-            texts.SetActive(false);
-            winCanvas.SetActive(true);
-            if (levelSelector == null)
+            foreach (GameObject confeti in confetti)
             {
-                levelSelector = GameObject.Find("LevelSelectorManager").GetComponent<LevelSelector>();
-                levelSelector.lastLevelPassed = level;
+                confeti.SetActive(true);
+                //play victory sound;
             }
-            else
-            {
-                levelSelector.lastLevelPassed = level;
-            }
+            StartCoroutine(wait1SecondAfterWin());
         }
 
         public void TryAgain()
@@ -70,6 +70,23 @@ namespace Atom
         public void NextLevel(string levelName)
         {
             SceneManager.LoadScene(levelName);
+        }
+
+        IEnumerator wait1SecondAfterWin()
+        {
+            yield return new WaitForSeconds(counter);
+            texts.SetActive(false);
+            winCanvas.SetActive(true);
+            anim.SetBool("Win", true);
+            if (levelSelector == null)
+            {
+                levelSelector = GameObject.Find("LevelSelectorManager").GetComponent<LevelSelector>();
+                levelSelector.lastLevelPassed = level;
+            }
+            else
+            {
+                levelSelector.lastLevelPassed = level;
+            }
         }
     }
 }
