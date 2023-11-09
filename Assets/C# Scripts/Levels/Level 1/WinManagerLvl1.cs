@@ -9,13 +9,25 @@ namespace Atom
 {
     public class WinManagerLvl1 : MonoBehaviour
     {
-        [SerializeField] Levysabe levyScript;
+
+        #region UI
         [SerializeField] GameObject winCanvas;
         [SerializeField] GameObject loseCanvas;
         [SerializeField] GameObject texts;
+        #endregion
+        #region Scripts
+        [SerializeField] Levysabe levyScript;
         LevelSelector levelSelector;
+        #endregion
+        #region Audio
+        [SerializeField] AudioSource source;
+        [SerializeField] AudioClip clip;
+        #endregion
+
         [SerializeField] private int level;
+        
         public float counter = 1;
+        
         [SerializeField] GameObject[] confetti;
 
         Animator anim;
@@ -26,6 +38,7 @@ namespace Atom
             loseCanvas.SetActive(false);
             texts.SetActive(true);
             anim = winCanvas.GetComponent<Animator>();
+            source = GetComponent<AudioSource>();
         }
 
         // Update is called once per frame
@@ -52,7 +65,7 @@ namespace Atom
             foreach (GameObject confeti in confetti)
             {
                 confeti.SetActive(true);
-                //play victory sound;
+                source.PlayOneShot(clip);
             }
             StartCoroutine(wait1SecondAfterWin());
         }
