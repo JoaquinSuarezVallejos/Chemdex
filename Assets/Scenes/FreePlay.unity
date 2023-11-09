@@ -1262,7 +1262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 14
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &54683007
 BoxCollider2D:
@@ -1314,7 +1314,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!212 &54683009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10122,7 +10121,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &156620994
 SpriteRenderer:
@@ -10200,7 +10199,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &156620999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12161,7 +12159,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &220368848
 SpriteRenderer:
@@ -12239,7 +12237,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &220368853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13201,7 +13198,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &259998503
 SpriteRenderer:
@@ -13279,7 +13276,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &259998508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14749,7 +14745,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &313577342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25423,7 +25418,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &509080784
 SpriteRenderer:
@@ -25501,7 +25496,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &509080789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26579,7 +26573,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &552800230
 SpriteRenderer:
@@ -26657,7 +26651,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &552800235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28050,7 +28043,6 @@ GameObject:
   m_Component:
   - component: {fileID: 587575552}
   - component: {fileID: 587575555}
-  - component: {fileID: 587575554}
   - component: {fileID: 587575553}
   m_Layer: 5
   m_Name: Check1
@@ -28071,8 +28063,8 @@ Transform:
   m_LocalScale: {x: 6.3342004, y: 6.3342004, z: 6.3342004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1339898364}
-  m_RootOrder: 1
+  m_Father: {fileID: 1415720640}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &587575553
 BoxCollider2D:
@@ -28100,31 +28092,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.49, y: 1.49}
   m_EdgeRadius: 0
---- !u!114 &587575554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587575551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf08cf31731d6124e95cee1922026b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Alkali_metals: []
-  Alkaline_earth_metals: []
-  Transition_metals: []
-  Post_Transition_metals: []
-  Metalloids: []
-  Nonmetals: []
-  Halogens: []
-  Noble_gases: []
-  Lanthanides: []
-  Actinides: []
-  periodicTable: {fileID: 1335240684}
-  UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!212 &587575555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29083,7 +29050,6 @@ GameObject:
   m_Component:
   - component: {fileID: 634810455}
   - component: {fileID: 634810458}
-  - component: {fileID: 634810457}
   - component: {fileID: 634810456}
   m_Layer: 5
   m_Name: Check2
@@ -29091,7 +29057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &634810455
 Transform:
   m_ObjectHideFlags: 0
@@ -29104,8 +29070,8 @@ Transform:
   m_LocalScale: {x: 6.3342004, y: 6.3342004, z: 6.3342004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1339898364}
-  m_RootOrder: 3
+  m_Father: {fileID: 1415720640}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &634810456
 BoxCollider2D:
@@ -29133,31 +29099,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.49, y: 1.49}
   m_EdgeRadius: 0
---- !u!114 &634810457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634810454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf08cf31731d6124e95cee1922026b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Alkali_metals: []
-  Alkaline_earth_metals: []
-  Transition_metals: []
-  Post_Transition_metals: []
-  Metalloids: []
-  Nonmetals: []
-  Halogens: []
-  Noble_gases: []
-  Lanthanides: []
-  Actinides: []
-  periodicTable: {fileID: 1335240684}
-  UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!212 &634810458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31256,7 +31197,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &733416059
 SpriteRenderer:
@@ -31334,7 +31275,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &733416064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32494,7 +32434,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &782614960
 SpriteRenderer:
@@ -32572,7 +32512,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &782614965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41578,7 +41517,6 @@ MonoBehaviour:
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
   counter: 0
-  squareChecks: []
 --- !u!4 &955826078
 Transform:
   m_ObjectHideFlags: 0
@@ -43647,7 +43585,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1024641256}
   - component: {fileID: 1024641259}
-  - component: {fileID: 1024641258}
   - component: {fileID: 1024641257}
   m_Layer: 5
   m_Name: Check3
@@ -43655,7 +43592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1024641256
 Transform:
   m_ObjectHideFlags: 0
@@ -43668,8 +43605,8 @@ Transform:
   m_LocalScale: {x: 6.3342004, y: 6.3342004, z: 6.3342004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1339898364}
-  m_RootOrder: 5
+  m_Father: {fileID: 1415720640}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1024641257
 BoxCollider2D:
@@ -43697,31 +43634,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.49, y: 1.49}
   m_EdgeRadius: 0
---- !u!114 &1024641258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024641255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf08cf31731d6124e95cee1922026b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Alkali_metals: []
-  Alkaline_earth_metals: []
-  Transition_metals: []
-  Post_Transition_metals: []
-  Metalloids: []
-  Nonmetals: []
-  Halogens: []
-  Noble_gases: []
-  Lanthanides: []
-  Actinides: []
-  periodicTable: {fileID: 1335240684}
-  UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!212 &1024641259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52640,7 +52552,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1237725660
 SpriteRenderer:
@@ -52718,7 +52630,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &1237725665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56418,13 +56329,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 313577336}
-  - {fileID: 587575552}
   - {fileID: 733416058}
-  - {fileID: 634810455}
   - {fileID: 1237725659}
-  - {fileID: 1024641256}
   - {fileID: 1796436071}
-  - {fileID: 1898233124}
   - {fileID: 782614959}
   - {fileID: 552800229}
   - {fileID: 156620993}
@@ -56433,7 +56340,7 @@ RectTransform:
   - {fileID: 259998502}
   - {fileID: 54683006}
   m_Father: {fileID: 2065818028}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -58729,6 +58636,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405629737}
   m_CullTransparentMesh: 1
+--- !u!1 &1415720639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415720640}
+  - component: {fileID: 1415720641}
+  m_Layer: 5
+  m_Name: SquareChecks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1415720640
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415720639}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 587575552}
+  - {fileID: 634810455}
+  - {fileID: 1024641256}
+  - {fileID: 1898233124}
+  m_Father: {fileID: 2065818028}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1415720641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415720639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 682a87909823dca41b0a1aecd4c447cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squareChecks:
+  - {fileID: 587575551}
+  - {fileID: 634810454}
+  - {fileID: 1024641255}
+  - {fileID: 1898233123}
 --- !u!1 &1415805150
 GameObject:
   m_ObjectHideFlags: 0
@@ -68461,7 +68426,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1339898364}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1796436072
 SpriteRenderer:
@@ -68539,7 +68504,6 @@ MonoBehaviour:
   Actinides: []
   periodicTable: {fileID: 1335240684}
   UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!61 &1796436077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71065,7 +71029,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1898233124}
   - component: {fileID: 1898233127}
-  - component: {fileID: 1898233126}
   - component: {fileID: 1898233125}
   m_Layer: 5
   m_Name: Check4
@@ -71073,7 +71036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1898233124
 Transform:
   m_ObjectHideFlags: 0
@@ -71082,12 +71045,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898233123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -270.33, y: 203.7, z: -9721.2}
+  m_LocalPosition: {x: -270.33, y: 203.70001, z: -9721.2}
   m_LocalScale: {x: 6.3342004, y: 6.3342004, z: 6.3342004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1339898364}
-  m_RootOrder: 7
+  m_Father: {fileID: 1415720640}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1898233125
 BoxCollider2D:
@@ -71115,31 +71078,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.49, y: 1.49}
   m_EdgeRadius: 0
---- !u!114 &1898233126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898233123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf08cf31731d6124e95cee1922026b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Alkali_metals: []
-  Alkaline_earth_metals: []
-  Transition_metals: []
-  Post_Transition_metals: []
-  Metalloids: []
-  Nonmetals: []
-  Halogens: []
-  Noble_gases: []
-  Lanthanides: []
-  Actinides: []
-  periodicTable: {fileID: 1335240684}
-  UIArrows: {fileID: 512958347}
-  squareChecks: []
 --- !u!212 &1898233127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81693,6 +81631,7 @@ RectTransform:
   - {fileID: 2132685877}
   - {fileID: 164661435}
   - {fileID: 955826078}
+  - {fileID: 1415720640}
   - {fileID: 1339898364}
   m_Father: {fileID: 1551150227}
   m_RootOrder: 1

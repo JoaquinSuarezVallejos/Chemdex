@@ -11,6 +11,8 @@ public class ColoredSquareManager : MonoBehaviour
     [SerializeField] GameObject periodicTable, UIArrows;
     [SerializeField] int counter;
     [SerializeField] GameObject[] squareChecks;
+    private ColoredSquares coloredSquaresScript;
+    private SquareChecks squareChecksScript;
 
 
     private void Awake()
@@ -20,7 +22,9 @@ public class ColoredSquareManager : MonoBehaviour
 
     private void Start()
     {
-        squareChecks = GameObject.FindGameObjectsWithTag("SquareCheck");
+        coloredSquaresScript = GameObject.Find("RedShapeTable").GetComponent<ColoredSquares>();
+        squareChecksScript = GameObject.Find("SquareChecks").GetComponent<SquareChecks>();
+        //squareChecks = GameObject.FindGameObjectsWithTag("SquareCheck");
     }
 
     public void OnClicked(GameObject[] hidingList)
@@ -41,6 +45,7 @@ public class ColoredSquareManager : MonoBehaviour
             {
                 Debug.Log("oculta lo mostrado");
                 HideAllImagesOfThisElement(hidingList);
+                HideSpecificCheck();
                 counter -= 1;
             }
             else if (hidingList[0].GetComponent<Image>().color.a == 0.3f) //esta oculto
@@ -48,6 +53,7 @@ public class ColoredSquareManager : MonoBehaviour
                 Debug.Log("muestra lo oculto");
                 ShowAllImagesOfThisElement(hidingList);
                 Debug.Log(hidingList);
+                ShowSpecificCheck();
                 counter += 1;
             }
 
@@ -91,14 +97,6 @@ public class ColoredSquareManager : MonoBehaviour
             Color tempColor = image.color;
             tempColor.a = 1f;
             image.color = tempColor;
-            
-
-            switch (element.gameObject.name)
-            {
-                case "Alkali_metals":
-                    squareChecks[0].SetActive(true);
-                    return;
-            }
         }
     }
 
@@ -147,6 +145,21 @@ public class ColoredSquareManager : MonoBehaviour
 
     private void ShowSpecificCheck()
     {
-        
+        switch (coloredSquaresScript.squareCheckName)
+        {
+            case "RedCheck":
+                squareChecksScript.squareChecks[0].SetActive(true);
+                return;
+        }
+    }
+
+    private void HideSpecificCheck()
+    {
+        switch (coloredSquaresScript.squareCheckName)
+        {
+            case "RedCheck":
+                squareChecksScript.squareChecks[0].SetActive(false);
+                return;
+        }
     }
 }
