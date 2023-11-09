@@ -17,6 +17,8 @@ public class ColoredSquares : MonoBehaviour
 
     private ColoredSquareManager managerScript;
 
+    GameObject[] squareChecks;
+
     GameObject[] reset;
 
     private void Start()
@@ -34,6 +36,8 @@ public class ColoredSquares : MonoBehaviour
 
         allImagesOfElements = periodicTable.GetComponentsInChildren<Image>();
 
+        squareChecks = GameObject.FindGameObjectsWithTag("SquareCheck");
+
         //reset = periodicTable. 
 
         managerScript = GameObject.Find("Square Color Manager").GetComponent<ColoredSquareManager>();
@@ -49,6 +53,7 @@ public class ColoredSquares : MonoBehaviour
         switch (gameObject.name)
         {
             case "RedShapeTable": //Alkali_metals
+                squareChecks[0].SetActive(true);
                 return Alkali_metals;
 
             case "OrangeShapeTable": // Alkaline_earth_metals

@@ -19,6 +19,7 @@ TagManager:
   - Lanthanides
   - Actinides
   - Period
+  - SquareCheck
   layers:
   - Default
   - TransparentFX

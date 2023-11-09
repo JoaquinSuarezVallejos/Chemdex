@@ -10,10 +10,17 @@ public class ColoredSquareManager : MonoBehaviour
     private Image[] allImagesOfElements;
     [SerializeField] GameObject periodicTable, UIArrows;
     [SerializeField] int counter;
+    [SerializeField] GameObject[] squareChecks;
+
 
     private void Awake()
     {
         allImagesOfElements = periodicTable.GetComponentsInChildren<Image>();
+    }
+
+    private void Start()
+    {
+        squareChecks = GameObject.FindGameObjectsWithTag("SquareCheck");
     }
 
     public void OnClicked(GameObject[] hidingList)
@@ -40,14 +47,17 @@ public class ColoredSquareManager : MonoBehaviour
             {
                 Debug.Log("muestra lo oculto");
                 ShowAllImagesOfThisElement(hidingList);
+                Debug.Log(hidingList);
                 counter += 1;
             }
 
             if (counter == 10)
             {
                 Debug.Log("vuelve a la normalidad");
-                //borro los ticks.
+                HideAllSquareChecks();
+                Debug.Log("checks hided");
                 ShowAllImages();
+
                 firstMouseDownClick = false;
                 counter = 0;
             }
@@ -55,8 +65,10 @@ public class ColoredSquareManager : MonoBehaviour
             if (counter == 0)
             {
                 Debug.Log("vuelve a la normalidad");
-                //borro los ticks.
+                HideAllSquareChecks();
+                Debug.Log("checks hided");
                 ShowAllImages();
+
                 firstMouseDownClick = false;
                 counter = 0;
             }
@@ -79,6 +91,14 @@ public class ColoredSquareManager : MonoBehaviour
             Color tempColor = image.color;
             tempColor.a = 1f;
             image.color = tempColor;
+            
+
+            switch (element.gameObject.name)
+            {
+                case "Alkali_metals":
+                    squareChecks[0].SetActive(true);
+                    return;
+            }
         }
     }
 
@@ -115,5 +135,18 @@ public class ColoredSquareManager : MonoBehaviour
             image.color = tempColor;
             UIArrows.GetComponent<Image>().enabled = true;
         }
+    }
+
+    private void HideAllSquareChecks()
+    {
+        foreach (GameObject check in squareChecks)
+        {
+            check.SetActive(false);
+        }
+    }
+
+    private void ShowSpecificCheck()
+    {
+        
     }
 }
