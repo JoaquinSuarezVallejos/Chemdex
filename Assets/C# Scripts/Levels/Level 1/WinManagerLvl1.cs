@@ -18,6 +18,7 @@ namespace Atom
         #region Scripts
         [SerializeField] Levysabe levyScript;
         LevelSelector levelSelector;
+        SettingsManager gameSettings;
         #endregion
         #region Audio
         [SerializeField] AudioSource source;
@@ -41,6 +42,7 @@ namespace Atom
             anim = winCanvas.GetComponent<Animator>();
             source = GetComponent<AudioSource>();
             audioPlayed = false;
+            gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
         }
 
         // Update is called once per frame
@@ -64,7 +66,7 @@ namespace Atom
 
         private void Win()
         {
-            if (!audioPlayed)
+            if (!audioPlayed && gameSettings.soundEffects)
             {
                 source.PlayOneShot(clip);
                 audioPlayed = true;
