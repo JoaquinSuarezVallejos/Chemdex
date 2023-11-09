@@ -13,12 +13,8 @@ public class ColoredSquares : MonoBehaviour
 
     private Image image;
     private Image[] allImagesOfElements;
-    private bool firstMouseDownClick = false;
 
     private ColoredSquareManager managerScript;
-    public string squareCheckName;
-
-    //[SerializeField] GameObject[] squareChecks;
 
     GameObject[] reset;
 
@@ -40,9 +36,6 @@ public class ColoredSquares : MonoBehaviour
         //reset = periodicTable. 
 
         managerScript = GameObject.Find("Square Color Manager").GetComponent<ColoredSquareManager>();
-        
-        //squareChecks = GameObject.FindGameObjectsWithTag("SquareCheck");
-        //Debug.Log(squareChecks);
     }
 
     private void OnMouseDown()
@@ -50,13 +43,11 @@ public class ColoredSquares : MonoBehaviour
         managerScript.OnClicked(ReturnColorType());
     }
 
-
     GameObject[] ReturnColorType()
     {
         switch (gameObject.name)
         {
             case "RedShapeTable": //Alkali_metals
-                squareCheckName = "RedCheck";
                 return Alkali_metals;
 
             case "OrangeShapeTable": // Alkaline_earth_metals

@@ -10,10 +10,7 @@ public class ColoredSquareManager : MonoBehaviour
     private Image[] allImagesOfElements;
     [SerializeField] GameObject periodicTable, UIArrows;
     [SerializeField] int counter;
-    [SerializeField] GameObject[] squareChecks;
-    private ColoredSquares coloredSquaresScript;
     private SquareChecks squareChecksScript;
-
 
     private void Awake()
     {
@@ -22,9 +19,7 @@ public class ColoredSquareManager : MonoBehaviour
 
     private void Start()
     {
-        coloredSquaresScript = GameObject.Find("RedShapeTable").GetComponent<ColoredSquares>();
         squareChecksScript = GameObject.Find("SquareChecks").GetComponent<SquareChecks>();
-        //squareChecks = GameObject.FindGameObjectsWithTag("SquareCheck");
     }
 
     public void OnClicked(GameObject[] hidingList)
@@ -45,23 +40,18 @@ public class ColoredSquareManager : MonoBehaviour
             {
                 Debug.Log("oculta lo mostrado");
                 HideAllImagesOfThisElement(hidingList);
-                HideSpecificCheck();
                 counter -= 1;
             }
             else if (hidingList[0].GetComponent<Image>().color.a == 0.3f) //esta oculto
             {
                 Debug.Log("muestra lo oculto");
                 ShowAllImagesOfThisElement(hidingList);
-                Debug.Log(hidingList);
-                ShowSpecificCheck();
                 counter += 1;
             }
 
             if (counter == 10)
             {
                 Debug.Log("vuelve a la normalidad");
-                HideAllSquareChecks();
-                Debug.Log("checks hided");
                 ShowAllImages();
 
                 firstMouseDownClick = false;
@@ -71,8 +61,6 @@ public class ColoredSquareManager : MonoBehaviour
             if (counter == 0)
             {
                 Debug.Log("vuelve a la normalidad");
-                HideAllSquareChecks();
-                Debug.Log("checks hided");
                 ShowAllImages();
 
                 firstMouseDownClick = false;
@@ -83,6 +71,7 @@ public class ColoredSquareManager : MonoBehaviour
         if (hidingList == null)
         {
             ShowAllImages();
+            squareChecksScript.HideAllSquareChecks();
             Debug.Log("reseteo");
             firstMouseDownClick = false;
             counter = 0;
@@ -132,34 +121,6 @@ public class ColoredSquareManager : MonoBehaviour
             tempColor.a = 1f;
             image.color = tempColor;
             UIArrows.GetComponent<Image>().enabled = true;
-        }
-    }
-
-    private void HideAllSquareChecks()
-    {
-        foreach (GameObject check in squareChecks)
-        {
-            check.SetActive(false);
-        }
-    }
-
-    private void ShowSpecificCheck()
-    {
-        switch (coloredSquaresScript.squareCheckName)
-        {
-            case "RedCheck":
-                squareChecksScript.squareChecks[0].SetActive(true);
-                return;
-        }
-    }
-
-    private void HideSpecificCheck()
-    {
-        switch (coloredSquaresScript.squareCheckName)
-        {
-            case "RedCheck":
-                squareChecksScript.squareChecks[0].SetActive(false);
-                return;
         }
     }
 }
