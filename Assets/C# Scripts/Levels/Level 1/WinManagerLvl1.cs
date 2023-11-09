@@ -22,6 +22,7 @@ namespace Atom
         #region Audio
         [SerializeField] AudioSource source;
         [SerializeField] AudioClip clip;
+        bool audioPlayed = false;
         #endregion
 
         [SerializeField] private int level;
@@ -39,6 +40,7 @@ namespace Atom
             texts.SetActive(true);
             anim = winCanvas.GetComponent<Animator>();
             source = GetComponent<AudioSource>();
+            audioPlayed = false;
         }
 
         // Update is called once per frame
@@ -62,10 +64,14 @@ namespace Atom
 
         private void Win()
         {
+            if (!audioPlayed)
+            {
+                source.PlayOneShot(clip);
+                audioPlayed = true;
+            }
             foreach (GameObject confeti in confetti)
             {
                 confeti.SetActive(true);
-                source.PlayOneShot(clip);
             }
             StartCoroutine(wait1SecondAfterWin());
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1372,7 +1372,7 @@ PrefabInstance:
     - target: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
         type: 3}
       propertyPath: m_Name
-      value: HCFX_Conffeti
+      value: Conffeti
       objectReference: {fileID: 0}
     - target: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
         type: 3}
@@ -1712,8 +1712,8 @@ MonoBehaviour:
   loseCanvas: {fileID: 1797426679}
   texts: {fileID: 1920111799}
   levyScript: {fileID: 1607662545}
-  source: {fileID: 0}
-  clip: {fileID: 0}
+  source: {fileID: 1174977847}
+  clip: {fileID: 8300000, guid: 4c45614cfd6bc4f4b91f021846d4c66d, type: 3}
   level: 1
   counter: 1
   confetti:
@@ -1745,7 +1745,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4076,7 +4076,7 @@ PrefabInstance:
     - target: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
         type: 3}
       propertyPath: m_Name
-      value: HCFX_Conffeti (1)
+      value: Conffeti
       objectReference: {fileID: 0}
     - target: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
         type: 3}
