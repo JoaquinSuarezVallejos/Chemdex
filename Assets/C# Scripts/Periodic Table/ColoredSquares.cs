@@ -38,7 +38,7 @@ public class ColoredSquares : MonoBehaviour
         managerScript = GameObject.Find("Square Color Manager").GetComponent<ColoredSquareManager>();
     }
 
-    private void OnMouseDown()
+    public void OnClick()
     {
         managerScript.OnClicked(ReturnColorType());
     }

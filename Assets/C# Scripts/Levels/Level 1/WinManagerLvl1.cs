@@ -42,7 +42,6 @@ namespace Atom
             anim = winCanvas.GetComponent<Animator>();
             source = GetComponent<AudioSource>();
             audioPlayed = false;
-            gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
         }
 
         // Update is called once per frame
@@ -66,16 +65,20 @@ namespace Atom
 
         private void Win()
         {
-            if (!audioPlayed && gameSettings.soundEffects)
+            if (GameObject.Find("Settings Manager") != null)
             {
-                source.PlayOneShot(clip);
-                audioPlayed = true;
+                gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
+                if (!audioPlayed && gameSettings.soundEffects)
+                {
+                    source.PlayOneShot(clip);
+                    audioPlayed = true;
+                }
             }
+            StartCoroutine(wait1SecondAfterWin());
             foreach (GameObject confeti in confetti)
             {
                 confeti.SetActive(true);
             }
-            StartCoroutine(wait1SecondAfterWin());
         }
 
         public void TryAgain()
