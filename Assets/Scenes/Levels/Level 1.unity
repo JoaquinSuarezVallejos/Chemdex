@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 342860112}
   - component: {fileID: 342860111}
   m_Layer: 5
-  m_Name: Win Canvas (1)
+  m_Name: Win pop up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

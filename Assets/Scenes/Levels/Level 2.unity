@@ -189,7 +189,6 @@ GameObject:
   - component: {fileID: 147723399}
   - component: {fileID: 147723401}
   - component: {fileID: 147723402}
-  - component: {fileID: 147723403}
   m_Layer: 0
   m_Name: Holder3
   m_TagString: Holder
@@ -376,19 +375,6 @@ MonoBehaviour:
   _distance: 0.1
   _delayBetweenShakes: 0.05
   winManager: {fileID: 1174977845}
---- !u!114 &147723403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147723389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474318a9df3e56f499916a804b6ab786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drag: 0
 --- !u!1 &179799857 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
@@ -1367,8 +1353,6 @@ GameObject:
   - component: {fileID: 1136810400}
   - component: {fileID: 1136810402}
   - component: {fileID: 1136810403}
-  - component: {fileID: 1136810404}
-  - component: {fileID: 1136810405}
   m_Layer: 0
   m_Name: Holder1
   m_TagString: Holder
@@ -1555,32 +1539,6 @@ MonoBehaviour:
   _distance: 0.1
   _delayBetweenShakes: 0.05
   winManager: {fileID: 1174977845}
---- !u!114 &1136810404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136810389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474318a9df3e56f499916a804b6ab786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drag: 0
---- !u!114 &1136810405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136810389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474318a9df3e56f499916a804b6ab786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drag: 0
 --- !u!1 &1174977844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,8 +1574,8 @@ MonoBehaviour:
   texts: {fileID: 1920111799}
   levyScript: {fileID: 2130950491}
   source: {fileID: 1174977847}
-  winClip: {fileID: 0}
-  loseClip: {fileID: 0}
+  winClip: {fileID: 8300000, guid: 4c45614cfd6bc4f4b91f021846d4c66d, type: 3}
+  loseClip: {fileID: 8300000, guid: 894c0870df796074b9a279f805d3e423, type: 3}
   level: 2
   counter: 1
   confetti:
@@ -1826,7 +1784,7 @@ GameObject:
   - component: {fileID: 1289298331}
   - component: {fileID: 1289298330}
   m_Layer: 5
-  m_Name: Win Canvas (1)
+  m_Name: Win pop up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

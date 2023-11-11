@@ -19,7 +19,6 @@ public class ParticleCounterManager : MonoBehaviour
             if (protonsOnScreen[i] == null)
             {
                 full = false;
-                Debug.Log("no lleno");
                 break;
             }
         }
@@ -38,7 +37,6 @@ public class ParticleCounterManager : MonoBehaviour
 
         if (full)
         {
-            Debug.Log("lleno");
             for (int i = 0; i < protonsOnScreen.Length; i++)
             {
                 if (protonsOnScreen[i].transform.parent == null || protonsOnScreen[i].transform.parent.name == "First Marker")
@@ -65,7 +63,6 @@ public class ParticleCounterManager : MonoBehaviour
             if (neutronsOnScreen[i] == null)
             {
                 full = false;
-                Debug.Log("no lleno");
                 break;
             }
         }
@@ -84,7 +81,6 @@ public class ParticleCounterManager : MonoBehaviour
 
         if (full)
         {
-            Debug.Log("lleno");
             for (int i = 0; i < neutronsOnScreen.Length; i++)
             {
                 if (neutronsOnScreen[i].transform.parent == null || neutronsOnScreen[i].transform.parent.name == "Second Marker")
@@ -111,7 +107,6 @@ public class ParticleCounterManager : MonoBehaviour
             if (thirdParticleOnScreen[i] == null)
             {
                 full = false;
-                Debug.Log("no lleno");
                 break;
             }
         }
@@ -130,7 +125,6 @@ public class ParticleCounterManager : MonoBehaviour
 
         if (full)
         {
-            Debug.Log("lleno");
             for (int i = 0; i < thirdParticleOnScreen.Length; i++)
             {
                 if (thirdParticleOnScreen[i].transform.parent == null || thirdParticleOnScreen[i].transform.parent.name == "Third Marker")

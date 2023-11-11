@@ -63,17 +63,15 @@ namespace Atom
 
         private void Lose()
         {
-            //texts.SetActive(false);
-            //loseCanvas.SetActive(true);
             if (GameObject.Find("Settings Manager") != null)
             {
-                if (gameSettings.soundEffects)
+                gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
+                if (!audioPlayed && gameSettings.soundEffects)
                 {
                     source.PlayOneShot(loseClip);
-                    Debug.Log("audio played");
+                    audioPlayed = true;
                 }
             }
-            Debug.Log("tryagain");
             TryAgain();
         }
 

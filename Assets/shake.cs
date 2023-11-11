@@ -37,7 +37,6 @@ public class shake : MonoBehaviour
     public void Begin()
     {
         alreadyShaking = true;
-        Debug.Log("shikaing");
         StartCoroutine(Shake());
     }
 
@@ -80,36 +79,3 @@ public class shake : MonoBehaviour
     }
 
 }
-//{
-//    [SerializeField] WinManagerLvl1 winManager;
-
-//    Vector3 origin;
-
-//    private PhysicsObject physicsObject;
-
-//    private void Start()
-//    {
-//        origin = transform.localPosition;
-//    }
-
-//    private void Update()
-//    {
-//        if (winManager.shaking)
-//        {
-//            Vector3 forceToOrigin = origin - transform.localPosition; // calculate the force to the origin
-
-//            Vector3 forceToShake = UnityEngine.Random.insideUnitSphere; // calculate the force to shake
-//            physicsObject.AddForce(forceToShake + forceToOrigin); // add the force to the nucleus
-//            Debug.Log("shaking");
-//        }
-
-//        else
-//        {
-//            Vector3 forceToOrigin = origin - transform.localPosition;
-//            if (forceToOrigin != Vector3.zero)
-//            {
-//                physicsObject.AddForce(forceToOrigin);
-//            }
-//        }
-//    }
-//}

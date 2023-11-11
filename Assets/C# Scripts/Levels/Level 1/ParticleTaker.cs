@@ -24,15 +24,12 @@ namespace Atom
             {
                 if (transform.childCount > 1)
                 {
-                    Debug.Log("No puede entrar más de una particula por espacio");
                 }
                 else
                 {
-                    Debug.Log("puede entrar la particula");
                     particleGO = part.gameObject;
                     particleGO.transform.parent = gameObject.transform;
                     isOccupied = true;
-                    //particleGO.transform.position = gameObject.transform.position;
                     if (part.GetType() == assignedParticle.GetType())
                     {
                         parent.AddParticle(particleGO, this);
