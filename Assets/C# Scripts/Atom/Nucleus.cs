@@ -157,7 +157,7 @@ namespace Atom
 
             if (Shake) // check if the nucleus is shaking
             {
-                Vector3 forceToShake = Random.insideUnitSphere; // calculate the force to shake
+                Vector3 forceToShake = Random.insideUnitSphere * 2; // calculate the force to shake
                 physicsObject.AddForce(forceToShake + forceToOrigin); // add the force to the nucleus
             }
 

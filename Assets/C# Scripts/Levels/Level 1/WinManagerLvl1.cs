@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Physics;
 
 namespace Atom
 {
@@ -22,7 +23,8 @@ namespace Atom
         #endregion
         #region Audio
         [SerializeField] AudioSource source;
-        [SerializeField] AudioClip clip;
+        [SerializeField] AudioClip winClip;
+        [SerializeField] AudioClip loseClip;
         bool audioPlayed = false;
         #endregion
 
@@ -33,6 +35,8 @@ namespace Atom
         [SerializeField] GameObject[] confetti;
 
         Animator anim;
+
+        public bool shaking = false;
 
         private void Awake()
         {
@@ -59,8 +63,18 @@ namespace Atom
 
         private void Lose()
         {
-            texts.SetActive(false);
-            loseCanvas.SetActive(true);
+            //texts.SetActive(false);
+            //loseCanvas.SetActive(true);
+            if (GameObject.Find("Settings Manager") != null)
+            {
+                if (gameSettings.soundEffects)
+                {
+                    source.PlayOneShot(loseClip);
+                    Debug.Log("audio played");
+                }
+            }
+            Debug.Log("tryagain");
+            TryAgain();
         }
 
         private void Win()
@@ -70,7 +84,7 @@ namespace Atom
                 gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
                 if (!audioPlayed && gameSettings.soundEffects)
                 {
-                    source.PlayOneShot(clip);
+                    source.PlayOneShot(winClip);
                     audioPlayed = true;
                 }
             }
@@ -83,7 +97,8 @@ namespace Atom
 
         public void TryAgain()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            shaking = true;
+            StartCoroutine(waitHalfSecondAfterLosing());
         }
 
         public void LevelSelector()
@@ -111,6 +126,13 @@ namespace Atom
             {
                 levelSelector.lastLevelPassed = level;
             }
+        }
+
+        IEnumerator waitHalfSecondAfterLosing()
+        {
+            yield return new WaitForSeconds(0.5f);
+            shaking = false;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
