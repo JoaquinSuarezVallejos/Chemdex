@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2545,12 +2545,14 @@ MonoBehaviour:
   texts: {fileID: 1920111799}
   levyScript: {fileID: 2130950491}
   source: {fileID: 1174977847}
-  clip: {fileID: 8300000, guid: 4c45614cfd6bc4f4b91f021846d4c66d, type: 3}
+  winClip: {fileID: 0}
+  loseClip: {fileID: 0}
   level: 8
   counter: 1
   confetti:
   - {fileID: 1695666202}
   - {fileID: 717004138}
+  shaking: 0
 --- !u!4 &1174977846
 Transform:
   m_ObjectHideFlags: 0
@@ -3187,14 +3189,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12156863, g: 0.13725491, b: 0.27450982, a: 1}
+  m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 32c427cb95804bc46ab325e2babb9f57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
