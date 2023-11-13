@@ -19,7 +19,10 @@ namespace Atom
 
         protected static AtomLvl1 atom; // the atom the particle is in
 
+        Levysabe levyScript;
+
         public float Radius // get and set the radius in Unity units
+
         {
             get { return transform.localScale.x / 2; }
             set { transform.localScale = Vector3.one * 2.0f * value; }
@@ -45,6 +48,8 @@ namespace Atom
                 }
             }
 
+            levyScript = GameObject.Find("MoleculeRepresentation").GetComponent<Levysabe>();
+
             // hook up events 
             sphereButton.OnClick.AddListener(Select); // select the particle when the sphere button is clicked
             OnSelect.AddListener(Select); // select the particle when the OnSelect event is called
@@ -54,7 +59,7 @@ namespace Atom
         protected virtual void Update()
         {
             // behavior when the particle is selected by the user
-            if (selected)
+            if (selected && !levyScript.win)
             {
                 transform.position = (Vector3)DUI.DUI.inputPos + Vector3.back; // move the particle to the mouse position
 

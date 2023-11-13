@@ -77,6 +77,7 @@ namespace Atom
 
         private void Win()
         {
+
             if (GameObject.Find("Settings Manager") != null)
             {
                 gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
@@ -91,6 +92,8 @@ namespace Atom
             {
                 confeti.SetActive(true);
             }
+            StartCoroutine(levyScript.waitToMoveMolecule(levyScript.counter));
+            levyScript.win = false;
         }
 
         public void TryAgain()

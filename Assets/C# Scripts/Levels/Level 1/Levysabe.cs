@@ -26,6 +26,10 @@ namespace Atom
         [SerializeField] ThirdParticleLvl1 thirdParticleLvl1;
         #endregion
 
+        public float counter;
+
+        public Vector3 targetPosition;
+
         private void Awake()
         {
             actual = new List<ParticleLvl1>(receta);
@@ -208,6 +212,12 @@ namespace Atom
                     }
                 }
             }
+        }
+
+        public IEnumerator waitToMoveMolecule(float counter)
+        {
+            yield return new WaitForSeconds(counter);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(-2.6f, -2, transform.position.z), Time.deltaTime * 3f);
         }
     }
 
