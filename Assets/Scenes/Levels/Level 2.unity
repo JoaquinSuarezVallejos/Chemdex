@@ -4089,7 +4089,7 @@ MonoBehaviour:
     type: 3}
   thirdParticleLvl1: {fileID: 0}
   counter: 2
-  targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: -3.55, y: -2, z: 0}
 --- !u!1001 &6155246352319863508
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ namespace Atom
         #endregion
         #region Ideal molecule
         public ParticleLvl1[] receta;
-        public Transform[] position;
+        //public Transform[] position;
         [SerializeField] List<ParticleLvl1> actual;
         bool listModified = false;
         private bool protonScript;
@@ -57,21 +57,24 @@ namespace Atom
             }
             #endregion
             #region Losing Check
-            foreach (GameObject holder in holders)
+            if (win)
             {
-                if (!holder.GetComponent<ParticleTaker>().isOccupied)
+                foreach (GameObject holder in holders)
                 {
-                    holdersAreFull = false;
-                    break;
+                    if (!holder.GetComponent<ParticleTaker>().isOccupied)
+                    {
+                        holdersAreFull = false;
+                        break;
+                    }
+                    else
+                    {
+                        holdersAreFull = true;
+                    }
                 }
-                else
+                if (holdersAreFull)
                 {
-                    holdersAreFull = true;
+                    lose = true;
                 }
-            }
-            if (holdersAreFull)
-            {
-                lose = true;
             }
             #endregion
         }
@@ -109,7 +112,6 @@ namespace Atom
                         {
                             Debug.Log("Coincide alguna con la receta");
                             script.wasCorrect = true;
-                            //actual.Remove(other);//se borra
                             actual[i] = null;
                             break;
                         }
@@ -129,7 +131,6 @@ namespace Atom
                         {
                             Debug.Log("Coincide alguna con la receta");
                             script.wasCorrect = true;
-                            //actual.Remove(other);//se borra
                             actual[i] = null;
                             break;
                         }
@@ -217,7 +218,7 @@ namespace Atom
         public IEnumerator waitToMoveMolecule(float counter)
         {
             yield return new WaitForSeconds(counter);
-            transform.position = Vector3.Lerp(transform.position, new Vector3(-2.6f, -2, transform.position.z), Time.deltaTime * 3f);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 3f);
         }
     }
 

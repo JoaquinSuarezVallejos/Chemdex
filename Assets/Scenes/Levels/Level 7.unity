@@ -4725,7 +4725,7 @@ MonoBehaviour:
     type: 3}
   thirdParticleLvl1: {fileID: 0}
   counter: 2
-  targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: -3.6, y: -2.25, z: 0}
 --- !u!1 &1954003278
 GameObject:
   m_ObjectHideFlags: 0

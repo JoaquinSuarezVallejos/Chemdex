@@ -61,6 +61,10 @@ namespace Atom
                     {
                         parent.CheckList(wasCorrect, particleGO);
                     }
+                    else if (particleGO.GetComponent<ThirdParticleLvl1>() != null)
+                    {
+                        parent.CheckList(wasCorrect, particleGO);
+                    }
                     //Destroy(particleGO.gameObject); //Si la destruyo se destruye el script.
                     wasCorrect = false;
                     particleGO = null;
