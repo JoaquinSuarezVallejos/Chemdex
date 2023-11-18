@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1768,6 +1768,7 @@ GameObject:
   - component: {fileID: 763494239}
   - component: {fileID: 763494238}
   - component: {fileID: 763494237}
+  - component: {fileID: 763494245}
   m_Layer: 0
   m_Name: Holder1
   m_TagString: Holder
@@ -1951,6 +1952,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &763494245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763494235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &777438005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,6 +2254,7 @@ GameObject:
   - component: {fileID: 818229201}
   - component: {fileID: 818229200}
   - component: {fileID: 818229199}
+  - component: {fileID: 818229207}
   m_Layer: 0
   m_Name: Holder1 (8)
   m_TagString: Holder
@@ -2420,6 +2438,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &818229207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818229197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &825150565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +2471,7 @@ GameObject:
   - component: {fileID: 825150569}
   - component: {fileID: 825150568}
   - component: {fileID: 825150567}
+  - component: {fileID: 825150575}
   m_Layer: 0
   m_Name: Holder1 (4)
   m_TagString: Holder
@@ -2620,6 +2655,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &825150575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825150565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &863194299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,6 +3107,7 @@ GameObject:
   - component: {fileID: 973894731}
   - component: {fileID: 973894730}
   - component: {fileID: 973894729}
+  - component: {fileID: 973894737}
   m_Layer: 0
   m_Name: Holder1 (1)
   m_TagString: Holder
@@ -3239,6 +3291,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &973894737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973894727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1050605416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3324,7 @@ GameObject:
   - component: {fileID: 1050605420}
   - component: {fileID: 1050605419}
   - component: {fileID: 1050605418}
+  - component: {fileID: 1050605426}
   m_Layer: 0
   m_Name: Holder1 (2)
   m_TagString: Holder
@@ -3439,6 +3508,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1050605426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050605416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1084006481
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,6 +3541,7 @@ GameObject:
   - component: {fileID: 1084006485}
   - component: {fileID: 1084006484}
   - component: {fileID: 1084006483}
+  - component: {fileID: 1084006491}
   m_Layer: 0
   m_Name: Holder1 (3)
   m_TagString: Holder
@@ -3639,6 +3725,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1084006491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084006481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1001 &1098272228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3865,6 +3967,7 @@ GameObject:
   - component: {fileID: 1155449751}
   - component: {fileID: 1155449750}
   - component: {fileID: 1155449749}
+  - component: {fileID: 1155449757}
   m_Layer: 0
   m_Name: Holder1 (7)
   m_TagString: Holder
@@ -4048,6 +4151,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1155449757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155449747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1174977844
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,6 +4496,7 @@ GameObject:
   - component: {fileID: 1367106826}
   - component: {fileID: 1367106825}
   - component: {fileID: 1367106824}
+  - component: {fileID: 1367106832}
   m_Layer: 0
   m_Name: Holder1 (5)
   m_TagString: Holder
@@ -4560,6 +4680,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1367106832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367106822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1491748613
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,13 +5330,6 @@ MonoBehaviour:
   - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
   - {fileID: 3257837661448464653, guid: ebcaac4a6d97266448db76d366048bc8, type: 3}
   - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
-  position:
-  - {fileID: 763494236}
-  - {fileID: 1867279651}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   actual: []
   protonLvl1: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
     type: 3}
@@ -5450,6 +5579,7 @@ GameObject:
   - component: {fileID: 1688915770}
   - component: {fileID: 1688915769}
   - component: {fileID: 1688915768}
+  - component: {fileID: 1688915776}
   m_Layer: 0
   m_Name: Holder1 (6)
   m_TagString: Holder
@@ -5633,6 +5763,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1688915776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688915766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1694809545
 GameObject:
   m_ObjectHideFlags: 0
@@ -6141,6 +6287,7 @@ GameObject:
   - component: {fileID: 1867279654}
   - component: {fileID: 1867279653}
   - component: {fileID: 1867279652}
+  - component: {fileID: 1867279660}
   m_Layer: 0
   m_Name: Holder2
   m_TagString: Holder
@@ -6324,6 +6471,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1867279660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867279650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1887993964
 GameObject:
   m_ObjectHideFlags: 0

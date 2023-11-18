@@ -57,7 +57,7 @@ namespace Atom
             }
             #endregion
             #region Losing Check
-            if (win)
+            if (!win)
             {
                 foreach (GameObject holder in holders)
                 {

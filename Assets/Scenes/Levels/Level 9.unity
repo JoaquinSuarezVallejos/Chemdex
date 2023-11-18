@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1723,6 +1723,7 @@ GameObject:
   - component: {fileID: 763494239}
   - component: {fileID: 763494238}
   - component: {fileID: 763494237}
+  - component: {fileID: 763494245}
   m_Layer: 0
   m_Name: Holder1
   m_TagString: Holder
@@ -1906,6 +1907,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &763494245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763494235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &777438005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,6 +2062,7 @@ GameObject:
   - component: {fileID: 825150569}
   - component: {fileID: 825150568}
   - component: {fileID: 825150567}
+  - component: {fileID: 825150575}
   m_Layer: 0
   m_Name: Holder1 (4)
   m_TagString: Holder
@@ -2228,6 +2246,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &825150575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825150565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &905998706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
@@ -2335,6 +2369,7 @@ GameObject:
   - component: {fileID: 973894731}
   - component: {fileID: 973894730}
   - component: {fileID: 973894729}
+  - component: {fileID: 973894737}
   m_Layer: 0
   m_Name: Holder1 (1)
   m_TagString: Holder
@@ -2518,6 +2553,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &973894737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973894727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &995479068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6405148555080861403, guid: 256c17849acfae441a858a1c3f805e67,
@@ -2792,6 +2843,7 @@ GameObject:
   - component: {fileID: 1050605420}
   - component: {fileID: 1050605419}
   - component: {fileID: 1050605418}
+  - component: {fileID: 1050605426}
   m_Layer: 0
   m_Name: Holder1 (2)
   m_TagString: Holder
@@ -2975,6 +3027,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1050605426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050605416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1084006481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +3060,7 @@ GameObject:
   - component: {fileID: 1084006485}
   - component: {fileID: 1084006484}
   - component: {fileID: 1084006483}
+  - component: {fileID: 1084006491}
   m_Layer: 0
   m_Name: Holder1 (3)
   m_TagString: Holder
@@ -3175,6 +3244,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1084006491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084006481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!1 &1122810128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,13 +4551,6 @@ MonoBehaviour:
   - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
   - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
   - {fileID: 8788705929651015219, guid: e2d4bb462f1bab249959f06a4ea109d4, type: 3}
-  position:
-  - {fileID: 763494236}
-  - {fileID: 1867279651}
-  - {fileID: 973894728}
-  - {fileID: 1050605417}
-  - {fileID: 1084006482}
-  - {fileID: 825150566}
   actual: []
   protonLvl1: {fileID: 5335258463894193498, guid: 56f0b99c2ef8b1d4fba6f49e78643633,
     type: 3}
@@ -5045,6 +5123,7 @@ GameObject:
   - component: {fileID: 1867279654}
   - component: {fileID: 1867279653}
   - component: {fileID: 1867279652}
+  - component: {fileID: 1867279660}
   m_Layer: 0
   m_Name: Holder2
   m_TagString: Holder
@@ -5228,6 +5307,22 @@ MonoBehaviour:
   particleGO: {fileID: 0}
   wasCorrect: 0
   isOccupied: 0
+--- !u!114 &1867279660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867279650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add98d41bb9455c4d819f5619a2e78cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 0.1
+  _distance: 0.1
+  _delayBetweenShakes: 0.05
+  winManager: {fileID: 1174977845}
 --- !u!850595691 &1900451620
 LightingSettings:
   m_ObjectHideFlags: 0
