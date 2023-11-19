@@ -13,6 +13,7 @@ public class LevelSelector : MonoBehaviour
     GameObject level;
     public bool onLevelSelector;
     bool modificados = false;
+    [SerializeField] Image level16;
 
     // Start is called before the first frame update
     void Awake()
@@ -28,6 +29,8 @@ public class LevelSelector : MonoBehaviour
         }
         level = gameObject.transform.GetChild(0).gameObject;
         levels = GameObject.FindGameObjectsWithTag("Levels");
+
+        level16.enabled = false;
     }
     
     void Update()
@@ -35,6 +38,19 @@ public class LevelSelector : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "LevelSelector")
         {
             level.SetActive(true);
+        }
+
+        if (lastLevelPassed == 15 && !modificados)
+        {
+            Debug.Log("se paso el 15");
+            modificados = true;
+            level16.enabled = true;
+            foreach (GameObject level in levels)
+            {
+                level.GetComponent<Button>().interactable = true;
+                level.GetComponent<LevelClickListener>().levelPassed = true;
+                level.GetComponent<Image>().sprite = level.GetComponent<LevelClickListener>().PassedClickeableUI;
+            }
         }
 
         if (onLevelSelector && !modificados)
