@@ -15,10 +15,10 @@ public class SelectionManager : MonoBehaviour
         SceneManager.LoadScene("FreePlay");
     }
     
-    public void Settings()
+    /*public void Settings()
     {
-        SceneManager.LoadScene("Settings");
-    }
+        //SceneManager.LoadScene("Settings");
+    }*/
     
     public void MainMenu()
     {

@@ -77,16 +77,13 @@ namespace Atom
 
         private void Win()
         {
-
-            if (GameObject.Find("Settings Manager") != null)
+            if (!audioPlayed)
             {
-                gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
-                if (!audioPlayed && gameSettings.soundEffects)
-                {
-                    source.PlayOneShot(winClip);
-                    audioPlayed = true;
-                }
+                //source.PlayOneShot(winClip);
+                audioPlayed = true;
+                AudioManager.Instance.PlaySFX("WinEffectConfetti");
             }
+
             StartCoroutine(wait1SecondAfterWin());
             foreach (GameObject confeti in confetti)
             {
