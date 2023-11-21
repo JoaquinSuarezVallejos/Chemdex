@@ -63,7 +63,7 @@ namespace Atom
 
         private void Lose()
         {
-            if (GameObject.Find("Settings Manager") != null)
+            /*if (GameObject.Find("Settings Manager") != null)
             {
                 gameSettings = GameObject.Find("Settings Manager").GetComponent<SettingsManager>();
                 if (!audioPlayed && gameSettings.soundEffects)
@@ -71,6 +71,12 @@ namespace Atom
                     source.PlayOneShot(loseClip);
                     audioPlayed = true;
                 }
+            }*/
+
+            if (!audioPlayed)
+            {
+                audioPlayed = true;
+                AudioManager.Instance.PlaySFX("LoseEffectShake");
             }
             TryAgain();
         }

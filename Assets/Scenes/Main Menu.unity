@@ -976,7 +976,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2263,13 +2263,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music_Sounds:
   - name: MainTheme
-    clip: {fileID: 8300000, guid: 8fb8717eeed3255438ad1aeca321b44e, type: 3}
+    clip: {fileID: 8300000, guid: 946e6a51dcc88434a8163f166ce8c805, type: 3}
   SFX_Sounds:
   - name: WinEffectConfetti
-    clip: {fileID: 8300000, guid: 4c45614cfd6bc4f4b91f021846d4c66d, type: 3}
+    clip: {fileID: 8300000, guid: c4a65fc74bf6da349945583c023c520e, type: 3}
+  - name: LoseEffectShake
+    clip: {fileID: 8300000, guid: 7483b7344aa3281418e5c418e3288d9a, type: 3}
   musicSource: {fileID: 567751394}
   SFXSource: {fileID: 2085576515}
-  UIController_script: {fileID: 0}
   musicBtnImage: {fileID: 552859268}
   sfxBtnImage: {fileID: 517766099}
 --- !u!1 &1633620577
