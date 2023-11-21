@@ -20,6 +20,7 @@ TagManager:
   - Actinides
   - Period
   - SquareCheck
+  - MusicBtn
   layers:
   - Default
   - TransparentFX
