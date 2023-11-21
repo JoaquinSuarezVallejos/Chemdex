@@ -67,19 +67,19 @@ public class AudioManager : MonoBehaviour
     public void ToggleMusic()
     {
         musicSource.mute = !musicSource.mute;
-        Color tempColor = musicBtnImage.color;
+        //Color tempColor = musicBtnImage.color;
 
         if (musicSource.mute == true)
         {
-            tempColor.a = 0.75f;
-            musicBtnImage.color = tempColor;
+            /*tempColor.a = 0.75f;
+            musicBtnImage.color = tempColor;*/
             PlayerPrefs.SetString("ToggleMusic", "muted");
         }
 
         else 
         {
-            tempColor.a = 1f;
-            musicBtnImage.color = tempColor;
+            /*tempColor.a = 1f;
+            musicBtnImage.color = tempColor;*/
             PlayerPrefs.SetString("ToggleMusic", "not muted");
         }
 
@@ -89,21 +89,22 @@ public class AudioManager : MonoBehaviour
     public void ToggleSFX()
     {
         SFXSource.mute = !SFXSource.mute;
-        Color tempColor = sfxBtnImage.color;
+        //Color tempColor = UIController.sfxBtnImage.color;
 
         if (SFXSource.mute == true)
         {
-            tempColor.a = 0.75f;
-            sfxBtnImage.color = tempColor;
+            /*tempColor.a = 0.75f;
+            UIController.sfxBtnImage.color = tempColor;*/
+            PlayerPrefs.SetString("ToggleSFX", "muted");
         }
 
         else 
         {
-            tempColor.a = 1f;
-            sfxBtnImage.color = tempColor;
+            /*tempColor.a = 1f;
+            UIController.sfxBtnImage.color = tempColor;*/
+            PlayerPrefs.SetString("ToggleSFX", "not muted");
         }
 
-        PlayerPrefs.SetFloat("ToggleSFX", tempColor.a);
         LoadToggleSFXValue();
     }
 
@@ -124,22 +125,38 @@ public class AudioManager : MonoBehaviour
         if (ToggleMusicValue == "muted")
         {
             musicSource.mute = true;
-            Color tempColor = musicBtnImage.color;
+            /*Color tempColor = UIController.musicBtnImage.color;
             tempColor.a = 0.75f;
-            musicBtnImage.color = tempColor;
+            UIController.musicBtnImage.color = tempColor;*/
         }
 
         else
         {
             musicSource.mute = false;
-            Color tempColor = musicBtnImage.color;
+            /*Color tempColor = UIController.musicBtnImage.color;
             tempColor.a = 1f;
-            musicBtnImage.color = tempColor;
+            UIController.musicBtnImage.color = tempColor;*/
         }
     }
 
     private void LoadToggleSFXValue()
     {
-        PlayerPrefs.GetFloat("ToggleSFX");
+        string ToggleSFXValue = PlayerPrefs.GetString("ToggleSFX");
+
+        if (ToggleSFXValue == "muted")
+        {
+            SFXSource.mute = true;
+            /*Color tempColor = UIController.musicBtnImage.color;
+            tempColor.a = 0.75f;
+            UIController.musicBtnImage.color = tempColor;*/
+        }
+
+        else
+        {
+            SFXSource.mute = false;
+            /*Color tempColor = UIController.musicBtnImage.color;
+            tempColor.a = 1f;
+            UIController.musicBtnImage.color = tempColor;*/
+        }
     }
 }
