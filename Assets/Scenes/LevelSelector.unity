@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1652,7 +1652,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 431}
-  m_SizeDelta: {x: 1500, y: 50}
+  m_SizeDelta: {x: 1150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603557858
 MonoBehaviour:
@@ -3517,7 +3517,6 @@ RectTransform:
   - {fileID: 1875246773}
   - {fileID: 1579856398}
   - {fileID: 502634871}
-  - {fileID: 1038780502}
   - {fileID: 1281701979}
   - {fileID: 1222127195}
   m_Father: {fileID: 696528180}
@@ -3850,201 +3849,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelMolecule: {fileID: 603557858}
   counter: 0.1
---- !u!1 &1038780501
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1038780502}
-  - component: {fileID: 1038780504}
-  - component: {fileID: 1038780503}
-  - component: {fileID: 1038780506}
-  - component: {fileID: 1038780505}
-  - component: {fileID: 1038780507}
-  m_Layer: 5
-  m_Name: Level 16
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1038780502
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038780501}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1016802229}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 890, y: -464}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1038780503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038780501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af477d05e4623fe4188576790ed9edaa, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1038780504
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038780501}
-  m_CullTransparentMesh: 1
---- !u!114 &1038780505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038780501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1038780506}
-          m_TargetAssemblyTypeName: TitleChanger, Assembly-CSharp
-          m_MethodName: ChangeTitleWhileOver
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: "m\u0334\u034B\u033E\u0309\u0315\u0303\u0346\u035D\u034A\u034A\u0309\u0304\u0310\u030E\u0303\u0318\u032D\u0331\u0359\u032D\u0331\u033C\u035C\u033B\u0322\u0339\u0324\u031E\u0348\u0359\u0355\u0347\u032A\u032De\u0335\u0314\u033D\u0302\u0315\u030F\u030E\u0351\u034C\u0301\u032A\u0326\u0317\u0355\u031C\u0333\u0328\u0356\u032F\u0316\u035A\u0326\u0348\u032B\u032C\u032C\u032A\u0316\u0330\u035C\u033C\u035A\u0318\u0355\u032C\u0333\u0326\u0328\u0330\u0359\u0317\u031E\u0329\u0317t\u0338\u0301\u0301\u0352\u030F\u030C\u0313\u030D\u034B\u0358\u0343\u034C\u033D\u031A\u035D\u030E\u030E\u031A\u0311\u035B\u0344\u0307\u0340\u031A\u0360\u0343\u030D\u031A\u0312\u0304\u033F\u031B\u0314\u0306\u0346\u030D\u0357\u0305\u0351\u0314\u0341\u0358\u033F\u0303\u034A\u0351\u030C\u0301\u031F\u0326\u0316\u032D\u034E\u0318\u0330\u0321\u031D\u0332\u0359\u0316\u031E\u0347\u0331\u035A\u0339\u032E\u0325\u0317\u0347\u0319\u032B\u0359\u034D\u035C\u0325\u0347\u0353\u0345\u031C\u0332\u0320h\u0336\u034B\u0308\u035D\u030F\u0301\u0313\u0310\u030F\u0305\u0304\u030C\u0357\u034B\u0344\u0350\u0342\u031A\u0304\u0340\u034B\u0340\u035D\u034C\u030B\u0341\u0342\u0342\u031B\u033D\u0300\u0308\u0344\u0311\u0300\u030C\u035D\u0340\u0351\u033E\u033D\u0313\u034C\u0311\u0308\u031B\u0357\u0343\u0341\u034A\u0344\u0332\u0328\u032C\u0331\u0353\u0324\u0325\u034D\u031E\u035A\u0326\u0349a\u0337\u0342\u0304\u0341\u0357\u034A\u033D\u030D\u035B\u030E\u0305\u030A\u0301\u035D\u033E\u0305\u0311\u0307\u0303\u0358\u0360\u0351\u031B\u0343\u0305\u033D\u030F\u030E\u0344\u0350\u0357\u0346\u032A\u031E\u0322\u0356\u0332\u031D\u031F\u0320\u0355\u0345\u033B\u032A\u0319\u032A\u0326\u032B\u034E\u033C\u0356\u0356\u0355\u0345m\u0336\u0343\u033D\u031A\u033E\u034C\u0346\u030B\u034A\u0310\u0352\u0308\u0313\u035D\u0340\u0357\u0352\u0344\u0304\u0308\u0300\u033F\u035B\u035B\u0324\u033C\u034D\u032E\u034D\u0318\u0316\u033C\u031C\u0317\u034D\u0332\u0356\u033B\u032B\u0324\u0333\u035C\u0354\u032E\u0329\u0327\u033A\u0333\u0329\u0354\u032F\u0339\u0349\u0331\u0359p\u0334\u0301\u035D\u030E\u035D\u031B\u0307\u0313\u030E\u030E\u034B\u0315\u0360\u033A\u0318\u0348\u033C\u0333\u0354\u032D\u035C\u032D\u0329\u0328\u0348\u0356\u032C\u035A\u031C\u0325\u0318\u0328\u0356\u0353h\u0334\u035D\u0300\u0333\u0318\u0349\u033C\u0332\u0339\u032E\u0325\u032B\u0317\u031E\u0359\u0317\u0331\u0328\u034D\u032Fe\u0334\u0306\u0308\u0314\u0311\u0314\u034A\u0308\u0344\u0309\u0303\u035D\u0300\u0309\u035B\u0350\u035D\u0302\u0306\u030A\u034B\u0314\u0313\u034C\u0346\u0352\u030D\u0340\u033F\u0360\u033E\u0305\u0344\u030D\u0302\u034A\u0302\u030E\u030C\u0344\u0302\u0344\u0310\u0300\u0306\u0310\u0303\u0351\u0309\u0303\u0327\u0325t\u0336\u0310\u0342\u0357\u031A\u0312\u0350\u0340\u0313\u0310\u0312\u0358\u0346\u0342\u0340\u0304\u0350\u0343\u030C\u0315\u0358\u0312\u033F\u0311\u030F\u0302\u0307\u0301\u033D\u0351\u0305\u030E\u0350\u0352\u0304\u030A\u0307\u0305\u033F\u0343\u0302\u0310\u0342\u0302\u030D\u0358\u0302\u0309\u030E\u034E\u0329\u0319\u0339\u0321\u033A\u0323\u032D\u032D\u0356\u033A\u032A\u0323\u0323\u0322\u032F\u0323\u031Da\u0336\u0310\u0302\u030E\u0301\u030C\u0351\u0313\u0311\u033E\u033E\u033F\u030D\u0310\u0313\u035B\u031B\u031A\u0304\u0306\u0314\u030B\u0340\u034C\u0311\u033D\u030F\u0343\u0311\u0342\u031B\u0304\u0308\u0314\u0315\u031A\u031A\u030F\u035B\u030C\u0312\u033E\u033C\u0354\u0327\u0332\u0345\u0330\u031D\u033A\u0319\u0354\u0317\u0328\u0326\u0330\u0324\u0347m\u0335\u034B\u033D\u0303\u0340\u030F\u033E\u030A\u035D\u0308\u0344\u0351\u0307\u0314\u035D\u033D\u0310\u0315\u0340\u0340\u035B\u0311\u034A\u0311\u0357\u033E\u0315\u0308\u0360\u030D\u0343\u030B\u0340\u035D\u033D\u033F\u0312\u0343\u0344\u0344\u0344\u0307\u0347\u0321\u0332\u0329\u032F\u0339\u0355\u0318\u0356\u033Ai\u0338\u030B\u030A\u0350\u035D\u0305\u035D\u0343\u0340\u0300\u0352\u030E\u0341\u0309\u030C\u0300\u0343\u030E\u0313\u0302\u0306\u0330\u0329\u034D\u0353\u0333\u034D\u0329\u0328n\u0338\u0305\u0358\u0312\u0302\u0344\u034A\u0302\u034C\u035B\u0342\u0302\u0346\u033D\u0310\u0345\u034D\u0331\u0333\u034E\u0326\u033C\u0355\u034E\u0317\u031E\u033C\u031F\u0322\u0348\u0325\u0359\u0325\u032C\u0320e\u0334\u035D\u0314\u034A\u0344\u0360\u033F\u0360\u035D\u031A\u0341\u035D\u0305\u0314\u035B\u0312\u0341\u035D\u0350\u034A\u0344\u030A\u0308\u0360\u0343\u0340\u0302\u0309\u0312\u033E\u034B\u0313\u0346\u0307\u0304\u034C\u0350\u0345\u032D\u031C\u035C\u033A\u0320\u0328\u0345\u035C\u0329\u0347\u0316\u0356\u0349\u0320\u032B\u0324\u0359\u031D"
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1038780506}
-          m_TargetAssemblyTypeName: TitleChanger, Assembly-CSharp
-          m_MethodName: ChangeTitleWhenOut
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: "\u254E\u2138 \u0323  \u2138 \u0323 \u2351\u14B7 \u2234\u2351\U0001D679\uA58E\u14B7
-              \u21B8\u254E\u14ED\u2138 \u0323 \u1511\u30EA\u14F5\u14B7."
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &1038780506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038780501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b51549b877f6fc4f85fa49e32e33794, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelMolecule: {fileID: 603557858}
-  counter: 0.1
---- !u!114 &1038780507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038780501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1038780503}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1867382237}
-        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
-        m_MethodName: OnLevelSelected
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 16
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1146597723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,7 +4020,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1016802229}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4566,7 +4370,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1016802229}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7066,11 +6870,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54c73e3fc1852944a5c8bc0a02262d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels: []
+  levels:
+  - {fileID: 980158250}
+  - {fileID: 1511694090}
+  - {fileID: 834502185}
+  - {fileID: 1316623678}
+  - {fileID: 348597863}
+  - {fileID: 1377988302}
+  - {fileID: 372104383}
+  - {fileID: 1032892034}
+  - {fileID: 670035604}
+  - {fileID: 1687098629}
+  - {fileID: 1679743332}
+  - {fileID: 767303540}
+  - {fileID: 1875246772}
+  - {fileID: 1579856397}
+  - {fileID: 502634870}
   lastLevelPassed: 0
   levelAvaible: 0
   onLevelSelector: 0
-  level16: {fileID: 1038780503}
 --- !u!4 &1867382238
 Transform:
   m_ObjectHideFlags: 0
